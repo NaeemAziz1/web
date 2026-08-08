@@ -90,13 +90,13 @@ section.dark .section-title::after {
     border: 4px solid #353b48;
 }
 
-.He is {
+.He.is {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.He is {
+.He.is {
     width: calc(33% - 20px);
     text-align: center;
     border: 1px solid #000000;
@@ -108,23 +108,23 @@ section.dark .section-title::after {
     transition: .3s linear;
 }
 
-.He is .icon {
+.He.is .icon {
     color: #990012;
     font-size: 40px;
     margin-bottom: 20px;
     transition: .3s linear;
 }
 
-.He is h4 {
+.He.is h4 {
     font-size: 16px;
     margin-bottom: 6px;
 }
 
-.He is:hover {
+.He.is:hover {
     background-color: #C11B17;
 }
 
-.He is:hover .icon {
+.He.is:hover .icon {
     color: #fff;
 }
 
@@ -139,7 +139,7 @@ section.dark .section-title::after {
     .inner-width {
         max-width: 800px;
     }
-    .He is {
+    .He.is {
         width: calc(50% - 20px);
     }
 }
@@ -148,7 +148,7 @@ section.dark .section-title::after {
     .inner-width {
         padding: 0 20px;
     }
-    .He is {
+    .He.is {
         width: 100%;
     }
 }
@@ -310,11 +310,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .He is, .skills, .Education & Experiences, .contact, footer{
+.about, .He.is, .skills, .Education & Experiences, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
-.He is .serv-content,
+.He.is .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -527,16 +527,16 @@ section .title::after{
     background: none;
 }
 
-.He is .title::before,
+.He.is .title::before,
 .teams .title::before{
     background: #fff;
 }
-.He is .title::after,
+.He.is .title::after,
 .teams .title::after{
     background: ##FF0000;
     content: "what i provide";
 }
-.He is .serv-content .card{
+.He.is .serv-content .card{
     width: calc(40% - 30px);
     background: #222;
     text-align: center;
@@ -546,24 +546,24 @@ section .title::after{
     transition: all 0.3s ease;
 
 }
-.He is .serv-content .card:hover{
+.He.is .serv-content .card:hover{
     background: #FF0000;
 }
-.He is .serv-content .card .box{
+.He.is .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.He is .serv-content .card:hover .box{
+.He.is .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.He is .serv-content .card i{
+.He.is .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.He is .serv-content .card:hover i{
+.He.is .serv-content .card:hover i{
     color: #fff;
 }
-.He is .serv-content .card .text{
+.He.is .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -888,7 +888,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .He is .serv-content .card{
+    .He.is .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -912,7 +912,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .He is .serv-content .card{
+    .He.is .serv-content .card{
         width: 100%;
     }
 }
