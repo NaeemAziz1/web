@@ -90,13 +90,13 @@ section.dark .section-title::after {
     border: 4px solid #353b48;
 }
 
-.services {
+.He is {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.service {
+.He is {
     width: calc(33% - 20px);
     text-align: center;
     border: 1px solid #000000;
@@ -108,14 +108,14 @@ section.dark .section-title::after {
     transition: .3s linear;
 }
 
-.service .icon {
+.He is .icon {
     color: #990012;
     font-size: 40px;
     margin-bottom: 20px;
     transition: .3s linear;
 }
 
-.service h4 {
+.He is h4 {
     font-size: 16px;
     margin-bottom: 6px;
 }
@@ -124,7 +124,7 @@ section.dark .section-title::after {
     background-color: #C11B17;
 }
 
-.service:hover .icon {
+.He is:hover .icon {
     color: #fff;
 }
 
@@ -310,11 +310,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .Education & Experiences, .contact, footer{
+.about, .He is, .skills, .Education & Experiences, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
-.services .serv-content,
+.He is .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -527,16 +527,16 @@ section .title::after{
     background: none;
 }
 
-.services .title::before,
+.He is .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.He is .title::after,
 .teams .title::after{
     background: ##FF0000;
     content: "what i provide";
 }
-.services .serv-content .card{
+.He is .serv-content .card{
     width: calc(40% - 30px);
     background: #222;
     text-align: center;
@@ -546,24 +546,24 @@ section .title::after{
     transition: all 0.3s ease;
 
 }
-.services .serv-content .card:hover{
+.He is .serv-content .card:hover{
     background: #FF0000;
 }
-.services .serv-content .card .box{
+.He is .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.He is .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.He is .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.He is .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
