@@ -90,36 +90,17 @@ section.dark .section-title::after {
     border: 4px solid #353b48;
 }
 
-.He.is {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 .He.is {
-    width: calc(33% - 20px);
+
     text-align: center;
 }
 
 .He.is .icon {
     color: #990012;
-    font-size: 40px;
-    margin-bottom: 20px;
-    transition: .3s linear;
+    
 }
 
-.He.is h4 {
-    font-size: 16px;
-    margin-bottom: 6px;
-}
-
-.He.is:hover {
-    background-color: #C11B17;
-}
-
-.He.is:hover .icon {
-    color: #fff;
-}
 
 .time-line,
 .works {
