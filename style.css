@@ -99,13 +99,6 @@ section.dark .section-title::after {
 .He.is {
     width: calc(33% - 20px);
     text-align: center;
-    border: 1px solid #000000;
-    border-radius: 6px;
-    margin: 20px 0;
-    padding: 40px 20px;
-    color: #000000;
-    cursor: pointer;
-    transition: .3s linear;
 }
 
 .He.is .icon {
