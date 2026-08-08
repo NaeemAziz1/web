@@ -426,15 +426,15 @@ section .title::after{
     margin: auto 0 auto 30px;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 30px;
 }
 .home .home-content .text-2{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 30px;
+    font-size: 35px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -445,7 +445,7 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 20px;
+    font-size: 23px;
     padding: 9px 25px;
     margin-top: 20px;
     font-weight: 400;
