@@ -446,11 +446,11 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 23px;
-    padding: 9px 25px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
+    font-size: 19px;
+    padding: 8px 21px;
+    margin-top: 19px;
+    font-weight: 350;
+    border-radius: 5px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
