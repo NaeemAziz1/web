@@ -427,30 +427,30 @@ section .title::after{
     margin: auto 0 auto 30px;
 }
 .home .home-content .text-1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .home .home-content .text-2{
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 500;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 35px;
+    font-size: 30px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
     color: crimson;
-    font-weight: 500;
+    font-weight: 400;
 }
 .home .home-content a{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 19px;
-    padding: 8px 21px;
-    margin-top: 19px;
-    font-weight: 350;
-    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-top: 18px;
+    font-weight: 300;
+    border-radius: 4px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
