@@ -512,7 +512,7 @@ section .title::after{
 .He.is .title::after,
 .teams .title::after{
     background: ##FF0000;
-    content: "what i provide";
+    content: "What I Provide";
 }
 .He.is .serv-content .card{
     width: calc(40% - 30px);
@@ -549,7 +549,7 @@ section .title::after{
 
 
 .skills .title::after{
-    content: "what i know";
+    content: "What I Know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
