@@ -460,10 +460,10 @@ section .title::after{
 }
 
 .about .title::after{
-    content: "Who I Am";
+    content: "Biography";
 }
 .darks .title::after{
-    content: "Who I Am";
+    content: "Biography";
 }
 .about .about-content .left{
     width: 45%;
