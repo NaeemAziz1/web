@@ -287,10 +287,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .He.is, .skills, .Education & Experiences, .contact, footer{
+.Biography, .He.is, .skills, .Education & Experiences, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, 
+.Biography .Biography-content, 
 .He.is .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -459,36 +459,36 @@ section .title::after{
     background: none;
 }
 
-.about .title::after{
+.Biography .title::after{
     content: "Biography";
 }
 .darks .title::after{
     content: "Biography";
 }
-.about .about-content .left{
+.Biography .Biography-content .left{
     width: 45%;
 }
-.about .about-content .left img{
+.Biography .Biography-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
-.about .about-content .right{
+.Biography .Biography-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.Biography .Biography-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.Biography .Biography-content .right .text span{
     color: crimson;
 }
-.about .about-content .right p{
+.Biography .Biography-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+.Biography .Biography-content .right a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -500,7 +500,7 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.Biography .Biography-content .right a:hover{
     color: #FF0000;
     background: none;
 }
@@ -801,7 +801,7 @@ footer span a:hover{
 }
 
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .Biography .Biography-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -855,15 +855,15 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .Biography .Biography-content .column{
         width: 100%;
     }
-    .about .about-content .left{
+    .Biography .Biography-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .Biography .Biography-content .right{
         flex: 100%;
     }
     .He.is .serv-content .card{
@@ -902,7 +902,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
+    .Biography .Biography-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
