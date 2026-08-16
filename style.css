@@ -460,10 +460,10 @@ section .title::after{
 }
 
 .Biography .title::after{
-    content: "Literary Biography";
+    content: "Journey";
 }
 .darks .title::after{
-    content: "Literary Biography";
+    content: "Journey";
 }
 .Biography .Biography-content .left{
     width: 45%;
