@@ -446,10 +446,10 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 12px;
-    padding: 2px 4px;
+    font-size: 13px;
+    padding: 3px 5px;
     margin-top: 18px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 4px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
