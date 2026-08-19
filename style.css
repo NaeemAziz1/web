@@ -435,7 +435,7 @@ section .title::after{
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 35px;
+    font-size: 15px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -447,7 +447,7 @@ section .title::after{
     background: crimson;
     color: #fff;
     font-size: 16px;
-    padding: 8px 18px;
+    padding: 5px 10px;
     margin-top: 18px;
     font-weight: 300;
     border-radius: 4px;
