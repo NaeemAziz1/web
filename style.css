@@ -440,7 +440,7 @@ section .title::after{
 }
 .home .home-content .text-3 span{
     color: crimson;
-    font-weight: 450;
+    font-weight: 250;
 }
 .home .home-content a{
     display: inline-block;
