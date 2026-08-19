@@ -387,7 +387,7 @@ section .title::after{
     position: fixed;
     height: 38px;
     width: 38px;
-    background: rgba(220, 20, 60, 0.85);
+    background: rgba(220, 20, 60, 0.95);
     right: 30px;
     bottom: 10px;
     text-align: center;
