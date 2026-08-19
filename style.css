@@ -435,12 +435,12 @@ section .title::after{
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 30px;
+    font-size: 35px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
     color: crimson;
-    font-weight: 400;
+    font-weight: 450;
 }
 .home .home-content a{
     display: inline-block;
