@@ -444,7 +444,7 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: rgba(220, 200, 60, 0.6);
+    background: rgba(220, 20, 60, 0.85);
     color: #fff;
     font-size: 14px;
     padding: 3px 6px;
