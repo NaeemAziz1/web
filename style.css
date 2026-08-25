@@ -434,7 +434,6 @@ section .title::after{
     width: 100%;
     transform: translateY(-50%);
     z-index: 2;
-}
 
 }
 .home .home-content .text-1{
@@ -964,4 +963,34 @@ transition: 400ms,
         height: auto;
     }
 
+}
+.home .home-content {
+    line-height: normal;
+}
+
+@media (max-width: 690px) {
+
+    .home .max-width {
+        padding: 0 20px;
+        top: 50%;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 16px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 32px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+
+    .home .home-content a {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin-top: 8px;
+    }
 }
