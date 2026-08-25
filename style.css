@@ -1131,3 +1131,7 @@ transition: 400ms,
 .Biography {
     padding-top: 25px !important;
 }
+/* Fix navbar scroll position for Biography */
+#Biography {
+    scroll-margin-top: 70px;
+}
