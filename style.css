@@ -1175,3 +1175,8 @@ transition: 400ms,
         margin-bottom: 45px;
     }
 }
+.yin-yang {
+    font-size: 0.55em;
+    display: inline-block;
+    vertical-align: middle;
+}
