@@ -417,18 +417,25 @@ section .title::after{
     width: 100%;
     margin: 0;
     padding: 0;
-    line-height: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.home img {
+.home-cover {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 100%;
 }
+
+.home .max-width {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
-.home .max-width{
-    margin: auto 0 auto 30px;
+
 }
 .home .home-content .text-1{
     font-size: 25px;
