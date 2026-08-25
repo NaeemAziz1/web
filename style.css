@@ -1102,3 +1102,29 @@ transition: 400ms,
         font-size: 17px;
     }
 }
+.profile-role {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 14px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.profile-role:hover {
+    color: crimson;
+    background: transparent;
+}
+@media (max-width: 690px) {
+    .profile-role {
+        font-size: 13px;
+        padding: 5px 9px;
+        margin-top: 5px;
+    }
+}
+
