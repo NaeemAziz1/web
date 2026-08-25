@@ -36,7 +36,7 @@ section {
     position: absolute;
     width: 80px;
     height: 3px;
-    background-color: ##FF0000;
+    background-color: #FF0000;
     bottom: 0;
     left: calc(50% - 40px);
 }
@@ -521,7 +521,7 @@ section .title::after{
 }
 .He.is .title::after,
 .teams .title::after{
-    background: ##FF0000;
+    background: #FF0000;
     content: "What I Provide";
 }
 .He.is .serv-content .card{
