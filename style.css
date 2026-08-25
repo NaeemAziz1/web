@@ -1135,3 +1135,20 @@ transition: 400ms,
 #Biography {
     scroll-margin-top: 70px;
 }
+/* Center He Is section on mobile */
+@media (max-width: 690px) {
+    .darks {
+        text-align: center;
+    }
+
+    .darks .He.is {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 25px;
+    }
+
+    .darks .He.is h4,
+    .darks .He.is p {
+        text-align: center;
+    }
+}
