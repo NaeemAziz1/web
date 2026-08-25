@@ -33,28 +33,44 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+   // ==============================
+// TYPING TEXT ANIMATION
+// ==============================
 
-var typed = new Typed(".typing", {
-    strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+// Profile section
+if (document.querySelector(".profile-typing")) {
+    new Typed(".profile-typing", {
+        strings: [
+            "a Poet",
+            "an Engineer",
+            "a Researcher"
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1200,
+        startDelay: 500,
+        loop: true,
+        showCursor: false
+    });
+}
 
-var typed2 = new Typed(".typing-2", {
-    strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
-var typedProfile = new Typed(".profile-typing", {
-    strings: ["a Poet", "an Engineer", "a Researcher"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+// Biography section
+if (document.querySelector(".typing-2")) {
+    new Typed(".typing-2", {
+        strings: [
+            "a Poet",
+            "an Engineer",
+            "an IT Expert",
+            "a Researcher"
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1200,
+        startDelay: 500,
+        loop: true,
+        showCursor: false
+    });
+}
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
