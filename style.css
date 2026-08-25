@@ -1168,3 +1168,10 @@ transition: 400ms,
         white-space: nowrap;
     }
 }
+@media (max-width: 690px) {
+    .Biography .title {
+        font-size: 32px;
+        white-space: nowrap;
+        margin-bottom: 45px;
+    }
+}
