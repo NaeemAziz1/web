@@ -1204,7 +1204,7 @@ transition: 400ms,
 }
 
 .awards .title::after {
-    content: "Achievements";
+    content: "Click on image to view details";
 }
 
 .awards-grid {
