@@ -1361,3 +1361,17 @@ transition: 400ms,
     }
 
 }
+@media (max-width: 690px) {
+    .awards .title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 75px;
+    }
+
+    .awards .title::after {
+        font-size: 13px;
+        white-space: nowrap;
+        padding: 4px 8px;
+        bottom: -42px;
+    }
+}
