@@ -1027,73 +1027,54 @@ transition: 400ms,
     }
 }
 /* ==============================
-   PROFILE INTRO CARD
+   PROFILE INTRO
    ============================== */
 
 .profile-intro {
-    padding: 45px 20px 35px;
+    padding: 28px 20px 22px;
     background: #f1f1f1;
+    text-align: center;
 }
 
 .profile-card {
     max-width: 850px;
     margin: auto;
-    padding: 35px 30px;
-    text-align: center;
+    padding: 20px 25px;
 
-    background: rgba(255, 255, 255, 0.94);
-    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-
-    position: relative;
-}
-
-/* decorative line */
-.profile-card::before {
-    content: "✦";
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    color: crimson;
-    font-size: 25px;
-    background: #f1f1f1;
-    padding: 0 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
 }
 
 .profile-card h1 {
-    margin: 0 0 12px;
-    font-size: 42px;
+    margin: 0 0 5px;
+    font-size: 32px;
     font-weight: 600;
     color: #111;
 }
 
 .profile-line {
-    font-size: 25px;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-.profile-line span {
-    color: crimson;
+    font-size: 23px;
     font-weight: 500;
+    color: #222;
 }
 
-.profile-role {
-    display: inline-block;
-
-    background: crimson;
-    color: #fff;
-
-    font-size: 20px;
+.profile-typing {
+    color: crimson;
     font-weight: 600;
+}
 
-    padding: 12px 28px;
-    border-radius: 10px;
+.profile-typing::after {
+    content: "|";
+    color: crimson;
+    animation: blink-cursor 0.7s infinite;
+}
 
-    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.25);
+@keyframes blink-cursor {
+    50% {
+        opacity: 0;
+    }
 }
 
 
@@ -1104,27 +1085,20 @@ transition: 400ms,
 @media (max-width: 690px) {
 
     .profile-intro {
-        padding: 30px 15px 25px;
+        padding: 18px 12px 15px;
     }
 
     .profile-card {
-        padding: 25px 18px;
-        border-radius: 22px;
+        padding: 13px 12px;
+        border-radius: 14px;
     }
 
     .profile-card h1 {
-        font-size: 29px;
+        font-size: 23px;
+        margin-bottom: 3px;
     }
 
     .profile-line {
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 17px;
     }
-
-    .profile-role {
-        font-size: 15px;
-        padding: 10px 17px;
-        border-radius: 8px;
-    }
-
 }
