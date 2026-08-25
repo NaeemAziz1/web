@@ -34,27 +34,26 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    var typedProfile = new Typed(".profile-typing", {
-    strings: ["Poet", "Engineer", "Researcher", "Author", "Photographer"],
-    typeSpeed: 90,
-    backSpeed: 50,
-    backDelay: 1500,
-    startDelay: 500,
-    loop: true,
-    showCursor: false
+var typed = new Typed(".typing", {
+    strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+var typed2 = new Typed(".typing-2", {
+    strings: ["a Poet", "an Engineer", "an IT Expert", "a Researcher"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+var typedProfile = new Typed(".profile-typing", {
+    strings: ["a Poet", "an Engineer", "a Researcher"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
 });
     // owl carousel script
     $('.carousel').owlCarousel({
