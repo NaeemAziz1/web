@@ -1180,3 +1180,17 @@ transition: 400ms,
     display: inline-block;
     vertical-align: middle;
 }
+.he-is-logo-space {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.he-is-logo-space img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
