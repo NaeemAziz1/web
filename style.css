@@ -413,15 +413,19 @@ section .title::after{
 }
 
   
-.home{
-    display: flex;
-    background: url("images/banner.png") no-repeat center;
-    height: 60vh;
-    color: #fff;
-    min-height: 0;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Ubuntu', sans-serif;
+.home {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 }
 .home .max-width{
     margin: auto 0 auto 30px;
@@ -947,6 +951,10 @@ transition: 400ms,
     font-size: 24px;
     padding: 14px;
 }
-
+@media (max-width: 690px) {
+    .home img {
+        width: 100%;
+        height: auto;
+    }
 
 }
