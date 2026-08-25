@@ -1127,4 +1127,7 @@ transition: 400ms,
         margin-top: 5px;
     }
 }
-
+/* Reduce gap between Profile Intro and Biography */
+.Biography {
+    padding-top: 25px !important;
+}
