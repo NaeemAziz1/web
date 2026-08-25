@@ -93,3 +93,34 @@ if (document.querySelector(".typing-2")) {
         }
     });
 });
+/* ==============================
+   AWARD POPUP
+   ============================== */
+
+function openAward(image, description) {
+
+    document.getElementById("awardModalImage").src = image;
+
+    document.getElementById("awardModalDescription").innerText =
+        description;
+
+    document.getElementById("awardModal").style.display = "block";
+}
+
+
+function closeAward() {
+
+    document.getElementById("awardModal").style.display = "none";
+
+}
+
+
+window.addEventListener("click", function(event) {
+
+    const modal = document.getElementById("awardModal");
+
+    if (event.target === modal) {
+        closeAward();
+    }
+
+});
