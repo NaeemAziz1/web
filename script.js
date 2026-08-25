@@ -47,7 +47,15 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-
+    var typedProfile = new Typed(".profile-typing", {
+    strings: ["Poet", "Engineer", "Researcher", "Author", "Photographer"],
+    typeSpeed: 90,
+    backSpeed: 50,
+    backDelay: 1500,
+    startDelay: 500,
+    loop: true,
+    showCursor: false
+});
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
