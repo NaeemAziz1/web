@@ -1154,9 +1154,9 @@ transition: 400ms,
 }
 @media (max-width: 690px) {
     footer {
-        padding: 15px 10px;
-        font-size: 14px;
-        line-height: 1.7;
+        padding: 18px 10px;
+        font-size: 16px;
+        line-height: 1.6;
         text-align: center;
     }
 
