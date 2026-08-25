@@ -1152,3 +1152,19 @@ transition: 400ms,
         text-align: center;
     }
 }
+@media (max-width: 690px) {
+    footer {
+        padding: 15px 10px;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    footer span {
+        display: block;
+    }
+
+    footer a {
+        white-space: nowrap;
+    }
+}
