@@ -1003,8 +1003,26 @@ transition: 400ms,
 }
 @media (max-width: 690px) {
     .home .home-content {
-        padding: 8px 12px;
-        border-radius: 6px;
-        max-width: 90%;
+        padding: 5px 9px;
+        max-width: 80%;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 13px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 25px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 15px;
+        margin: 2px 0;
+    }
+
+    .home .home-content a {
+        font-size: 10px;
+        padding: 3px 6px;
+        margin-top: 5px;
     }
 }
