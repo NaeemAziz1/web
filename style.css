@@ -1552,22 +1552,24 @@ transition: 400ms,
 @media (max-width: 480px) {
 
     .darks {
-        padding: 50px 12px;
+        padding: 65px 8px;
     }
 
-    .he-is-title {
-        font-size: 29px;
-        letter-spacing: 1.5px;
+    .he-is-container {
+        width: 100%;
     }
 
     .he-is-grid {
         grid-template-columns: 1fr;
-        max-width: 380px;
-        margin: 0 auto;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        gap: 14px;
     }
 
     .he-is-card {
-        padding: 25px 20px;
+        width: 100%;
+        padding: 25px 18px;
     }
 
 }
