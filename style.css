@@ -876,19 +876,7 @@ footer span a:hover{
         line-height: 45px;
     }
 }
-.sroll-to-top {
-position: fixed;
-bottom: 48px;
-right: 32px;
-background: #DC143C;
-border-radius: 40%;
-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-cursor: pointer;
-z-index: 100;
-opacity: 0;
-pointer-events: none;
-transition: 400ms,
-}
+
 .scroll-to-top.active{
     opacity: 1;
     pointer-events: auto;
@@ -1328,17 +1316,7 @@ transition: 400ms,
     border-radius: 50%;
     object-fit: cover;
 }
-/* ==============================
-   FADE UP BUTTON WHEN IDLE
-   ============================== */
 
-.scroll-up-btn {
-    transition: opacity 0.4s ease, all 0.3s ease;
-}
-
-.scroll-up-btn.idle {
-    opacity: 0.18;
-}
 /* ==============================
    FOOTER LOGO
    ============================== */
@@ -1589,3 +1567,14 @@ transition: 400ms,
     }
 
         }
+/* ==============================
+   UP BUTTON FADE WHEN IDLE
+   ============================== */
+
+.scroll-up-btn {
+    transition: opacity 0.5s ease, bottom 0.3s ease;
+}
+
+.scroll-up-btn.idle {
+    opacity: 0.18;
+}
