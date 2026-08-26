@@ -1394,3 +1394,15 @@ transition: 400ms,
     border-radius: 50%;
     object-fit: cover;
 }
+/* Keep content above the Up button */
+.scroll-up-btn {
+    z-index: 100;
+}
+
+section,
+.profile-intro,
+.he-is-logo-space,
+footer {
+    position: relative;
+    z-index: 200;
+}
