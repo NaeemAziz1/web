@@ -1409,3 +1409,21 @@ transition: 400ms,
 .scroll-up-btn.idle {
     opacity: 0.18;
 }
+/* ==============================
+   FOOTER LOGO
+   ============================== */
+
+.footer-logo-space {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.footer-logo-space img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
