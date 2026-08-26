@@ -1546,34 +1546,32 @@ transition: 400ms,
 
 
 /* ==========================================
-   MOBILE
+   MOBILE — REDUCE LEFT & RIGHT SPACE
    ========================================== */
 
 @media (max-width: 480px) {
 
     .darks {
-        padding: 65px 8px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .he-is-container {
         width: 100%;
+        max-width: none;
     }
 
     .he-is-grid {
-        grid-template-columns: 1fr;
         width: 100%;
-        max-width: none;
-        margin: 0;
-        gap: 14px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .he-is-card {
         width: 100%;
-        padding: 25px 18px;
     }
 
 }
-
 
 /* ==========================================
    EXTRA SMALL PHONE
