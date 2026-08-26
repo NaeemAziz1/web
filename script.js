@@ -124,3 +124,45 @@ window.addEventListener("click", function(event) {
     }
 
 });
+// ==============================
+// SMART UP BUTTON POSITION
+// ==============================
+
+window.addEventListener("scroll", function () {
+
+    const btn = document.querySelector(".scroll-up-btn");
+
+    if (!btn || !btn.classList.contains("show")) return;
+
+    const elements = document.querySelectorAll(
+        "p, h1, h2, h3, h4, .text, .info, .field, button, a"
+    );
+
+    const btnRect = btn.getBoundingClientRect();
+
+    let overlap = false;
+
+    elements.forEach(function (element) {
+
+        if (element === btn) return;
+
+        const rect = element.getBoundingClientRect();
+
+        const isOverlapping =
+            btnRect.right > rect.left &&
+            btnRect.left < rect.right &&
+            btnRect.bottom > rect.top &&
+            btnRect.top < rect.bottom;
+
+        if (isOverlapping) {
+            overlap = true;
+        }
+    });
+
+    if (overlap) {
+        btn.style.transform = "translateY(-90px)";
+    } else {
+        btn.style.transform = "translateY(0)";
+    }
+
+});
