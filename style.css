@@ -924,9 +924,9 @@ footer span a:hover{
         margin: 0;
     }
     .scroll-up-btn{
-        left: 10px;
-        right: auto;
-        bottom: 15px;
+        left: auto;
+        right: 13px;
+        bottom: 13px;
         height: 38px;
         width: 38px;
         font-size: 30px;
