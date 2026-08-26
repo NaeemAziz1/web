@@ -125,7 +125,7 @@ window.addEventListener("click", function(event) {
 
 });
 // ==============================
-// FADE UP BUTTON WHEN NOT SCROLLING
+// UP BUTTON FADE WHEN IDLE
 // ==============================
 
 let scrollTimer;
@@ -136,13 +136,13 @@ window.addEventListener("scroll", function () {
 
     if (!btn) return;
 
-    // Scrolling করলে button আবার পরিষ্কার দেখা যাবে
+    // Scroll করলে button আবার পরিষ্কার হবে
     btn.classList.remove("idle");
 
-    // আগের timer বাতিল
+    // আগের timer বন্ধ
     clearTimeout(scrollTimer);
 
-    // 1.5 seconds scrolling বন্ধ থাকলে fade হবে
+    // 1 second scroll না করলে fade হবে
     scrollTimer = setTimeout(function () {
 
         if (btn.classList.contains("show")) {
