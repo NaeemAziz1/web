@@ -135,7 +135,7 @@ window.addEventListener("scroll", function () {
     if (!btn || !btn.classList.contains("show")) return;
 
     const elements = document.querySelectorAll(
-        "p, h1, h2, h3, h4, .text, .info, .field, button, a"
+        "p, h1, h2, h3, h4, .text, .info, .field, button, a, img"
     );
 
     const btnRect = btn.getBoundingClientRect();
@@ -144,23 +144,28 @@ window.addEventListener("scroll", function () {
 
     elements.forEach(function (element) {
 
-        if (element === btn) return;
+        if (
+            element === btn ||
+            element.closest(".scroll-up-btn") ||
+            element.closest(".award-modal")
+        ) {
+            return;
+        }
 
         const rect = element.getBoundingClientRect();
 
-        const isOverlapping =
+        if (
             btnRect.right > rect.left &&
             btnRect.left < rect.right &&
             btnRect.bottom > rect.top &&
-            btnRect.top < rect.bottom;
-
-        if (isOverlapping) {
+            btnRect.top < rect.bottom
+        ) {
             overlap = true;
         }
     });
 
     if (overlap) {
-        btn.style.transform = "translateY(-90px)";
+        btn.style.transform = "translateY(-120px)";
     } else {
         btn.style.transform = "translateY(0)";
     }
