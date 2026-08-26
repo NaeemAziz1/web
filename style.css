@@ -1414,14 +1414,13 @@ transition: 400ms,
    ============================== */
 
 .footer-logo-space {
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f1f1f1;
     position: relative;
-    top: -35px;
-    margin-bottom: -35px;
+    margin: 0;
 }
 
 .footer-logo-space img {
@@ -1429,4 +1428,5 @@ transition: 400ms,
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+    transform: translateY(-18px);
 }
