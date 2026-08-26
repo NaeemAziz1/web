@@ -1375,3 +1375,21 @@ transition: 400ms,
         bottom: -42px;
     }
 }
+/* ==============================
+   IMAGE BETWEEN SKILLS & EDUCATION
+   ============================== */
+
+.skills-education-image-space {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.skills-education-image-space img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
