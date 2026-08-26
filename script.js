@@ -41,7 +41,7 @@ $(document).ready(function () {
                     scrollBtn.addClass('idle');
                 }
 
-            }, 1000);
+            }, 900);
 
         } else {
 
