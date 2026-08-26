@@ -124,3 +124,31 @@ window.addEventListener("click", function(event) {
     }
 
 });
+// ==============================
+// FADE UP BUTTON WHEN NOT SCROLLING
+// ==============================
+
+let scrollTimer;
+
+window.addEventListener("scroll", function () {
+
+    const btn = document.querySelector(".scroll-up-btn");
+
+    if (!btn) return;
+
+    // Scrolling করলে button আবার পরিষ্কার দেখা যাবে
+    btn.classList.remove("idle");
+
+    // আগের timer বাতিল
+    clearTimeout(scrollTimer);
+
+    // 1.5 seconds scrolling বন্ধ থাকলে fade হবে
+    scrollTimer = setTimeout(function () {
+
+        if (btn.classList.contains("show")) {
+            btn.classList.add("idle");
+        }
+
+    }, 1500);
+
+});
