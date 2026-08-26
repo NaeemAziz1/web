@@ -569,8 +569,10 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
-    text-align: justify;
+.skills .skills-content .left p {
+    text-align: left;
+    word-spacing: normal;
+    line-height: 1.6;
 }
 .skills .skills-content .left a{
     display: inline-block;
