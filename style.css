@@ -1360,107 +1360,150 @@ transition: 400ms,
     object-fit: cover;
     transform: translateY(-18px);
 }
-/* ==============================
-   HE IS — CLASSIC STYLE
-   ============================== */
+/* ==========================================
+   HE IS — FINAL RESPONSIVE CLASSIC STYLE
+   ========================================== */
 
 .darks {
-    background: #f1f1f1;
-    padding: 90px 20px;
     width: 100%;
+    max-width: 100%;
+    padding: clamp(55px, 7vw, 90px) 20px;
+    background: #f1f1f1;
+    overflow-x: hidden;
 }
 
 .he-is-container {
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
 }
 
+/* HE IS TITLE */
 .he-is-title {
+    display: block;
+    width: 100%;
     margin: 0;
+    padding: 0;
+    text-align: center !important;
+
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 42px;
+    font-size: clamp(30px, 4vw, 42px);
     font-weight: 700;
-    letter-spacing: 2px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+
     color: #111;
+    white-space: nowrap;
 }
 
 .he-is-title span {
+    display: inline-block;
+    margin-left: 8px;
     color: #990012;
     font-size: 0.85em;
-    margin-left: 8px;
+    vertical-align: middle;
 }
 
+/* CLASSIC LINE */
 .he-is-line {
     width: 120px;
     height: 3px;
-    background: #111;
     margin: 22px auto 55px;
+
+    background: #111;
     position: relative;
 }
 
 .he-is-line::after {
     content: "";
     position: absolute;
+
     width: 18px;
     height: 10px;
-    background: #990012;
-    border: 4px solid #f1f1f1;
+
     left: 50%;
     top: 50%;
+
     transform: translate(-50%, -50%);
+
+    background: #990012;
+    border: 4px solid #f1f1f1;
 }
 
+/* CARDS */
 .he-is-grid {
     width: 100%;
     display: grid;
+
     grid-template-columns: repeat(5, minmax(0, 1fr));
+
     gap: 20px;
     align-items: stretch;
 }
 
 .he-is-card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 30px 20px;
+
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 30px 20px;
-    min-width: 0;
+
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .he-is-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.14);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
 }
 
+/* ICON */
 .he-is-card .icon {
+    display: block;
+
     font-size: 38px;
     color: #990012;
+
     margin-bottom: 18px;
 }
 
+/* CARD TITLE */
 .he-is-card h4 {
+    margin: 0 0 12px;
+
     font-family: Georgia, "Times New Roman", serif;
     font-size: 19px;
-    margin-bottom: 12px;
+    line-height: 1.3;
+
     color: #111;
 }
 
+/* CARD TEXT */
 .he-is-card p {
+    margin: 0;
+
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.6;
+
     color: #444;
-    margin: 0;
+
+    overflow-wrap: break-word;
 }
 
 
-/* ==============================
-   RESPONSIVE
-   ============================== */
+/* ==========================================
+   ZOOM / SMALL LAPTOP
+   ========================================== */
 
 @media (max-width: 1100px) {
 
@@ -1470,14 +1513,20 @@ transition: 400ms,
 
 }
 
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
 @media (max-width: 700px) {
 
     .darks {
-        padding: 65px 15px;
+        padding: 60px 15px;
     }
 
     .he-is-title {
         font-size: 32px;
+        letter-spacing: 2px;
     }
 
     .he-is-line {
@@ -1495,7 +1544,21 @@ transition: 400ms,
 
 }
 
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
 @media (max-width: 480px) {
+
+    .darks {
+        padding: 50px 12px;
+    }
+
+    .he-is-title {
+        font-size: 29px;
+        letter-spacing: 1.5px;
+    }
 
     .he-is-grid {
         grid-template-columns: 1fr;
@@ -1508,3 +1571,21 @@ transition: 400ms,
     }
 
 }
+
+
+/* ==========================================
+   EXTRA SMALL PHONE
+   ========================================== */
+
+@media (max-width: 350px) {
+
+    .he-is-title {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .he-is-line {
+        width: 100px;
+    }
+
+        }
