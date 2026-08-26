@@ -149,6 +149,6 @@ window.addEventListener("scroll", function () {
             btn.classList.add("idle");
         }
 
-    }, 1000);
+    }, 800);
 
 });
