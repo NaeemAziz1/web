@@ -1394,3 +1394,14 @@ transition: 400ms,
     border-radius: 50%;
     object-fit: cover;
 }
+/* ==============================
+   FADE UP BUTTON WHEN IDLE
+   ============================== */
+
+.scroll-up-btn {
+    transition: opacity 0.8s ease, all 0.3s ease;
+}
+
+.scroll-up-btn.idle {
+    opacity: 0.18;
+}
