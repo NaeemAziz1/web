@@ -366,7 +366,6 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
 .scroll-up-btn {
     position: fixed;
     height: 38px;
