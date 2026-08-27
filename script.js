@@ -281,3 +281,22 @@ const observer = new IntersectionObserver(function(entries) {
 sections.forEach(function(section) {
     observer.observe(section);
 });
+// ==========================================
+// PRELOADER
+// ==========================================
+
+window.addEventListener('load', function () {
+
+    const preloader = document.getElementById('preloader');
+
+    if (preloader) {
+
+        preloader.classList.add('hide');
+
+        setTimeout(function () {
+            preloader.remove();
+        }, 700);
+
+    }
+
+});
