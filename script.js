@@ -255,3 +255,37 @@ window.addEventListener('click', function (event) {
     }
 
 });
+// ==========================================
+// ACTIVE MOBILE MENU ITEM
+// ==========================================
+
+const sections = document.querySelectorAll('section[id]');
+const menuLinks = document.querySelectorAll('.navbar .menu li a');
+
+const observer = new IntersectionObserver(function(entries) {
+
+    entries.forEach(function(entry) {
+
+        if (entry.isIntersecting) {
+
+            menuLinks.removeClass('active');
+
+            const activeLink = document.querySelector(
+                '.navbar .menu li a[href="#' + entry.target.id + '"]'
+            );
+
+            if (activeLink) {
+                $(activeLink).addClass('active');
+            }
+
+        }
+
+    });
+
+}, {
+    rootMargin: '-35% 0px -55% 0px'
+});
+
+sections.forEach(function(section) {
+    observer.observe(section);
+});
