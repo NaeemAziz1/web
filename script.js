@@ -285,11 +285,24 @@ sections.forEach(function(section) {
 // PRELOADER
 // ==========================================
 
+// ==========================================
+// PRELOADER — MINIMUM 1.5 SECONDS
+// ==========================================
+
+const preloaderStart = Date.now();
+
 window.addEventListener('load', function () {
 
     const preloader = document.getElementById('preloader');
 
-    if (preloader) {
+    if (!preloader) return;
+
+    const elapsedTime = Date.now() - preloaderStart;
+
+    // Minimum 1.5 seconds
+    const remainingTime = Math.max(1500 - elapsedTime, 0);
+
+    setTimeout(function () {
 
         preloader.classList.add('hide');
 
@@ -297,6 +310,6 @@ window.addEventListener('load', function () {
             preloader.remove();
         }, 700);
 
-    }
+    }, remainingTime);
 
 });
