@@ -1577,13 +1577,3 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
-html {
-    overscroll-behavior: none;
-}
-
-body {
-    overscroll-behavior-y: none;
-}
-#he-is {
-    overscroll-behavior: none;
-}
