@@ -1698,7 +1698,10 @@ html, body {
 
     .navbar .menu {
         background: #0b0b0b;
+        height: 100dvh;
         padding-top: 31px;
+        padding-bottom: 30px;
+        overflow-y: auto;
     }
 
     .navbar .menu li {
