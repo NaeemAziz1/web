@@ -19,20 +19,18 @@ $(window).on('scroll', function () {
     // Scroll Up Button
     if (this.scrollY > 500) {
 
-        // স্ক্রল করলে জ্বলবে
+        // স্ক্রল করলে পুরো উজ্জ্বল
         scrollBtn.addClass('show');
 
-        // আগের timer বাতিল
         clearTimeout(scrollTimer);
 
-        // স্ক্রল থামার 900ms পর নিভবে
+        // 900ms পর ম্লান হবে
         scrollTimer = setTimeout(function () {
             scrollBtn.removeClass('show');
         }, 900);
 
     } else {
 
-        // 500px-এর নিচে থাকলে নিভে থাকবে
         scrollBtn.removeClass('show');
         clearTimeout(scrollTimer);
 
