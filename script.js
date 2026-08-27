@@ -5,6 +5,7 @@ $(document).ready(function () {
     // ==========================================
 
 const scrollBtn = $('.scroll-up-btn');
+const scrollBtn = $('.scroll-up-btn');
 let scrollTimer;
 
 $(window).on('scroll', function () {
@@ -20,21 +21,20 @@ $(window).on('scroll', function () {
     if (this.scrollY > 500) {
 
         // স্ক্রল করলে পুরো উজ্জ্বল
-        scrollBtn.removeClass('dim').addClass('show');
+        scrollBtn.addClass('show');
 
         clearTimeout(scrollTimer);
 
-        // 900ms scroll বন্ধ থাকলে ম্লান হবে
+        // 900ms পর ম্লান হবে
         scrollTimer = setTimeout(function () {
-            scrollBtn.removeClass('show').addClass('dim');
+            scrollBtn.removeClass('show');
         }, 900);
 
     } else {
 
-        // পেজের একদম উপরে থাকলে পুরো গায়েব
-        scrollBtn.removeClass('show dim');
-
+        scrollBtn.removeClass('show');
         clearTimeout(scrollTimer);
+
     }
 
 });
