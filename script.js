@@ -6,9 +6,8 @@ $(document).ready(function () {
 
 const scrollBtn = $('.scroll-up-btn');
 let scrollTimer;
-let lastScrollY = window.scrollY;
 
-$(window).on('scroll', function () {
+function handleScroll() {
 
     const currentScrollY = window.scrollY;
 
@@ -22,35 +21,57 @@ $(window).on('scroll', function () {
     // Scroll Up Button
     if (currentScrollY > 500) {
 
-        if (Math.abs(currentScrollY - lastScrollY) > 2) {
+        // Scrolling = Bright
+        scrollBtn.removeClass('dim').addClass('show');
 
-            scrollBtn
-                .removeClass('dim')
-                .addClass('show');
+        clearTimeout(scrollTimer);
+
+        // Scroll stop = Dim
+        scrollTimer = setTimeout(function () {
+
+            if (window.scrollY > 500) {
+                scrollBtn.removeClass('show').addClass('dim');
+            }
+
+        }, 1000);
+
+    } else {
+
+        scrollBtn.removeClass('show dim');
+        clearTimeout(scrollTimer);
+
+    }
+}
+
+
+// Normal scrolling
+window.addEventListener('scroll', handleScroll, {
+    passive: true
+});
+
+
+// Mobile browser-এর scroll শেষ হলে
+if ('onscrollend' in window) {
+
+    window.addEventListener('scrollend', function () {
+
+        if (window.scrollY > 500) {
 
             clearTimeout(scrollTimer);
 
             scrollTimer = setTimeout(function () {
 
                 if (window.scrollY > 500) {
-                    scrollBtn
-                        .removeClass('show')
-                        .addClass('dim');
+                    scrollBtn.removeClass('show').addClass('dim');
                 }
 
-            }, 900);
+            }, 300);
+
         }
 
-    } else {
+    });
 
-        scrollBtn.removeClass('show dim');
-
-        clearTimeout(scrollTimer);
-    }
-
-    lastScrollY = currentScrollY;
-
-});
+}
 
 
     // ==========================================
