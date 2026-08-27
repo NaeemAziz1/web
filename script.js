@@ -29,23 +29,16 @@ $(window).on('scroll', function () {
     // SCROLL UP BUTTON CLICK
     // ==========================================
 
-    scrollBtn.on('click', function () {
+ scrollBtn.on('click', function () {
 
-        // Fade class সরিয়ে পুরো button visible করা
-        scrollBtn.removeClass('idle');
+    $('html, body').animate(
+        {
+            scrollTop: 0
+        },
+        700
+    );
 
-        // Timer বন্ধ
-        clearTimeout(scrollTimer);
-
-        // Smoothly top এ যাওয়া
-        $('html, body').animate(
-            {
-                scrollTop: 0
-            },
-            700
-        );
-
-    });
+});
 
 
     // ==========================================
