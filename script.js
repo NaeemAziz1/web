@@ -1,41 +1,54 @@
 $(document).ready(function () {
 
-    // ==========================================
-    // NAVBAR + UP BUTTON SCROLL SYSTEM
-    // ==========================================
+// ==========================================
+// NAVBAR + UP BUTTON SCROLL SYSTEM
+// ==========================================
 
 const scrollBtn = $('.scroll-up-btn');
 let scrollTimer;
+let lastScrollY = window.scrollY;
 
 $(window).on('scroll', function () {
 
+    const currentScrollY = window.scrollY;
+
     // Sticky Navbar
-    if (this.scrollY > 20) {
+    if (currentScrollY > 20) {
         $('.navbar').addClass('sticky');
     } else {
         $('.navbar').removeClass('sticky');
     }
 
     // Scroll Up Button
-    if (this.scrollY > 500) {
+    if (currentScrollY > 500) {
 
-        // স্ক্রল করলে পুরো উজ্জ্বল
-        scrollBtn.removeClass('dim').addClass('show');
+        if (Math.abs(currentScrollY - lastScrollY) > 2) {
 
-        clearTimeout(scrollTimer);
+            scrollBtn
+                .removeClass('dim')
+                .addClass('show');
 
-        // 900ms scroll বন্ধ থাকলে ম্লান হবে
-        scrollTimer = setTimeout(function () {
-            scrollBtn.removeClass('show').addClass('dim');
-        }, 900);
+            clearTimeout(scrollTimer);
+
+            scrollTimer = setTimeout(function () {
+
+                if (window.scrollY > 500) {
+                    scrollBtn
+                        .removeClass('show')
+                        .addClass('dim');
+                }
+
+            }, 900);
+        }
 
     } else {
 
-        // পেজের একদম উপরে থাকলে পুরো গায়েব
         scrollBtn.removeClass('show dim');
 
         clearTimeout(scrollTimer);
     }
+
+    lastScrollY = currentScrollY;
 
 });
 
