@@ -1749,6 +1749,6 @@ html, body {
 /* Active mobile menu item */
 @media (max-width: 947px) {
     .navbar .menu li a.active {
-        color: crimson;
+        color: crimson !important;
     }
 }
