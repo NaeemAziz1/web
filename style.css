@@ -265,7 +265,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.Biography, .skills, .Education & Experiences, .contact, footer{
+.Biography, .skills, #education, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .Biography .Biography-content, 
@@ -1576,4 +1576,7 @@ footer span a:hover{
 html, body {
     overflow-x: hidden;
     width: 100%;
+}
+#education {
+    scroll-margin-top: 90px;
 }
