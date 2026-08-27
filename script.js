@@ -84,7 +84,7 @@ if ('onscrollend' in window) {
         {
             scrollTop: 0
         },
-        700
+        500
     );
 
 });
