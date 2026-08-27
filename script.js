@@ -4,55 +4,25 @@ $(document).ready(function () {
     // NAVBAR + UP BUTTON SCROLL SYSTEM
     // ==========================================
 
-    let scrollTimer;
-    const scrollBtn = $('.scroll-up-btn');
+  const scrollBtn = $('.scroll-up-btn');
 
-    $(window).on('scroll', function () {
+$(window).on('scroll', function () {
 
-        // ------------------------------------------
-        // Sticky Navbar
-        // ------------------------------------------
-        if (this.scrollY > 20) {
-            $('.navbar').addClass('sticky');
-        } else {
-            $('.navbar').removeClass('sticky');
-        }
+    // Sticky Navbar
+    if (this.scrollY > 20) {
+        $('.navbar').addClass('sticky');
+    } else {
+        $('.navbar').removeClass('sticky');
+    }
 
+    // Scroll Up Button
+    if (this.scrollY > 500) {
+        scrollBtn.addClass('show');
+    } else {
+        scrollBtn.removeClass('show');
+    }
 
-        // ------------------------------------------
-        // Show / Hide Up Button
-        // ------------------------------------------
-        if (this.scrollY > 500) {
-
-            // Button থাকবে
-            scrollBtn.addClass('show');
-
-            // Scroll করার সময় পুরো উজ্জ্বল থাকবে
-            scrollBtn.removeClass('idle');
-
-            // আগের timer বন্ধ
-            clearTimeout(scrollTimer);
-
-            // 1 second scroll না হলে আবার fade হবে
-            scrollTimer = setTimeout(function () {
-
-                // শুধু তখনই fade হবে যদি button এখনো visible থাকে
-                if (scrollBtn.hasClass('show')) {
-                    scrollBtn.addClass('idle');
-                }
-
-            }, 900);
-
-        } else {
-
-            // উপরের দিকে থাকলে button সম্পূর্ণ লুকানো
-            scrollBtn.removeClass('show idle');
-
-            // Timer বন্ধ
-            clearTimeout(scrollTimer);
-        }
-
-    });
+});
 
 
     // ==========================================
