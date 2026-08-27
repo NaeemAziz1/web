@@ -380,7 +380,7 @@ section .title::after{
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity 0.35s ease, background 0.35s ease;
+    transition: opacity 0.35s ease, background 0.35s ease, visibility 0.35s ease;
 }
 
 .scroll-up-btn.show {
