@@ -380,17 +380,21 @@ section .title::after{
     font-size: 30px;
     font-weight: bold;
     border-radius: 6px;
-    border-bottom-width: 2px;
     cursor: pointer;
+
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: all 0.3s ease;
+
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
+
 .scroll-up-btn.show{
-    bottom: 30px;
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
+
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
