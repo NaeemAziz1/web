@@ -4,7 +4,8 @@ $(document).ready(function () {
     // NAVBAR + UP BUTTON SCROLL SYSTEM
     // ==========================================
 
-  const scrollBtn = $('.scroll-up-btn');
+const scrollBtn = $('.scroll-up-btn');
+let scrollTimer;
 
 $(window).on('scroll', function () {
 
@@ -17,9 +18,24 @@ $(window).on('scroll', function () {
 
     // Scroll Up Button
     if (this.scrollY > 500) {
+
+        // স্ক্রল করলে জ্বলবে
         scrollBtn.addClass('show');
+
+        // আগের timer বাতিল
+        clearTimeout(scrollTimer);
+
+        // স্ক্রল থামার 900ms পর নিভবে
+        scrollTimer = setTimeout(function () {
+            scrollBtn.removeClass('show');
+        }, 900);
+
     } else {
+
+        // 500px-এর নিচে থাকলে নিভে থাকবে
         scrollBtn.removeClass('show');
+        clearTimeout(scrollTimer);
+
     }
 
 });
