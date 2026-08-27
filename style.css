@@ -1571,14 +1571,3 @@ footer span a:hover{
     }
 
         }
-/* ==============================
-   UP BUTTON FADE WHEN IDLE
-   ============================== */
-
-.scroll-up-btn {
-    transition: opacity 0.5s ease, bottom 0.3s ease;
-}
-
-.scroll-up-btn.idle {
-    opacity: 0.18;
-}
