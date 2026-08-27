@@ -1573,3 +1573,7 @@ footer span a:hover{
     }
 
         }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
