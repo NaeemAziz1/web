@@ -1690,3 +1690,59 @@ html, body {
 #he-is {
     scroll-margin-top: 90px;
 }
+/* ==========================================
+   MOBILE MENU — CLASSIC ELEGANT STYLE
+   ========================================== */
+
+@media (max-width: 947px) {
+
+    .navbar .menu {
+        background: #0b0b0b;
+        padding-top: 120px;
+    }
+
+    .navbar .menu li {
+        margin: 0;
+        position: relative;
+    }
+
+    .navbar .menu li a {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #f1f1f1;
+        margin: 0;
+        padding: 22px 20px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu li a:hover {
+        color: crimson;
+        letter-spacing: 6px;
+    }
+
+    /* Elegant separator */
+    .navbar .menu li:not(:last-child)::after {
+        content: "✦";
+        display: block;
+        color: #990012;
+        font-size: 10px;
+        opacity: 0.8;
+    }
+
+    /* Close button */
+    .navbar .menu-btn {
+        font-size: 28px;
+    }
+
+    .navbar .menu-btn i {
+        transition: transform 0.3s ease;
+    }
+
+    .navbar .menu-btn i.active {
+        transform: rotate(90deg);
+    }
+
+}
