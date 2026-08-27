@@ -241,26 +241,14 @@ function closeAward() {
 
 
 // ==========================================
-// CLOSE AWARD POPUP BY CLICKING OUTSIDE
-// ==========================================
-
-window.addEventListener('click', function (event) {
-
-    const modal = document.getElementById('awardModal');
-
-    if (event.target === modal) {
-
-        closeAward();
-
-    }
-
-});
-// ==========================================
 // ACTIVE MOBILE MENU ITEM
 // ==========================================
 
 const sections = document.querySelectorAll('section[id]');
-const menuLinks = document.querySelectorAll('.navbar .menu li a');
+
+const menuLinks = document.querySelectorAll(
+    '.navbar .menu li a'
+);
 
 const observer = new IntersectionObserver(function(entries) {
 
@@ -268,16 +256,20 @@ const observer = new IntersectionObserver(function(entries) {
 
         if (entry.isIntersecting) {
 
-            menuLinks.removeClass('active');
+            // সব active class সরানো
+            menuLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
 
+            // বর্তমান section-এর menu link খোঁজা
             const activeLink = document.querySelector(
                 '.navbar .menu li a[href="#' + entry.target.id + '"]'
             );
 
+            // active করা
             if (activeLink) {
-                $(activeLink).addClass('active');
+                activeLink.classList.add('active');
             }
-
         }
 
     });
