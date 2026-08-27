@@ -367,10 +367,11 @@ section .title::after{
     display: none;
 }
 .scroll-up-btn{
+.scroll-up-btn {
     position: fixed;
     height: 38px;
     width: 38px;
-    background: rgba(220, 20, 60, 0.90);
+    background: rgba(220, 20, 60, 0.25);
     right: 25px;
     bottom: 25px;
     text-align: center;
@@ -386,13 +387,21 @@ section .title::after{
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity 0.25s ease, visibility 0.25s ease;
+    transition: opacity 0.35s ease, background 0.35s ease;
 }
 
-.scroll-up-btn.show{
+.scroll-up-btn.show {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    background: rgba(220, 20, 60, 0.90);
+}
+
+.scroll-up-btn.dim {
+    opacity: 0.30;
+    visibility: visible;
+    pointer-events: auto;
+    background: rgba(220, 20, 60, 0.40);
 }
 
 .scroll-up-btn:hover{
