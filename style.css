@@ -1584,3 +1584,6 @@ html {
 body {
     overscroll-behavior-y: none;
 }
+#he-is {
+    overscroll-behavior: none;
+}
