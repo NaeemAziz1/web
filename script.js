@@ -20,20 +20,21 @@ $(window).on('scroll', function () {
     if (this.scrollY > 500) {
 
         // স্ক্রল করলে পুরো উজ্জ্বল
-        scrollBtn.addClass('show');
+        scrollBtn.removeClass('dim').addClass('show');
 
         clearTimeout(scrollTimer);
 
-        // 900ms পর ম্লান হবে
+        // 900ms scroll বন্ধ থাকলে ম্লান হবে
         scrollTimer = setTimeout(function () {
-            scrollBtn.removeClass('show');
+            scrollBtn.removeClass('show').addClass('dim');
         }, 900);
 
     } else {
 
-        scrollBtn.removeClass('show');
-        clearTimeout(scrollTimer);
+        // পেজের একদম উপরে থাকলে পুরো গায়েব
+        scrollBtn.removeClass('show dim');
 
+        clearTimeout(scrollTimer);
     }
 
 });
