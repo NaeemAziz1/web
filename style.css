@@ -2067,3 +2067,128 @@ html, body {
     }
 
 }
+/* ==========================================
+   AWARD MODAL — FINAL POSITION FIX
+   ========================================== */
+
+.award-modal {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    z-index: 99999 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    padding: 75px 20px 30px !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Modal box */
+.award-modal-content {
+    position: relative !important;
+
+    width: min(850px, 100%) !important;
+    max-width: 850px !important;
+
+    margin: 0 auto !important;
+    padding: 20px !important;
+
+    box-sizing: border-box !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* Main image */
+#awardModalImage {
+    display: block !important;
+
+    position: relative !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: calc(100vh - 150px) !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+}
+
+
+/* Extra image */
+#awardModalExtraImage {
+    position: relative !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: calc(100vh - 180px) !important;
+
+    margin: 18px auto 5px !important;
+
+    object-fit: contain !important;
+}
+
+
+/* Close button always stays at top */
+.award-close {
+    position: fixed !important;
+
+    top: 18px !important;
+    right: 22px !important;
+
+    z-index: 100000 !important;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 690px) {
+
+    .award-modal {
+        align-items: flex-start !important;
+
+        padding: 65px 10px 20px !important;
+    }
+
+    .award-modal-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+        padding: 12px !important;
+    }
+
+    #awardModalImage {
+        max-width: 100% !important;
+        max-height: calc(100vh - 130px) !important;
+    }
+
+    #awardModalExtraImage {
+        max-width: 100% !important;
+        max-height: calc(100vh - 160px) !important;
+    }
+
+    .award-close {
+        top: 12px !important;
+        right: 12px !important;
+
+        width: 42px !important;
+        height: 42px !important;
+    }
+}
