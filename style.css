@@ -1937,3 +1937,70 @@ html, body {
     }
 
 }
+/* ==========================================
+   AWARD MODAL — CENTERED ON MOBILE
+   ========================================== */
+
+@media (max-width: 690px) {
+
+    .award-modal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 12px;
+    }
+
+    .award-modal-content {
+        width: 100%;
+        max-width: 500px;
+        max-height: 90vh;
+        margin: 0 auto;
+        padding: 15px;
+        overflow-y: auto;
+        border-radius: 15px;
+    }
+
+    .award-modal-content img {
+        max-width: 100%;
+        max-height: 55vh;
+        object-fit: contain;
+    }
+
+    .award-modal-content p {
+        margin: 15px auto 5px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Elegant outside circle button */
+    .award-close {
+        position: absolute;
+        top: -52px;
+        right: 0;
+
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #fff;
+        color: #111;
+
+        border: 2px solid #111;
+        border-radius: 50%;
+
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 1;
+
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    .award-close:hover {
+        color: crimson;
+        border-color: crimson;
+    }
+
+}
