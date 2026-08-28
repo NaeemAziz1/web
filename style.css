@@ -234,11 +234,6 @@ section.dark .section-title::after {
     }
 }
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -1268,51 +1263,6 @@ footer span a:hover{
 }
 
 
-/* ==============================
-   AWARD POPUP
-   ============================== */
-
-.award-modal {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 25px 15px;
-    overflow-y: auto;
-    background: rgba(0, 0, 0, 0.88);
-}
-
-.award-modal-content {
-    position: relative;
-    max-width: 850px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.award-modal-content img {
-    display: block;
-    max-width: 100%;
-    max-height: 70vh;
-    margin: auto;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-.award-modal-content p {
-    margin: 18px auto 5px;
-    max-width: 750px;
-    color: #222;
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 500;
-}
-
 /* ==========================================
    ELEGANT CLOSE BUTTON — OUTSIDE AWARD CARD
    ========================================== */
@@ -1929,73 +1879,8 @@ html, body {
     }
 
 }
-/* ==========================================
-   AWARD MODAL — CENTERED ON MOBILE
-   ========================================== */
 
-@media (max-width: 690px) {
 
-    .award-modal {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 12px;
-    }
-
-    .award-modal-content {
-        width: 100%;
-        max-width: 500px;
-        max-height: 90vh;
-        margin: 0 auto;
-        padding: 15px;
-        overflow-y: auto;
-        border-radius: 15px;
-    }
-
-    .award-modal-content img {
-        max-width: 100%;
-        max-height: 55vh;
-        object-fit: contain;
-    }
-
-    .award-modal-content p {
-        margin: 15px auto 5px;
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    /* Elegant outside circle button */
-    .award-close {
-        position: absolute;
-        top: -52px;
-        right: 0;
-
-        width: 42px;
-        height: 42px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: #fff;
-        color: #111;
-
-        border: 2px solid #111;
-        border-radius: 50%;
-
-        font-size: 27px;
-        font-weight: 400;
-        line-height: 1;
-
-        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    }
-
-    .award-close:hover {
-        color: crimson;
-        border-color: crimson;
-    }
-
-}
 /* ==========================================
    AWARD MODAL — ELEGANT CLOSE BUTTON
    ========================================== */
