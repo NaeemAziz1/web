@@ -1313,20 +1313,56 @@ footer span a:hover{
     font-weight: 500;
 }
 
+/* ==========================================
+   ELEGANT CLOSE BUTTON — OUTSIDE AWARD CARD
+   ========================================== */
+
 .award-close {
-    position: absolute;
-    top: 2px;
-    right: 15px;
-    z-index: 2;
-    color: #111;
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 1;
+    position: fixed;
+
+    top: 18px;
+    right: 22px;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+
+    background: rgba(15, 15, 15, 0.88);
+    color: #fff;
+
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 44px;
+
+    text-align: center;
+
     cursor: pointer;
+
+    z-index: 100000;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .award-close:hover {
-    color: crimson;
+    background: crimson;
+    border-color: crimson;
+    color: #fff;
+
+    transform: rotate(90deg) scale(1.08);
+}
+
+.award-close:active {
+    transform: rotate(90deg) scale(0.95);
 }
 
 
