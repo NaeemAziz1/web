@@ -221,12 +221,22 @@ $('.navbar .menu li a').on('click', function () {
 // AWARD POPUP
 // ==========================================
 
-function openAward(image, description) {
+function openAward(image, description, extraImage = '') {
 
     document.getElementById('awardModalImage').src = image;
 
     document.getElementById('awardModalDescription').innerText =
         description;
+
+    const extraImg = document.getElementById('awardModalExtraImage');
+
+    if (extraImage) {
+        extraImg.src = extraImage;
+        extraImg.style.display = 'block';
+    } else {
+        extraImg.src = '';
+        extraImg.style.display = 'none';
+    }
 
     document.getElementById('awardModal').style.display = 'block';
 
