@@ -238,7 +238,7 @@ function openAward(image, description, extraImage = '') {
         extraImg.style.display = 'none';
     }
 
-    document.getElementById('awardModal').style.display = 'block';
+    document.getElementById('awardModal').style.display = 'flex';
 
 }
 
