@@ -1923,3 +1923,17 @@ html, body {
     object-fit: contain;
     border-radius: 8px;
 }
+@media (max-width: 690px) {
+
+    .award-close {
+        width: 42px;
+        height: 42px;
+
+        top: 12px;
+        right: 12px;
+
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+}
