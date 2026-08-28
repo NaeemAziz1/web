@@ -1915,14 +1915,6 @@ html, body {
     }
 
 }
-#awardModalExtraImage {
-    display: none;
-    max-width: 100%;
-    max-height: 70vh;
-    margin: 20px auto 5px;
-    object-fit: contain;
-    border-radius: 8px;
-}
 @media (max-width: 690px) {
 
     .award-close {
@@ -2194,6 +2186,143 @@ html, body {
         max-height: 55vh !important;
 
         margin: 18px auto 5px !important;
+    }
+
+}
+/* ==========================================
+   FINAL FIX — EXTRA AWARD IMAGE
+   ========================================== */
+
+.award-modal-content {
+    position: relative !important;
+    width: min(850px, calc(100% - 20px)) !important;
+    max-width: 850px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+
+    margin: 20px auto !important;
+    padding: 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Main award image */
+#awardModalImage {
+    display: block !important;
+
+    position: static !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: 65vh !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+}
+
+
+/* Extra image — m10.jpg */
+#awardModalExtraImage {
+    display: none;
+
+    position: static !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: 60vh !important;
+
+    margin: 20px auto 5px !important;
+
+    object-fit: contain !important;
+
+    border-radius: 8px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Description */
+#awardModalDescription {
+    position: static !important;
+
+    width: 100% !important;
+    max-width: 750px !important;
+
+    margin: 18px auto 5px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ==========================================
+   DESKTOP
+   ========================================== */
+
+@media (min-width: 691px) {
+
+    .award-modal {
+        padding: 75px 20px 35px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .award-modal-content {
+        width: min(850px, calc(100% - 40px)) !important;
+    }
+
+    #awardModalExtraImage {
+        max-width: 100% !important;
+        max-height: 60vh !important;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 690px) {
+
+    .award-modal {
+        padding: 70px 10px 25px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .award-modal-content {
+        width: calc(100% - 10px) !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+        padding: 12px !important;
+
+        border-radius: 14px !important;
+    }
+
+    #awardModalImage {
+        max-width: 100% !important;
+        max-height: 58vh !important;
+    }
+
+    #awardModalExtraImage {
+        max-width: 100% !important;
+        max-height: 52vh !important;
+
+        margin: 18px auto 5px !important;
+    }
+
+    #awardModalDescription {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
     }
 
 }
