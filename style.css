@@ -2067,3 +2067,153 @@ html, body {
     }
 
 }
+/* ==========================================
+   AWARD MODAL — MAIN FULLSCREEN OVERLAY
+   ========================================== */
+
+.award-modal {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100vw !important;
+    height: 100dvh !important;
+
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.88);
+
+    z-index: 99999 !important;
+
+    padding: 75px 20px 35px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   AWARD MODAL CONTENT
+   ========================================== */
+
+.award-modal-content {
+    position: relative !important;
+
+    width: min(850px, 100%) !important;
+    max-width: 850px !important;
+
+    margin: 0 auto !important;
+    padding: 20px !important;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+/* MAIN AWARD IMAGE */
+
+#awardModalImage {
+    display: block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: 65vh !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+}
+
+
+/* DESCRIPTION */
+
+#awardModalDescription {
+    display: block;
+
+    width: 100% !important;
+    max-width: 750px !important;
+
+    margin: 18px auto 5px !important;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #222;
+
+    text-align: center;
+}
+
+
+/* EXTRA IMAGE */
+
+#awardModalExtraImage {
+    display: none;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: 60vh !important;
+
+    margin: 20px auto 5px !important;
+
+    object-fit: contain !important;
+
+    border-radius: 8px;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 690px) {
+
+    .award-modal {
+        padding: 70px 10px 25px !important;
+
+        align-items: flex-start;
+
+        overflow-y: auto;
+    }
+
+    .award-modal-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+
+        padding: 12px !important;
+
+        border-radius: 14px;
+    }
+
+    #awardModalImage {
+        max-width: 100% !important;
+        max-height: 58vh !important;
+    }
+
+    #awardModalExtraImage {
+        max-width: 100% !important;
+        max-height: 52vh !important;
+
+        margin: 18px auto 5px !important;
+    }
+
+    #awardModalDescription {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+}
