@@ -2149,3 +2149,51 @@ html, body {
     }
 
 }
+/* ==========================================
+   FIX — EXTRA AWARD IMAGE (m10.jpg)
+   ========================================== */
+
+.award-modal-content {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+#awardModalExtraImage {
+    position: static !important;
+    display: none;
+    
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 70vh !important;
+
+    margin: 20px auto 5px !important;
+
+    object-fit: contain !important;
+    border-radius: 8px;
+}
+
+
+/* Desktop */
+@media (min-width: 691px) {
+
+    #awardModalExtraImage {
+        max-width: 100% !important;
+        max-height: 65vh !important;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 690px) {
+
+    #awardModalExtraImage {
+        width: auto !important;
+        max-width: 100% !important;
+        max-height: 55vh !important;
+
+        margin: 18px auto 5px !important;
+    }
+
+}
