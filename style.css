@@ -1483,6 +1483,8 @@ footer span a:hover{
     color: #990012;
     font-size: 0.85em;
     vertical-align: middle;
+    position: relative;
+    top: -2px;
 }
 
 /* CLASSIC LINE */
