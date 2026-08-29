@@ -2240,3 +2240,15 @@ html, body {
         top: -2px;
     }
 }
+/* Desktop - Lion symbol */
+@media (min-width: 691px) {
+    .skills-symbol {
+        font-size: 50px !important;
+        transform: scale(1.35);
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+    }
+}
