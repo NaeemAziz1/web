@@ -1408,8 +1408,10 @@ footer span a:hover{
 .skills-education-image-space img {
     width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 0;
     object-fit: contain;
+    object-position: center;
+    display: block;
 }
 
 /* ==============================
