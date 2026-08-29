@@ -1409,7 +1409,7 @@ footer span a:hover{
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* ==============================
