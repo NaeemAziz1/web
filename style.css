@@ -2223,3 +2223,16 @@ html, body {
         line-height: 1.5 !important;
     }
 }
+.skills-symbol {
+    color: crimson;
+    font-weight: bold;
+    font-size: 42px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 690px) {
+    .skills-symbol {
+        font-size: 35px;
+    }
+}
