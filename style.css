@@ -2223,32 +2223,3 @@ html, body {
         line-height: 1.5 !important;
     }
 }
-.skills-symbol {
-    color: crimson;
-    font-weight: bold;
-    font-size: 50px;
-    display: inline-block;
-    position: relative;
-    top: -3px;
-    line-height: 1;
-    vertical-align: middle;
-}
-
-@media (max-width: 690px) {
-    .skills-symbol {
-        font-size: 42px;
-        top: -2px;
-    }
-}
-/* Desktop - Lion symbol */
-@media (min-width: 691px) {
-    .skills-symbol {
-        font-size: 50px !important;
-        transform: scale(1.35);
-        position: relative;
-        top: -3px;
-        display: inline-block;
-        vertical-align: middle;
-        line-height: 1;
-    }
-}
