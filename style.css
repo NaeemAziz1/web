@@ -1203,9 +1203,13 @@ footer span a:hover{
     }
 }
 .yin-yang {
-    font-size: 0.95em;
+    font-size: 0.78em;
     display: inline-block;
-    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    margin: 0 1px;
+    vertical-align: baseline;
+    line-height: 1;
 }
 .he-is-logo-space {
     height: 70px;
