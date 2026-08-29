@@ -2226,13 +2226,17 @@ html, body {
 .skills-symbol {
     color: crimson;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 50px;
     display: inline-block;
+    position: relative;
+    top: -3px;
+    line-height: 1;
     vertical-align: middle;
 }
 
 @media (max-width: 690px) {
     .skills-symbol {
-        font-size: 35px;
+        font-size: 42px;
+        top: -2px;
     }
 }
