@@ -137,9 +137,9 @@ $('.navbar .menu li a').on('click', function () {
         new Typed('.profile-typing', {
 
             strings: [
-                'a Poet',
-                'an Engineer',
-                'a Researcher'
+                'A Poet',
+                'An Engineer',
+                'A Researcher'
             ],
 
             typeSpeed: 100,
