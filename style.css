@@ -2254,7 +2254,7 @@ html, body {
     font-weight: 550;
 }
     @media (max-width: 690px) {
-    .awards .section-title {
+    .awards .title {
         font-size: 24px;
     }
 }
