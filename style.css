@@ -1467,7 +1467,7 @@ footer span a:hover{
     padding: 0;
     text-align: center !important;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: clamp(30px, 4vw, 42px);
     font-weight: 550;
     line-height: 1.2;
