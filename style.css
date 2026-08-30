@@ -2225,3 +2225,6 @@ html, body {
         line-height: 1.5 !important;
     }
 }
+#education .section-title {
+    text-transform: none;
+}
