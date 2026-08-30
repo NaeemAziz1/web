@@ -2267,7 +2267,7 @@ html, body {
 @media (max-width: 690px) {
     .skills .title::after,
     .contact .title::after {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 @media (max-width: 690px) {
