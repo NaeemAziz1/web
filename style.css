@@ -1469,7 +1469,7 @@ footer span a:hover{
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(30px, 4vw, 42px);
-    font-weight: 600;
+    font-weight: 550;
     line-height: 1.2;
     letter-spacing: 3px;
 
@@ -2229,7 +2229,7 @@ html, body {
     text-transform: none;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 @media (max-width: 690px) {
@@ -2239,17 +2239,17 @@ html, body {
 }
 .skills .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 600;
+    font-weight: 550;
 }
 .contact .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 600;
+    font-weight: 550;
 }
 .Biography .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 600;
+    font-weight: 550;
 }
 .awards .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 600;
+    font-weight: 550;
 }
