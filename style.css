@@ -2264,3 +2264,9 @@ html, body {
         font-size: 30px;
     }
 }
+@media (max-width: 690px) {
+    .skills .title::after,
+    .contact .title::after {
+        font-size: 13px;
+    }
+}
