@@ -2227,7 +2227,13 @@ html, body {
 }
 #education .section-title {
     text-transform: none;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     font-weight: 700;
+}
+
+@media (max-width: 690px) {
+    #education .section-title {
+        font-size: 32px;
+    }
 }
