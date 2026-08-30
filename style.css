@@ -2229,7 +2229,7 @@ html, body {
     text-transform: none;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 @media (max-width: 690px) {
@@ -2239,13 +2239,13 @@ html, body {
 }
 .skills .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 .contact .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 .Biography .title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
+    font-weight: 500;
 }
