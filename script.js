@@ -323,3 +323,6 @@ window.addEventListener('load', function () {
     }, remainingTime);
 
 });
+// Preload m10.jpg
+const m10Image = new Image();
+m10Image.src = 'images/m10.jpg';
