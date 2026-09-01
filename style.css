@@ -2279,8 +2279,8 @@ html, body {
 }
 @media (max-width: 690px) {
     .yin-yang {
-        font-size: 0.85em;
+        font-size: 0.8em;
         position: relative;
-        top: 2px;
+        top: 1.5px;
     }
 }
