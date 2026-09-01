@@ -1211,6 +1211,7 @@ footer span a:hover{
     padding: 0;
     vertical-align: baseline;
     line-height: 1;
+    font-weight: bold;
 }
 .he-is-logo-space {
     height: 70px;
