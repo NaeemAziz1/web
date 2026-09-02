@@ -2286,3 +2286,22 @@ html, body {
         font-weight: bold;
     }
 }
+/* ==============================
+   IMAGE BETWEEN HE IS & AWARDS
+   ============================== */
+
+.he-is-awards-image-space {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.he-is-awards-image-space img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
