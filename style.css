@@ -2299,8 +2299,8 @@ html, body {
 }
 
 .he-is-awards-image-space img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     object-position: center;
     display: block;
