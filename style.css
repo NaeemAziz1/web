@@ -2306,7 +2306,7 @@ html, body {
     display: block;
 }
 /* ==============================
-   L.PNG — PROFILE DECORATION
+   L.PNG — SMALL ROTATING DESIGN
    ============================== */
 
 .profile-card {
@@ -2315,31 +2315,29 @@ html, body {
 
 .profile-left-image {
     position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
 
-    width: 70px;
-    height: 70px;
+    left: 12px;
+    top: 50%;
+
+    width: 42px;
+    height: 42px;
 
     object-fit: contain;
     object-position: center;
 
     display: block;
     z-index: 10;
+
+    animation: lStickRotate 5s linear infinite;
 }
-/* ==============================
-   L.PNG — MOBILE FIX
-   ============================== */
 
-@media (max-width: 690px) {
-
-    .profile-left-image {
-        left: 5px;
-        top: 50%;
-        width: 50px;
-        height: 50px;
-        transform: translateY(-50%);
+/* Smooth circular rotation */
+@keyframes lStickRotate {
+    from {
+        transform: rotate(0deg);
     }
 
+    to {
+        transform: rotate(360deg);
+    }
 }
