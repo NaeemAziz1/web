@@ -2329,12 +2329,12 @@ html, body {
     position: absolute;
 
     left: 50%;
-    bottom: -100px;
+    bottom: -80px;
 
     width: 190px;
     height: 190px;
 
-    background: url("images/L.png") center center / 120px auto no-repeat;
+    background: url("images/L.png") center center / 110px auto no-repeat;
 
     transform: translateX(-50%) rotate(58deg);
 
