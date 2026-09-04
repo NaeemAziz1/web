@@ -2319,29 +2319,3 @@ html, body {
 .profile-card {
     position: relative;
 }
-
-.profile-left-image,
-.profile-right-image {
-    position: absolute;
-    top: 46%;
-
-    width: 50px;
-    height: 50px;
-
-    object-fit: contain;
-    object-position: center;
-
-    display: block;
-    z-index: 10;
-}
-
-/* Left */
-.profile-left-image {
-    left: 12px;
-}
-
-/* Right */
-.profile-right-image {
-    right: 12px;
-    transform: scaleX(-1);
-}
