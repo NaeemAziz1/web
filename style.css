@@ -1212,7 +1212,7 @@ footer span a:hover{
     vertical-align: baseline;
     line-height: 1;
     font-weight: bold;
-    animation: yinYangRotate 6s linear infinite;
+    animation: yinYangRotate 5s linear infinite;
 }
 
 @keyframes yinYangRotate {
