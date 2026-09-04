@@ -1212,6 +1212,17 @@ footer span a:hover{
     vertical-align: baseline;
     line-height: 1;
     font-weight: bold;
+    animation: yinYangRotate 8s linear infinite;
+}
+
+@keyframes yinYangRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 .he-is-logo-space {
     height: 70px;
