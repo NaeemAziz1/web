@@ -2336,7 +2336,7 @@ html, body {
 
     background: url("images/L.png") center center / 110px auto no-repeat;
 
-    transform: translateX(-50%) rotate(58deg);
+    transform: translateX(-50%) rotate(60deg);
 
     z-index: 1;
 }
