@@ -2328,3 +2328,18 @@ html, body {
     display: block;
     z-index: 10;
 }
+/* ==============================
+   L.PNG — MOBILE FIX
+   ============================== */
+
+@media (max-width: 690px) {
+
+    .profile-left-image {
+        left: 5px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
+    }
+
+}
