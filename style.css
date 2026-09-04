@@ -2305,7 +2305,9 @@ html, body {
     object-position: center;
     display: block;
 }
-/* L.PNG — LEFT OF PROFILE INTRO */
+/* ==============================
+   L.PNG — PROFILE DECORATION
+   ============================== */
 
 .profile-card {
     position: relative;
@@ -2313,14 +2315,16 @@ html, body {
 
 .profile-left-image {
     position: absolute;
-    left: 10px;
+    left: -30px;
     top: 50%;
     transform: translateY(-50%);
 
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
 
     object-fit: contain;
+    object-position: center;
+
     display: block;
     z-index: 10;
 }
