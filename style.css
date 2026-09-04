@@ -2305,3 +2305,20 @@ html, body {
     object-position: center;
     display: block;
 }
+/* L.PNG — LEFT OF PROFILE INTRO */
+
+.profile-card {
+    position: relative;
+}
+
+.profile-left-image {
+    position: absolute;
+    left: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+    z-index: 999;
+}
