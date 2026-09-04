@@ -2319,3 +2319,24 @@ html, body {
 .profile-card {
     position: relative;
 }
+/* ==========================================
+   AWARDS TITLE — L STICK
+   ========================================== */
+
+.awards .title::before {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    left: 50%;
+    bottom: -35px;
+
+    background: url("images/L.png") center center / contain no-repeat;
+
+    transform: translateX(-50%);
+    
+    background-color: transparent;
+}
