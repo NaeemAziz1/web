@@ -2319,3 +2319,7 @@ html, body {
 
     transform: rotate(-25deg);
 }
+.profile-right-image {
+    right: 12px;
+    transform: scaleX(-1);
+}
