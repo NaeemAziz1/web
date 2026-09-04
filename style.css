@@ -2313,12 +2313,14 @@ html, body {
 
 .profile-left-image {
     position: absolute;
-    left: -75px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 65px;
-    height: 65px;
+
+    width: 55px;
+    height: 55px;
+
     object-fit: contain;
     display: block;
-    z-index: 999;
+    z-index: 10;
 }
