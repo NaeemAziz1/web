@@ -2305,20 +2305,31 @@ html, body {
     object-position: center;
     display: block;
 }
-.profile-left-image {
+.profile-card {
+    position: relative;
+}
+
+.profile-left-image,
+.profile-right-image {
     position: absolute;
-    left: 12px;
     top: 46%;
 
     width: 50px;
     height: 50px;
 
     object-fit: contain;
+    object-position: center;
+
     display: block;
     z-index: 10;
-
-    transform: rotate(-25deg);
 }
+
+/* Left */
+.profile-left-image {
+    left: 12px;
+}
+
+/* Right */
 .profile-right-image {
     right: 12px;
     transform: scaleX(-1);
