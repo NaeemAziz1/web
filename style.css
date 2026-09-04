@@ -2305,3 +2305,56 @@ html, body {
     object-position: center;
     display: block;
 }
+/* ==============================
+   L.PNG — LEFT OF PROFILE INTRO
+   ============================== */
+
+.profile-card {
+    position: relative;
+}
+
+.profile-left-image {
+    position: absolute;
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+    z-index: 2;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 690px) {
+
+    .profile-left-image {
+        left: -60px;
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+   ============================== */
+
+@media (max-width: 450px) {
+
+    .profile-left-image {
+        left: -50px;
+        width: 45px;
+        height: 45px;
+    }
+
+}
