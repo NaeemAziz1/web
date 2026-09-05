@@ -2319,3 +2319,55 @@ html, body {
 .profile-card {
     position: relative;
 }
+/* Social Media Links */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+    padding-left: 4px;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: crimson;
+    color: #fff;
+
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease,
+        box-shadow .3s ease;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: crimson;
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0,0,0,.18);
+}
+
+/* Mobile */
+@media (max-width: 690px) {
+    .social-links {
+        margin-top: 24px;
+        gap: 13px;
+    }
+
+    .social-links a {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+    }
+}
