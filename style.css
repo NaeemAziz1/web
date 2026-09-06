@@ -2416,10 +2416,10 @@ html, body {
     }
 
     .menu-btn i {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .menu-btn i::before {
-        content: "\f142";
+        content: "\f0c9";
     }
 }
