@@ -2410,16 +2410,17 @@ html, body {
     }
 }
 @media (max-width: 947px) {
-    .navbar .menu-btn {
-        color: crimson !important;
-        transform: translateY(6px) !important;
+    .menu-btn {
+        color: crimson;
+        position: relative;
+        top: 4px;
     }
 
-    .navbar .menu-btn i {
+    .menu-btn i {
         font-size: 28px;
     }
 
-    .navbar .menu-btn i::before {
+    .menu-btn i::before {
         content: "\f142";
     }
 }
