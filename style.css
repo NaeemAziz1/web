@@ -2413,6 +2413,8 @@ html, body {
     .menu-btn {
         position: relative;
         top: 9px;
+        background: transparent;
+        border: none;
     }
 
     .menu-btn i {
