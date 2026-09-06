@@ -2411,7 +2411,7 @@ html, body {
 }
 @media (max-width: 947px) {
     .menu-btn {
-        color: crimson;
+        color: #B08D57;
         position: relative;
         top: 4px;
     }
