@@ -2410,11 +2410,14 @@ html, body {
     }
 }
 @media (max-width: 947px) {
-    .menu-btn i {
+    .menu-btn {
+        color: crimson;
+        position: relative;
+        top: 4px;
+    }
 
-color: crimson;
+    .menu-btn i {
         font-size: 28px;
-        transform: translateY(4px);
     }
 
     .menu-btn i::before {
