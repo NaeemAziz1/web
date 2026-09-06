@@ -2412,6 +2412,7 @@ html, body {
 @media (max-width: 947px) {
     .menu-btn i {
         font-size: 28px;
+        transform: translateY(2px);
     }
 
     .menu-btn i::before {
