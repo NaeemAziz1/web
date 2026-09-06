@@ -2387,3 +2387,23 @@ html, body {
     border-radius: 50%;
     object-fit: cover;
 }
+.profile-role {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.profile-role-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+@media (max-width: 690px) {
+    .profile-role-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
