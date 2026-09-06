@@ -775,11 +775,6 @@ footer span a:hover{
         display: block;
         z-index: 1001;
         cursor: pointer;
-
-        background: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-        outline: none !important;
     }
 
     .menu-btn i.active:before {
