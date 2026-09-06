@@ -2412,11 +2412,11 @@ html, body {
 @media (max-width: 947px) {
     .menu-btn {
         position: relative;
-        top: 4px;
+        top: 6px;
     }
 
     .menu-btn i {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .menu-btn i::before {
