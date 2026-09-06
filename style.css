@@ -2391,7 +2391,7 @@ html, body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 1px;
 }
 
 .profile-role-icon {
@@ -2399,7 +2399,7 @@ html, body {
     height: 30px;
     object-fit: contain;
     display: inline-block;
-    vertical-align: middle;
+    margin-left: 0;
 }
 
 @media (max-width: 690px) {
