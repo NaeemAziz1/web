@@ -2371,3 +2371,10 @@ html, body {
         font-size: 19px;
     }
 }
+.title .yin-yang img {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: -0.15em;
+}
