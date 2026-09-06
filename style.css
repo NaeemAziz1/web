@@ -2409,3 +2409,12 @@ html, body {
         height: 22px;
     }
 }
+@media (max-width: 947px) {
+    .menu-btn i {
+        font-size: 28px;
+    }
+
+    .menu-btn i::before {
+        content: "\f142";
+    }
+}
