@@ -2411,8 +2411,10 @@ html, body {
 }
 @media (max-width: 947px) {
     .menu-btn i {
+
+color: crimson;
         font-size: 28px;
-        transform: translateY(2px);
+        transform: translateY(4px);
     }
 
     .menu-btn i::before {
