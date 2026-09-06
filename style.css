@@ -2395,15 +2395,16 @@ html, body {
 }
 
 .profile-role-icon {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     display: inline-block;
+    vertical-align: middle;
 }
 
 @media (max-width: 690px) {
     .profile-role-icon {
-        width: 14px;
-        height: 14px;
+        width: 24px;
+        height: 24px;
     }
 }
