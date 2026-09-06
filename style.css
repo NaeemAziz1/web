@@ -2400,7 +2400,7 @@ html, body {
     object-fit: contain;
     display: inline-block;
     margin-left: 0;
-    transform: rotate(-6deg);
+    transform: rotate(-11deg);
 }
 
 @media (max-width: 690px) {
