@@ -2449,3 +2449,8 @@ html, body {
 .he-is-card .poet-icon + h4 {
     margin-top: -5px;
 }
+/* Researcher image only */
+.he-is-card .researcher-icon {
+    width: 80px;
+    height: 70px;
+}
