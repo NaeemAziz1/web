@@ -2451,8 +2451,8 @@ html, body {
 }
 /* Researcher Icon */
 .he-is-card img.researcher-icon {
-    width: 100px !important;
-    height: 100px !important;
+    width: 95px !important;
+    height: 95px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
