@@ -2425,7 +2425,7 @@ html, body {
 }
 /* Engineer & Researcher PNG Icons */
 .he-is-card .he-is-image {
-    width: 80px;
+    width: 90px;
     height: 80px;
     object-fit: contain;
     object-position: center;
@@ -2439,8 +2439,8 @@ html, body {
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 75px;
     object-fit: contain;
     object-position: center;
     display: block;
