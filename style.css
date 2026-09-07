@@ -2423,3 +2423,12 @@ html, body {
         content: "\f0c9";
     }
 }
+/* Engineer & Researcher PNG Icons */
+.he-is-card .he-is-image {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto 18px;
+}
