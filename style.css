@@ -2437,3 +2437,15 @@ html, body {
 .he-is-card .he-is-image + h4 {
     margin-top: -5px;
 }
+/* Poet Icon */
+.he-is-card .poet-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto 0;
+}
+.he-is-card .poet-icon + h4 {
+    margin-top: -5px;
+}
