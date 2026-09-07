@@ -2452,12 +2452,12 @@ html, body {
 /* Researcher image only */
 .he-is-card .researcher-icon {
     width: 86px;
-    height: 95px;
+    height: 120px;
     object-fit: contain;
     object-position: center;
     display: block;
     margin: 0 auto 0;
 }
 .he-is-card .researcher-icon + h4 {
-    margin-top: -15px;
+    margin-top: -20px;
 }
