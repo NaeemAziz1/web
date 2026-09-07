@@ -2439,8 +2439,8 @@ html, body {
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
-    width: 110px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     object-fit: contain;
     object-position: center;
     display: block;
