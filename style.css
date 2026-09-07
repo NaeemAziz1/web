@@ -2449,15 +2449,17 @@ html, body {
 .he-is-card .poet-icon + h4 {
     margin-top: -5px;
 }
-/* Researcher image only */
-.he-is-card .researcher-icon {
-    width: 86px !important;
-    height: 120px !important;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-    margin: 0 auto 0;
+/* Researcher Icon */
+.he-is-card img.researcher-icon {
+    width: 110px !important;
+    height: 110px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
-.he-is-card .researcher-icon + h4 {
-    margin-top: -20px !important;
+
+/* Researcher title gap */
+.he-is-card img.researcher-icon + h4 {
+    margin-top: -15px !important;
 }
