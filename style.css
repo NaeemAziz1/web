@@ -2439,7 +2439,7 @@ html, body {
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
-    width: 90px;
+    width: 100px;
     height: 75px;
     object-fit: contain;
     object-position: center;
