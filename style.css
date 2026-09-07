@@ -2451,13 +2451,13 @@ html, body {
 }
 /* Researcher image only */
 .he-is-card .researcher-icon {
-    width: 86px;
-    height: 120px;
+    width: 86px !important;
+    height: 120px !important;
     object-fit: contain;
     object-position: center;
     display: block;
     margin: 0 auto 0;
 }
 .he-is-card .researcher-icon + h4 {
-    margin-top: -20px;
+    margin-top: -20px !important;
 }
