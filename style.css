@@ -2461,5 +2461,5 @@ html, body {
 
 /* Researcher title gap */
 .he-is-card img.researcher-icon + h4 {
-    margin-top: -15px !important;
+    margin-top: -25px !important;
 }
