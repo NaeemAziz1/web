@@ -2405,8 +2405,8 @@ html, body {
 
 @media (max-width: 690px) {
     .profile-role-icon {
-        width: 22px;
-        height: 22px;
+        width: 18px;
+        height: 18px;
     }
 }
 @media (max-width: 947px) {
