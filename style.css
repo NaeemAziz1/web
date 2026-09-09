@@ -2475,5 +2475,5 @@ html, body {
 
 /* UI Designer title gap */
 .he-is-card img.ui-designer-icon + h4 {
-    margin-top: -2px !important;
+    margin-top: 1px !important;
 }
