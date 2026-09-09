@@ -2463,3 +2463,17 @@ html, body {
 .he-is-card img.researcher-icon + h4 {
     margin-top: -5px !important;
 }
+/* UI Designer Icon */
+.he-is-card img.ui-designer-icon {
+    width: 95px !important;
+    height: 95px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* UI Designer title gap */
+.he-is-card img.ui-designer-icon + h4 {
+    margin-top: -5px !important;
+}
