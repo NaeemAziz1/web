@@ -2395,8 +2395,8 @@ html, body {
 }
 
 .profile-role-icon {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     object-fit: contain;
     display: inline-block;
     margin-left: 0;
