@@ -2435,7 +2435,7 @@ html, body {
 
 /* Reduce gap between image and title */
 .he-is-card .he-is-image + h4 {
-    margin-top: -10px;
+    margin-top: -8px;
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
