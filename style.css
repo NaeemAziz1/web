@@ -2429,7 +2429,7 @@ html, body {
     object-fit: contain;
     object-position: center;
     display: block;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 /* Reduce gap between image and title */
@@ -2443,7 +2443,7 @@ html, body {
     object-fit: contain;
     object-position: center;
     display: block;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 .he-is-card .poet-icon + h4 {
     margin-top: -2px;
