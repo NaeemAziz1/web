@@ -2488,5 +2488,5 @@ html, body {
 
 /* Photographer title gap */
 .he-is-photographer + h4 {
-    margin-top: 2px !important;
+    margin-top: 3px !important;
 }
