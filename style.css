@@ -2476,3 +2476,17 @@ html, body {
 .he-is-card img.ui-designer-icon + h4 {
     margin-top: 2px !important;
 }
+/* Photographer Icon */
+.he-is-photographer {
+    width: 95px !important;
+    height: 95px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Photographer title gap */
+.he-is-photographer + h4 {
+    margin-top: 2px !important;
+}
