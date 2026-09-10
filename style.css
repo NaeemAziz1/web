@@ -2464,8 +2464,8 @@ html, body {
 }
 /* UI Designer Icon */
 .he-is-card img.ui-designer-icon {
-    width: 120px !important;
-    height: 120px !important;
+    width: 125px !important;
+    height: 125px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
@@ -2474,7 +2474,7 @@ html, body {
 
 /* UI Designer title gap */
 .he-is-card img.ui-designer-icon + h4 {
-    margin-top: -1px !important;
+    margin-top: -8px !important;
 }
 /* Photographer Icon */
 .he-is-photographer {
