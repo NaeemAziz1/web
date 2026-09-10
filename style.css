@@ -2478,8 +2478,8 @@ html, body {
 }
 /* Photographer Icon */
 .he-is-photographer {
-    width: 95px !important;
-    height: 95px !important;
+    width: 80px !important;
+    height: 80px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
