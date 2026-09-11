@@ -2755,23 +2755,25 @@ html, body {
        ===================================== */
 
     .mobile-menu-toggle.floating-menu {
-        position: fixed !important;
+    position: fixed !important;
 
-        right: 18px !important;
-        bottom: 20px !important;
+    right: 18px !important;
+    top: 15px !important;
 
-        width: 42px !important;
-        height: 42px !important;
+    bottom: auto !important;
 
-        background: transparent !important;
-        color: #fff !important;
+    width: 42px !important;
+    height: 42px !important;
 
-        border: none !important;
-        border-radius: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
 
-        box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
 
-        z-index: 99999 !important;
+    box-shadow: none !important;
+
+    z-index: 99999 !important;
     }
 
     .mobile-menu-toggle.floating-menu i {
