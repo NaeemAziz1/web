@@ -2675,19 +2675,3 @@ html, body {
         background-clip: text;
     }
 }
-/* ==========================================
-   MOBILE MENU — GLOSSY DIAMOND
-   ========================================== */
-
-@media (max-width: 947px) {
-
-    .mobile-menu-toggle,
-    .navbar.sticky .mobile-menu-toggle {
-        color: #FFFFFF !important;
-        -webkit-text-fill-color: #FFFFFF !important;
-        filter:
-            drop-shadow(0 0 2px #FFFFFF)
-            drop-shadow(0 0 5px #DFF6FF)
-            drop-shadow(0 0 8px #AFCBD6) !important;
-    }
-}
