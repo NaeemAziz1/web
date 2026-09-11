@@ -2492,8 +2492,7 @@ html, body {
 }
 @media (max-width: 947px) {
     .navbar .logo a {
-        font-size: 30px !important;
         position: relative;
-        top: 10px;
+        top: -20px;
     }
 }
