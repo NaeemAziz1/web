@@ -2655,3 +2655,13 @@ html, body {
     }
 
 }
+/* Mobile Logo Colors */
+@media (max-width: 947px) {
+    .navbar .logo a {
+        color: #F5F0E6 !important; /* WELCO - Ivory */
+    }
+
+    .navbar .logo a span {
+        color: #C9C9C9 !important; /* ♏︎E𓂀 - Silver */
+    }
+}
