@@ -2754,27 +2754,41 @@ html, body {
        AFTER SCROLL
        ===================================== */
 
-    .mobile-menu-toggle.floating-menu {
+   .mobile-menu-toggle.floating-menu {
     position: fixed !important;
 
     right: 18px !important;
     top: 15px !important;
-
     bottom: auto !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    color: #fff !important;
+    font-size: 25px !important;
 
     width: 42px !important;
     height: 42px !important;
 
-    background: transparent !important;
-    color: #fff !important;
-
-    border: none !important;
-    border-radius: 0 !important;
-
-    box-shadow: none !important;
+    padding: 0 !important;
 
     z-index: 99999 !important;
-    }
+
+    /* Soft visibility */
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.9),
+        0 0 6px rgba(255, 255, 255, 0.45);
+}
+
+.mobile-menu-toggle.floating-menu i {
+    color: #fff !important;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.9),
+        0 0 6px rgba(255, 255, 255, 0.45);
+}
 
     .mobile-menu-toggle.floating-menu i {
         color: #fff !important;
