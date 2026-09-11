@@ -2434,7 +2434,7 @@ html, body {
 
 /* Reduce gap between image and title */
 .he-is-card .he-is-image + h4 {
-    margin-top: -13px;
+    margin-top: -15px;
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
@@ -2446,7 +2446,7 @@ html, body {
     margin: 0 auto;
 }
 .he-is-card .poet-icon + h4 {
-    margin-top: -2px;
+    margin-top: -3px;
 }
 /* Researcher Icon */
 .he-is-card img.researcher-icon {
@@ -2460,7 +2460,7 @@ html, body {
 
 /* Researcher title gap */
 .he-is-card img.researcher-icon + h4 {
-    margin-top: -5px !important;
+    margin-top: -7px !important;
 }
 /* UI Designer Icon */
 .he-is-card img.ui-designer-icon {
