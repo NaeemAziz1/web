@@ -2424,8 +2424,8 @@ html, body {
 }
 /* Engineer & Researcher PNG Icons */
 .he-is-card .he-is-image {
-    width: 115px;
-    height: 115px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -2450,8 +2450,8 @@ html, body {
 }
 /* Researcher Icon */
 .he-is-card img.researcher-icon {
-    width: 110px !important;
-    height: 110px !important;
+    width: 120px !important;
+    height: 120px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
@@ -2464,8 +2464,8 @@ html, body {
 }
 /* UI Designer Icon */
 .he-is-card img.ui-designer-icon {
-    width: 131px !important;
-    height: 131px !important;
+    width: 136px !important;
+    height: 136px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
