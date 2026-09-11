@@ -2490,21 +2490,6 @@ html, body {
 .he-is-photographer + h4 {
     margin-top: 10px !important;
 }
-  
-@media (max-width: 947px) {
-    .navbar {
-        background: #7A0019 !important;
-    }
-
-    .navbar.sticky {
-        background: #7A0019 !important;
-    }
-}
-@media (max-width: 947px) {
-    .navbar .logo a span {
-        color: #B0903D !important;
-    }
-}
 /* ==========================================
    MOBILE NAVBAR — FINAL CLEAN VERSION
    DESKTOP = ORIGINAL / NO MOBILE BUTTON
