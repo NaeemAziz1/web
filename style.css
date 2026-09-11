@@ -2826,3 +2826,8 @@ html, body {
         background: #7A0019 !important;
     }
 }
+@media (max-width: 947px) {
+    .navbar .logo a span {
+        color: #D6D6D6 !important;
+    }
+}
