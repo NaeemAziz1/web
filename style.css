@@ -2675,3 +2675,47 @@ html, body {
         background-clip: text;
     }
 }
+/* =========================================
+   MOBILE NAVBAR - FINAL COLOR SETUP
+   ========================================= */
+
+@media (max-width: 947px) {
+
+    /* Navbar Background */
+    .navbar,
+    .navbar.sticky {
+        background: linear-gradient(
+            180deg,
+            #3D271F 0%,
+            #35211A 50%,
+            #2B1914 100%
+        ) !important;
+    }
+
+    /* WELCO - Navy Gradient */
+    .navbar .logo a {
+        background: linear-gradient(
+            180deg,
+            #263A5A 0%,
+            #14243E 35%,
+            #0D192D 65%,
+            #1B2D4A 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+    }
+
+    /* ♏︎E𓂀
+       IMPORTANT:
+       Keep your existing coloring exactly as it is.
+       No color/gradient override here.
+    */
+
+    /* Mobile Menu Icon */
+    .mobile-menu-toggle,
+    .mobile-menu-toggle i {
+        color: #FFFFFF !important;
+    }
+}
