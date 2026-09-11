@@ -2424,8 +2424,8 @@ html, body {
 }
 /* Engineer & Researcher PNG Icons */
 .he-is-card .he-is-image {
-    width: 110px;
-    height: 110px;
+    width: 115px;
+    height: 115px;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -2438,8 +2438,8 @@ html, body {
 }
 /* Poet Icon */
 .he-is-card .poet-icon {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -2450,8 +2450,8 @@ html, body {
 }
 /* Researcher Icon */
 .he-is-card img.researcher-icon {
-    width: 105px !important;
-    height: 105px !important;
+    width: 110px !important;
+    height: 110px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
@@ -2464,8 +2464,8 @@ html, body {
 }
 /* UI Designer Icon */
 .he-is-card img.ui-designer-icon {
-    width: 128px !important;
-    height: 128px !important;
+    width: 131px !important;
+    height: 131px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
@@ -2478,8 +2478,8 @@ html, body {
 }
 /* Photographer Icon */
 .he-is-photographer {
-    width: 77px !important;
-    height: 77px !important;
+    width: 82px !important;
+    height: 82px !important;
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
