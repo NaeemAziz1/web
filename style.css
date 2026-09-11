@@ -2831,3 +2831,40 @@ html, body {
         color: #D6D6D6 !important;
     }
 }
+/* ==============================
+   MOBILE MENU — MOBILE ONLY
+   DESKTOP UNCHANGED
+   ============================== */
+
+.mobile-menu-toggle {
+    display: none !important;
+}
+
+@media (max-width: 947px) {
+
+    .mobile-menu-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        color: #fff !important;
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+        width: 40px !important;
+        height: 40px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        font-size: 23px !important;
+        cursor: pointer !important;
+        z-index: 10001 !important;
+    }
+
+    .mobile-menu-toggle i {
+        color: #fff !important;
+    }
+
+}
