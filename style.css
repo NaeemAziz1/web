@@ -2675,3 +2675,20 @@ html, body {
         background-clip: text;
     }
 }
+/* Mobile Menu Button — Glossy Diamond */
+@media (max-width: 947px) {
+    .mobile-menu-toggle {
+        background: linear-gradient(
+            180deg,
+            #FFFFFF 0%,
+            #DFF6FF 25%,
+            #AFCBD6 50%,
+            #FFFFFF 70%,
+            #D5EAF0 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+    }
+}
