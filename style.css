@@ -2490,9 +2490,3 @@ html, body {
 .he-is-photographer + h4 {
     margin-top: 10px !important;
 }
-@media (max-width: 947px) {
-    .navbar .logo a {
-        position: relative;
-        top: -20px;
-    }
-}
