@@ -2800,3 +2800,20 @@ html, body {
         color: #D4AF37 !important;
     }
 }
+@media (max-width: 947px) {
+    .navbar {
+        padding: 8px 0 !important;
+    }
+
+    .navbar .max-width {
+        min-height: 42px !important;
+    }
+
+    .navbar .logo a {
+        font-size: 18px !important;
+    }
+
+    .navbar > .max-width > .mobile-menu-toggle {
+        font-size: 21px !important;
+    }
+}
