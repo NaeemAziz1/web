@@ -2655,11 +2655,3 @@ html, body {
     }
 
 }
-/* Logo two-color styling */
-.logo a {
-    color: #F5F0E6; /* Ivory */
-}
-
-.logo a span {
-    color: #C9C9C9; /* Silver */
-}
