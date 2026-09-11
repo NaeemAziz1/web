@@ -2675,9 +2675,10 @@ html, body {
         background-clip: text;
     }
 }
-/* Mobile Menu Button — Glossy Diamond */
+/* Mobile Menu — Glossy Diamond */
 @media (max-width: 947px) {
-    .mobile-menu-toggle {
+    .mobile-menu-toggle,
+    .navbar.sticky .mobile-menu-toggle {
         background: linear-gradient(
             180deg,
             #FFFFFF 0%,
@@ -2690,5 +2691,6 @@ html, body {
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         background-clip: text !important;
+        color: transparent !important;
     }
 }
