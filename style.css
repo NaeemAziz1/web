@@ -2526,47 +2526,84 @@ html, body {
         margin: 0 !important;
     }
 
-    /* =====================================
-       FLOATING MENU BUTTON
-       ===================================== */
+   /* =========================================
+   MOBILE NAVBAR
+   ========================================= */
 
-    .navbar .menu-btn {
-        position: fixed !important;
-        right: 18px !important;
-        bottom: 20px !important;
+@media (max-width: 947px) {
 
-        width: 50px !important;
-        height: 50px !important;
+    /* Top navbar */
+    .navbar {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        padding: 15px 0 !important;
+        background: crimson !important;
+        z-index: 9999 !important;
+    }
 
+    .navbar .max-width {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    /* Cover immediately below navbar */
+    .home {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .home-cover {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    /* ONLY the actual hamburger button */
+    .navbar > .max-width > .menu-btn {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
 
+        width: 45px !important;
+        height: 45px !important;
+
         background: crimson !important;
-        color: #111 !important;
+        color: #fff !important;
 
         border: 2px solid #fff !important;
         border-radius: 50% !important;
 
-        font-size: 21px !important;
-
-        box-shadow: 0 5px 18px rgba(0,0,0,.30) !important;
-
-        z-index: 10000 !important;
-
+        font-size: 20px !important;
         cursor: pointer !important;
 
         transition: all .3s ease !important;
     }
 
-    /* Stylish hover/touch effect */
-    .navbar .menu-btn:hover {
-        transform: scale(1.08) !important;
-        box-shadow: 0 7px 22px rgba(0,0,0,.40) !important;
+    /* Floating button after scrolling */
+    .navbar > .max-width > .menu-btn.floating-menu {
+        position: fixed !important;
+        right: 18px !important;
+        bottom: 20px !important;
+
+        width: 52px !important;
+        height: 52px !important;
+
+        background: crimson !important;
+        color: #fff !important;
+
+        border: 2px solid #fff !important;
+        border-radius: 50% !important;
+
+        box-shadow: 0 5px 20px rgba(0,0,0,.35) !important;
+
+        z-index: 10000 !important;
     }
 
-    /* Keep the icon centered */
-    .navbar .menu-btn i {
-        margin: 0 !important;
+    .navbar > .max-width > .menu-btn.floating-menu:hover {
+        transform: scale(1.08);
     }
 }
