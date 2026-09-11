@@ -326,22 +326,43 @@ window.addEventListener('load', function () {
 // Preload m10.jpg
 const m10Image = new Image();
 m10Image.src = 'images/m10.jpg';
-/* Mobile floating menu button on scroll */
-$(window).on('scroll', function () {
+/* =========================================
+   MOBILE MENU TOGGLE + FLOATING BUTTON
+   ========================================= */
 
-    if (window.innerWidth <= 947) {
+$(document).ready(function () {
 
-        if ($(window).scrollTop() > 150) {
-            $('.navbar > .max-width > .menu-btn')
-                .addClass('floating-menu');
+    /* Open / close mobile menu */
+    $('.mobile-menu-toggle').click(function () {
+
+        $('.navbar .menu').toggleClass('active');
+
+        $(this).find('i').toggleClass('fa-bars fa-times');
+
+    });
+
+
+    /* Floating menu button while scrolling */
+    $(window).on('scroll', function () {
+
+        if (window.innerWidth <= 947) {
+
+            if ($(window).scrollTop() > 150) {
+
+                $('.mobile-menu-toggle').addClass('floating-menu');
+
+            } else {
+
+                $('.mobile-menu-toggle').removeClass('floating-menu');
+
+            }
+
         } else {
-            $('.navbar > .max-width > .menu-btn')
-                .removeClass('floating-menu');
+
+            $('.mobile-menu-toggle').removeClass('floating-menu');
+
         }
 
-    } else {
-        $('.navbar > .max-width > .menu-btn')
-            .removeClass('floating-menu');
-    }
+    });
 
 });
