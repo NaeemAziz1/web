@@ -2795,3 +2795,8 @@ html, body {
         font-size: 25px !important;
     }
 }
+@media (max-width: 947px) {
+    .navbar .logo a span {
+        color: #000000 !important;
+    }
+}
