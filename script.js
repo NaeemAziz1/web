@@ -326,3 +326,22 @@ window.addEventListener('load', function () {
 // Preload m10.jpg
 const m10Image = new Image();
 m10Image.src = 'images/m10.jpg';
+/* Mobile floating menu button on scroll */
+$(window).on('scroll', function () {
+
+    if (window.innerWidth <= 947) {
+
+        if ($(window).scrollTop() > 150) {
+            $('.navbar > .max-width > .menu-btn')
+                .addClass('floating-menu');
+        } else {
+            $('.navbar > .max-width > .menu-btn')
+                .removeClass('floating-menu');
+        }
+
+    } else {
+        $('.navbar > .max-width > .menu-btn')
+            .removeClass('floating-menu');
+    }
+
+});
