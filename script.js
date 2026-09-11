@@ -11,14 +11,49 @@ function handleScroll() {
 
     const currentScrollY = window.scrollY;
 
-    // Sticky Navbar
-    if (currentScrollY > 20) {
-        $('.navbar').addClass('sticky');
+
+    // ==========================================
+    // MOBILE FLOATING MENU
+    // ==========================================
+
+    if (window.innerWidth <= 947) {
+
+        if (currentScrollY > 150) {
+
+            $('.mobile-menu-toggle').addClass('floating-menu');
+
+        } else {
+
+            $('.mobile-menu-toggle').removeClass('floating-menu');
+
+        }
+
     } else {
-        $('.navbar').removeClass('sticky');
+
+        $('.mobile-menu-toggle').removeClass('floating-menu');
+
     }
 
-    // Scroll Up Button
+
+    // ==========================================
+    // STICKY NAVBAR
+    // ==========================================
+
+    if (currentScrollY > 20) {
+
+        $('.navbar').addClass('sticky');
+
+    } else {
+
+        $('.navbar').removeClass('sticky');
+
+    }
+
+
+    // ==========================================
+    // SCROLL UP BUTTON
+    // ==========================================
+
     if (currentScrollY > 500) {
 
         // Scrolling = Bright
@@ -30,7 +65,11 @@ function handleScroll() {
         scrollTimer = setTimeout(function () {
 
             if (window.scrollY > 500) {
-                scrollBtn.removeClass('show').addClass('dim');
+
+                scrollBtn
+                    .removeClass('show')
+                    .addClass('dim');
+
             }
 
         }, 1000);
@@ -38,19 +77,27 @@ function handleScroll() {
     } else {
 
         scrollBtn.removeClass('show dim');
+
         clearTimeout(scrollTimer);
 
     }
+
 }
 
 
-// Normal scrolling
+// ==========================================
+// NORMAL SCROLLING
+// ==========================================
+
 window.addEventListener('scroll', handleScroll, {
     passive: true
 });
 
 
-// Mobile browser-এর scroll শেষ হলে
+// ==========================================
+// MOBILE BROWSER SCROLL END
+// ==========================================
+
 if ('onscrollend' in window) {
 
     window.addEventListener('scrollend', function () {
@@ -62,7 +109,11 @@ if ('onscrollend' in window) {
             scrollTimer = setTimeout(function () {
 
                 if (window.scrollY > 500) {
-                    scrollBtn.removeClass('show').addClass('dim');
+
+                    scrollBtn
+                        .removeClass('show')
+                        .addClass('dim');
+
                 }
 
             }, 300);
@@ -74,11 +125,11 @@ if ('onscrollend' in window) {
 }
 
 
-    // ==========================================
-    // SCROLL UP BUTTON CLICK
-    // ==========================================
+// ==========================================
+// SCROLL UP BUTTON CLICK
+// ==========================================
 
- scrollBtn.on('click', function () {
+scrollBtn.on('click', function () {
 
     $('html, body').animate(
         {
@@ -90,29 +141,51 @@ if ('onscrollend' in window) {
 });
 
 
-    // ==========================================
-    // NAVBAR MENU CLICK
-    // ==========================================
+// ==========================================
+// NAVBAR MENU CLICK
+// ==========================================
 
-    $('.navbar .menu li a').on('click', function () {
+$('.navbar .menu li a').on('click', function () {
 
-        $('html').css('scrollBehavior', 'smooth');
-
-    });
-
-
-    // ==========================================
-    // MOBILE MENU
-    // ==========================================
-
-    $('.navbar > .max-width > .menu-btn').on('click', function () {
-
-    $('.navbar .menu').toggleClass('active');
-
-    $('.navbar > .max-width > .menu-btn i')
-        .toggleClass('active');
+    $('html').css('scrollBehavior', 'smooth');
 
 });
+
+
+// ==========================================
+// MOBILE MENU
+// ==========================================
+
+$('.mobile-menu-toggle').on('click', function () {
+
+    const menu = $('.navbar .menu');
+    const icon = $(this).find('i');
+
+    // Open / Close menu
+    menu.toggleClass('active');
+
+
+    // Change icon
+    if (menu.hasClass('active')) {
+
+        icon
+            .removeClass('fa-bars')
+            .addClass('fa-times');
+
+    } else {
+
+        icon
+            .removeClass('fa-times')
+            .addClass('fa-bars');
+
+    }
+
+});
+
+
+// ==========================================
+// CLOSE MOBILE MENU AFTER CLICKING LINK
+// ==========================================
 
 $('.navbar .menu li a').on('click', function () {
 
@@ -120,99 +193,100 @@ $('.navbar .menu li a').on('click', function () {
 
         $('.navbar .menu').removeClass('active');
 
-        $('.navbar > .max-width > .menu-btn i')
-            .removeClass('active');
+        $('.mobile-menu-toggle i')
+            .removeClass('fa-times')
+            .addClass('fa-bars');
 
     }
 
 });
 
 
-    // ==========================================
-    // PROFILE TYPING ANIMATION
-    // ==========================================
+// ==========================================
+// PROFILE TYPING ANIMATION
+// ==========================================
 
-    if (document.querySelector('.profile-typing')) {
+if (document.querySelector('.profile-typing')) {
 
-        new Typed('.profile-typing', {
+    new Typed('.profile-typing', {
 
-            strings: [
-                'A Poet',
-                'An Engineer',
-                'A Researcher'
-            ],
+        strings: [
+            'A Poet',
+            'An Engineer',
+            'A Researcher'
+        ],
 
-            typeSpeed: 100,
-            backSpeed: 60,
-            backDelay: 1200,
-            startDelay: 500,
-            loop: true,
-            showCursor: false
-
-        });
-
-    }
-
-
-    // ==========================================
-    // BIOGRAPHY TYPING ANIMATION
-    // ==========================================
-
-    if (document.querySelector('.typing-2')) {
-
-        new Typed('.typing-2', {
-
-            strings: [
-                'a Poet',
-                'an Engineer',
-                'an IT Expert',
-                'a Researcher'
-            ],
-
-            typeSpeed: 100,
-            backSpeed: 60,
-            backDelay: 1200,
-            startDelay: 500,
-            loop: true,
-            showCursor: false
-
-        });
-
-    }
-
-
-    // ==========================================
-    // OWL CAROUSEL
-    // ==========================================
-
-    $('.carousel').owlCarousel({
-
-        margin: 20,
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1200,
+        startDelay: 500,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-
-        responsive: {
-
-            0: {
-                items: 1,
-                nav: false
-            },
-
-            600: {
-                items: 2,
-                nav: false
-            },
-
-            1000: {
-                items: 3,
-                nav: false
-            }
-
-        }
+        showCursor: false
 
     });
+
+}
+
+
+// ==========================================
+// BIOGRAPHY TYPING ANIMATION
+// ==========================================
+
+if (document.querySelector('.typing-2')) {
+
+    new Typed('.typing-2', {
+
+        strings: [
+            'a Poet',
+            'an Engineer',
+            'an IT Expert',
+            'a Researcher'
+        ],
+
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1200,
+        startDelay: 500,
+        loop: true,
+        showCursor: false
+
+    });
+
+}
+
+
+// ==========================================
+// OWL CAROUSEL
+// ==========================================
+
+$('.carousel').owlCarousel({
+
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+
+    responsive: {
+
+        0: {
+            items: 1,
+            nav: false
+        },
+
+        600: {
+            items: 2,
+            nav: false
+        },
+
+        1000: {
+            items: 3,
+            nav: false
+        }
+
+    }
+
+});
 
 });
 
@@ -228,14 +302,19 @@ function openAward(image, description, extraImage = '') {
     document.getElementById('awardModalDescription').innerText =
         description;
 
-    const extraImg = document.getElementById('awardModalExtraImage');
+    const extraImg =
+        document.getElementById('awardModalExtraImage');
 
     if (extraImage) {
+
         extraImg.src = extraImage;
         extraImg.style.display = 'block';
+
     } else {
+
         extraImg.src = '';
         extraImg.style.display = 'none';
+
     }
 
     document.getElementById('awardModal').style.display = 'flex';
@@ -268,29 +347,45 @@ const observer = new IntersectionObserver(function(entries) {
 
             // সব active class সরানো
             menuLinks.forEach(function(link) {
+
                 link.classList.remove('active');
+
             });
+
 
             // বর্তমান section-এর menu link খোঁজা
             const activeLink = document.querySelector(
-                '.navbar .menu li a[href="#' + entry.target.id + '"]'
+                '.navbar .menu li a[href="#' +
+                entry.target.id +
+                '"]'
             );
+
 
             // active করা
             if (activeLink) {
+
                 activeLink.classList.add('active');
+
             }
+
         }
 
     });
 
 }, {
+
     rootMargin: '-35% 0px -55% 0px'
+
 });
 
+
 sections.forEach(function(section) {
+
     observer.observe(section);
+
 });
+
+
 // ==========================================
 // PRELOADER
 // ==========================================
@@ -303,66 +398,37 @@ const preloaderStart = Date.now();
 
 window.addEventListener('load', function () {
 
-    const preloader = document.getElementById('preloader');
+    const preloader =
+        document.getElementById('preloader');
 
     if (!preloader) return;
 
-    const elapsedTime = Date.now() - preloaderStart;
+    const elapsedTime =
+        Date.now() - preloaderStart;
 
     // Minimum 1.5 seconds
-    const remainingTime = Math.max(400 - elapsedTime, 0);
+    const remainingTime =
+        Math.max(400 - elapsedTime, 0);
 
     setTimeout(function () {
 
         preloader.classList.add('hide');
 
         setTimeout(function () {
+
             preloader.remove();
+
         }, 700);
 
     }, remainingTime);
 
 });
-// Preload m10.jpg
+
+
+// ==========================================
+// PRELOAD m10.jpg
+// ==========================================
+
 const m10Image = new Image();
+
 m10Image.src = 'images/m10.jpg';
-/* =========================================
-   MOBILE MENU TOGGLE + FLOATING BUTTON
-   ========================================= */
-
-$(document).ready(function () {
-
-    /* Open / close mobile menu */
-    $('.mobile-menu-toggle').click(function () {
-
-        $('.navbar .menu').toggleClass('active');
-
-        $(this).find('i').toggleClass('fa-bars fa-times');
-
-    });
-
-
-    /* Floating menu button while scrolling */
-    $(window).on('scroll', function () {
-
-        if (window.innerWidth <= 947) {
-
-            if ($(window).scrollTop() > 150) {
-
-                $('.mobile-menu-toggle').addClass('floating-menu');
-
-            } else {
-
-                $('.mobile-menu-toggle').removeClass('floating-menu');
-
-            }
-
-        } else {
-
-            $('.mobile-menu-toggle').removeClass('floating-menu');
-
-        }
-
-    });
-
-});
