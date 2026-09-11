@@ -2817,3 +2817,12 @@ html, body {
         font-size: 25px !important;
     }
 }
+@media (max-width: 947px) {
+    .navbar {
+        background: #7A0019 !important;
+    }
+
+    .navbar.sticky {
+        background: #7A0019 !important;
+    }
+}
