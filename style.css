@@ -2831,39 +2831,51 @@ html, body {
         color: #D6D6D6 !important;
     }
 }
-/* ==============================
-   MOBILE MENU — MOBILE ONLY
-   DESKTOP UNCHANGED
-   ============================== */
+/* ==========================================
+   MOBILE MENU BUTTON — DESKTOP COMPLETELY HIDDEN
+   ========================================== */
 
-.mobile-menu-toggle {
+.navbar .max-width .mobile-menu-toggle {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
+
+
+/* ==========================================
+   MOBILE ONLY
+   ========================================== */
 
 @media (max-width: 947px) {
 
-    .mobile-menu-toggle {
+    .navbar .max-width .mobile-menu-toggle {
         display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+
         align-items: center !important;
         justify-content: center !important;
 
-        color: #fff !important;
+        width: 40px !important;
+        height: 40px !important;
+
         background: transparent !important;
         border: none !important;
         outline: none !important;
         box-shadow: none !important;
+        border-radius: 0 !important;
 
-        width: 40px !important;
-        height: 40px !important;
+        color: #fff !important;
+        font-size: 23px !important;
         padding: 0 !important;
         margin: 0 !important;
 
-        font-size: 23px !important;
-        cursor: pointer !important;
         z-index: 10001 !important;
     }
 
-    .mobile-menu-toggle i {
+    .navbar .max-width .mobile-menu-toggle i {
         color: #fff !important;
     }
 
