@@ -2738,3 +2738,16 @@ html, body {
         filter: none !important;
     }
 }
+/* WELCO - Premium 3D */
+@media (max-width: 947px) {
+    .navbar .logo a {
+        color: #24466F !important;
+        font-weight: 800 !important;
+
+        text-shadow:
+            1px 1px 0 #1C3656,
+            2px 2px 0 #1C3656,
+            3px 3px 0 #1C3656,
+            0 -1px 0 rgba(255,255,255,0.18);
+    }
+}
