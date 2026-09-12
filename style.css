@@ -2700,7 +2700,7 @@ html, body {
 }
 @media (max-width: 947px) {
 
-    /* NORMAL NAVBAR — image-এর মতো cool metallic silver */
+    /* NORMAL — cool metallic silver */
     .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
@@ -2709,20 +2709,20 @@ html, body {
             #F5F7F8 40%,
             #AEB5B9 55%,
             #E6EAEC 72%,
-            #9A A1A5 88%,
+            #9AA1A5 88%,
             #737A7E 100%
         ) !important;
 
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-        color: transparent !important;
 
+        color: #DDE2E5 !important;
         text-shadow: none !important;
         filter: none !important;
     }
 
-    /* SCROLL — আগের মতোই */
+    /* SCROLL — আগের মতো */
     .navbar.sticky .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
@@ -2736,8 +2736,8 @@ html, body {
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-        color: transparent !important;
 
+        color: #D8D8D8 !important;
         text-shadow: none !important;
         filter: none !important;
     }
