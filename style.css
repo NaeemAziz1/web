@@ -2713,19 +2713,20 @@ html, body {
 
     .mobile-menu-toggle,
     .navbar.sticky .mobile-menu-toggle {
-        color: #BDBDBD !important;
+        color: #A8A8A8 !important;
         text-shadow: none !important;
+        filter: none !important;
     }
 
     .mobile-menu-toggle i,
     .navbar.sticky .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
-            #9A9A9A 0%,
-            #D8D8D8 25%,
-            #8A8A8A 48%,
-            #C8C8C8 70%,
-            #858585 100%
+            #777777 0%,
+            #D8D8D8 30%,
+            #A0A0A0 50%,
+            #E0E0E0 70%,
+            #777777 100%
         ) !important;
 
         -webkit-background-clip: text !important;
@@ -2733,8 +2734,7 @@ html, body {
         -webkit-text-fill-color: transparent !important;
 
         color: transparent !important;
-
-        /* Sharp dark edge */
-        filter: drop-shadow(0 0 0.7px rgba(40, 40, 40, 0.9)) !important;
+        text-shadow: none !important;
+        filter: none !important;
     }
 }
