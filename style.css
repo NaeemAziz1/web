@@ -2700,29 +2700,8 @@ html, body {
 }
 @media (max-width: 947px) {
 
-    .mobile-menu-toggle,
-    .navbar.sticky .mobile-menu-toggle,
-    .mobile-menu-toggle i,
-    .navbar.sticky .mobile-menu-toggle i {
-        background: linear-gradient(
-            180deg,
-            #FFFFFF 0%,
-            #D9D9D9 25%,
-            #F7F7F7 45%,
-            #BFC0C2 65%,
-            #FFFFFF 82%,
-            #C8C8C8 100%
-        ) !important;
-
-        -webkit-background-clip: text !important;
-        background-clip: text !important;
-
-        -webkit-text-fill-color: transparent !important;
-        color: transparent !important;
-
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.18) !important;
-    }
-
+    /* Mobile navbar - always crimson gradient */
+    .navbar,
     .navbar.sticky {
         background: linear-gradient(
             90deg,
@@ -2731,5 +2710,34 @@ html, body {
             #990012,
             #B72E4A
         ) !important;
+    }
+
+    /* Mobile menu button - shiny silver */
+    .mobile-menu-toggle,
+    .navbar.sticky .mobile-menu-toggle {
+        color: #E5E5E5 !important;
+        text-shadow:
+            0 1px 1px rgba(0, 0, 0, 0.55),
+            0 2px 3px rgba(0, 0, 0, 0.35) !important;
+    }
+
+    .mobile-menu-toggle i,
+    .navbar.sticky .mobile-menu-toggle i {
+        color: #E5E5E5 !important;
+        background: linear-gradient(
+            180deg,
+            #FFFFFF 0%,
+            #D0D0D0 30%,
+            #FFFFFF 50%,
+            #AFAFAF 70%,
+            #F5F5F5 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+        text-shadow:
+            0 1px 1px rgba(0, 0, 0, 0.45) !important;
     }
 }
