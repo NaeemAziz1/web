@@ -2665,7 +2665,7 @@ html, body {
 @media (max-width: 947px) {
     .navbar .logo a {
     font-weight: 800 !important;
-        font-size: 30px !important;
+        font-size: 31px !important;
     background: linear-gradient(
         115deg,
         #0B2038 0%,
