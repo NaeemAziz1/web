@@ -2522,13 +2522,13 @@ html, body {
 
         padding: 9px 0 !important;
 
-        background: linear-gradient(90deg, #990012, #C2182B, #E04B5A) !important;
+        background: linear-gradient(90deg, #7A0019, #990012, #B8860B) !important;
 
         z-index: 9999 !important;
     }
 
     .navbar.sticky {
-        background: linear-gradient(90deg, #990012, #C2182B, #E04B5A) !important;
+        background: linear-gradient(90deg, #7A0019, #990012, #B8860B) !important;
     }
 
 
