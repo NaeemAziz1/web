@@ -2524,20 +2524,20 @@ html, body {
 
        background: linear-gradient(
     90deg,
-    #700016,
-    #83001B,
-    #990012,
-    #B72E4A
+    #0B0B0B 0%,
+    #171717 45%,
+    #240B10 70%,
+    #0B0B0B 100%
 ) !important;
     }
 
     .navbar.sticky {
         background: linear-gradient(
     90deg,
-    #700016,
-    #83001B,
-    #990012,
-    #B72E4A
+    #0B0B0B 0%,
+    #171717 45%,
+    #240B10 70%,
+    #0B0B0B 100%
 ) !important;
     }
     /* NAVBAR INNER */
