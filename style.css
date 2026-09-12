@@ -2711,17 +2711,15 @@ html, body {
         ) !important;
     }
 
-    /* Normal অবস্থায় - বেশি shiny silver */
+    /* NORMAL — ♏︎E𓂀 এর EXACT একই color */
     .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
-            #6F6F6F 0%,
-            #F8F8F8 18%,
-            #FFFFFF 38%,
-            #B8B8B8 50%,
-            #FFFFFF 65%,
-            #E2E2E2 82%,
-            #707070 100%
+            #FFFFFF 0%,
+            #D9DDE1 25%,
+            #8F989F 50%,
+            #F4F6F7 70%,
+            #AAB2B8 100%
         ) !important;
 
         -webkit-background-clip: text !important;
@@ -2733,7 +2731,7 @@ html, body {
         filter: none !important;
     }
 
-    /* Scroll/sticky - আগের মতো */
+    /* SCROLL / STICKY — বর্তমানটাই থাকবে */
     .navbar.sticky .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
