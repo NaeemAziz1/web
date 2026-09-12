@@ -2700,7 +2700,7 @@ html, body {
 }
 @media (max-width: 947px) {
 
-    /* Mobile navbar - always crimson gradient */
+    /* Mobile navbar */
     .navbar,
     .navbar.sticky {
         background: linear-gradient(
@@ -2712,24 +2712,23 @@ html, body {
         ) !important;
     }
 
-    /* Mobile menu button - shiny silver */
+    /* Crisp shiny silver menu icon */
     .mobile-menu-toggle,
     .navbar.sticky .mobile-menu-toggle {
-        color: #E5E5E5 !important;
-        text-shadow:
-            0 1px 1px rgba(0, 0, 0, 0.55),
-            0 2px 3px rgba(0, 0, 0, 0.35) !important;
+        color: #E6E6E6 !important;
+        text-shadow: none !important;
     }
 
     .mobile-menu-toggle i,
     .navbar.sticky .mobile-menu-toggle i {
-        color: #E5E5E5 !important;
+        color: #E6E6E6 !important;
+
         background: linear-gradient(
             180deg,
             #FFFFFF 0%,
-            #D0D0D0 30%,
+            #D2D2D2 28%,
             #FFFFFF 50%,
-            #AFAFAF 70%,
+            #B8B8B8 72%,
             #F5F5F5 100%
         ) !important;
 
@@ -2737,7 +2736,7 @@ html, body {
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
 
-        text-shadow:
-            0 1px 1px rgba(0, 0, 0, 0.45) !important;
+        text-shadow: none !important;
+        filter: none !important;
     }
 }
