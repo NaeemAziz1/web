@@ -2698,3 +2698,40 @@ html, body {
         drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.24))
         drop-shadow(13px 13px 10px rgba(0, 0, 0, 0.40));
 }
+@media (max-width: 947px) {
+
+    .mobile-menu-toggle {
+        background: linear-gradient(
+            180deg,
+            #FFFFFF 0%,
+            #D9D9D9 25%,
+            #F7F7F7 45%,
+            #BFC0C2 65%,
+            #FFFFFF 82%,
+            #C8C8C8 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+        text-shadow:
+            0 1px 1px rgba(0, 0, 0, 0.18) !important;
+    }
+
+    .mobile-menu-toggle i {
+        background: linear-gradient(
+            180deg,
+            #FFFFFF 0%,
+            #D9D9D9 25%,
+            #F7F7F7 45%,
+            #BFC0C2 65%,
+            #FFFFFF 82%,
+            #C8C8C8 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+        color: transparent !important;
+    }
+}
