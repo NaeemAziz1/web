@@ -2696,6 +2696,7 @@ html, body {
         background-clip: text;
     }
 }
+@media (max-width: 947px) {
 .navbar .logo a {
     position: relative;
     display: inline-block;
@@ -2707,6 +2708,7 @@ html, body {
         drop-shadow(8px 8px 0 rgba(0, 0, 0, 0.28))
         drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.24))
         drop-shadow(13px 13px 10px rgba(0, 0, 0, 0.40));
+}
 }
 @media (max-width: 947px) {
 
