@@ -2664,7 +2664,18 @@ html, body {
 /* Mobile Logo Colors */
 @media (max-width: 947px) {
     .navbar .logo a {
-        color: #D9D2C3 !important;
+    background: linear-gradient(
+        180deg,
+        #FFFFFF 0%,
+        #E9EDF0 25%,
+        #C5CBD0 50%,
+        #F7F9FA 68%,
+        #AEB5BA 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     }
 
     .navbar .logo a span {
