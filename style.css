@@ -2754,6 +2754,7 @@ html, body {
         filter: none !important;
     }
 }
-.navbar .logo a {
+.navbar .logo a,
+.navbar .logo a span {
     font-family: "New Rocker", cursive !important;
 }
