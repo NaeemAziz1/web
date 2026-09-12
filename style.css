@@ -2524,13 +2524,10 @@ html, body {
 
        background: linear-gradient(
     90deg,
-    #6B0012 0%,
-    #850014 18%,
-    #990012 35%,
-    #B52A43 50%,
-    #D58A8F 65%,
-    #EAD9D5 80%,
-    #F5F1E8 100%
+    #650014,
+    #7F0018,
+    #990012,
+    #B72E4A
 ) !important;
         z-index: 9999 !important;
     }
@@ -2538,13 +2535,10 @@ html, body {
     .navbar.sticky {
         background: linear-gradient(
     90deg,
-    #6B0012 0%,
-    #850014 18%,
-    #990012 35%,
-    #B52A43 50%,
-    #D58A8F 65%,
-    #EAD9D5 80%,
-    #F5F1E8 100%
+    #650014,
+    #7F0018,
+    #990012,
+    #B72E4A
 ) !important;
     }
 
