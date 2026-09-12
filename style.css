@@ -2700,26 +2700,17 @@ html, body {
 }
 @media (max-width: 947px) {
 
-    .navbar,
-    .navbar.sticky {
-        background: linear-gradient(
-            90deg,
-            #700016,
-            #83001B,
-            #990012,
-            #B72E4A
-        ) !important;
-    }
-
-    /* NORMAL — ♏︎E𓂀 এর EXACT একই color */
+    /* NORMAL NAVBAR — image-এর মতো cool metallic silver */
     .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
-            #FFFFFF 0%,
-            #D9DDE1 25%,
-            #8F989F 50%,
-            #F4F6F7 70%,
-            #AAB2B8 100%
+            #858B8F 0%,
+            #DDE2E5 22%,
+            #F5F7F8 40%,
+            #AEB5B9 55%,
+            #E6EAEC 72%,
+            #9A A1A5 88%,
+            #737A7E 100%
         ) !important;
 
         -webkit-background-clip: text !important;
@@ -2731,7 +2722,7 @@ html, body {
         filter: none !important;
     }
 
-    /* SCROLL / STICKY — বর্তমানটাই থাকবে */
+    /* SCROLL — আগের মতোই */
     .navbar.sticky .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
