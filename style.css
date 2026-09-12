@@ -2711,14 +2711,29 @@ html, body {
         ) !important;
     }
 
-    .mobile-menu-toggle,
-    .navbar.sticky .mobile-menu-toggle {
-        color: #A8A8A8 !important;
+    /* Normal অবস্থায় - বেশি shiny silver */
+    .mobile-menu-toggle i {
+        background: linear-gradient(
+            180deg,
+            #6F6F6F 0%,
+            #F8F8F8 18%,
+            #FFFFFF 38%,
+            #B8B8B8 50%,
+            #FFFFFF 65%,
+            #E2E2E2 82%,
+            #707070 100%
+        ) !important;
+
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+
         text-shadow: none !important;
         filter: none !important;
     }
 
-    .mobile-menu-toggle i,
+    /* Scroll/sticky - আগের মতো */
     .navbar.sticky .mobile-menu-toggle i {
         background: linear-gradient(
             180deg,
@@ -2732,8 +2747,8 @@ html, body {
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-
         color: transparent !important;
+
         text-shadow: none !important;
         filter: none !important;
     }
