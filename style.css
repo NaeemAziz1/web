@@ -2664,9 +2664,8 @@ html, body {
 /* Mobile Logo Colors */
 @media (max-width: 947px) {
     .navbar .logo a {
-        color: #F3F5F6 !important;
-        background: none !important;
-        -webkit-text-fill-color: #F3F5F6 !important;
+        color: #F4F4F4 !important;
+        font-weight: 700 !important;
     }
 
     .navbar .logo a span {
