@@ -2524,11 +2524,11 @@ html, body {
 
        background: linear-gradient(
     90deg,
-    #7F1D1D,
-    #B45309,
+    #C41E3A,
+    #D97706,
     #D4AF37,
-    #1E3A5F,
-    #7C3AED
+    #147D64,
+    #3155A6
 ) !important;
 
         z-index: 9999 !important;
@@ -2537,11 +2537,11 @@ html, body {
     .navbar.sticky {
         background: linear-gradient(
     90deg,
-    #7F1D1D,
-    #B45309,
+    #C41E3A,
+    #D97706,
     #D4AF37,
-    #1E3A5F,
-    #7C3AED
+    #147D64,
+    #3155A6
 ) !important;
     }
 
