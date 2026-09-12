@@ -2700,7 +2700,6 @@ html, body {
 }
 @media (max-width: 947px) {
 
-    /* Mobile navbar */
     .navbar,
     .navbar.sticky {
         background: linear-gradient(
@@ -2712,31 +2711,30 @@ html, body {
         ) !important;
     }
 
-    /* Crisp shiny silver menu icon */
     .mobile-menu-toggle,
     .navbar.sticky .mobile-menu-toggle {
-        color: #E6E6E6 !important;
+        color: #BDBDBD !important;
         text-shadow: none !important;
     }
 
     .mobile-menu-toggle i,
     .navbar.sticky .mobile-menu-toggle i {
-        color: #E6E6E6 !important;
-
         background: linear-gradient(
             180deg,
-            #FFFFFF 0%,
-            #D2D2D2 28%,
-            #FFFFFF 50%,
-            #B8B8B8 72%,
-            #F5F5F5 100%
+            #9A9A9A 0%,
+            #D8D8D8 25%,
+            #8A8A8A 48%,
+            #C8C8C8 70%,
+            #858585 100%
         ) !important;
 
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
 
-        text-shadow: none !important;
-        filter: none !important;
+        color: transparent !important;
+
+        /* Sharp dark edge */
+        filter: drop-shadow(0 0 0.7px rgba(40, 40, 40, 0.9)) !important;
     }
 }
