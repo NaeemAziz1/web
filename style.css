@@ -2522,24 +2522,50 @@ html, body {
 
         padding: 9px 0 !important;
 
-       background: linear-gradient(
-    90deg,
-    #700016,
-    #83001B,
-    #990012,
-    #B72E4A
-) !important;
+       background:
+            radial-gradient(
+                ellipse at 15% 50%,
+                #3A2A20 0%,
+                #6B5745 18%,
+                transparent 42%
+            ),
+            radial-gradient(
+                ellipse at 85% 30%,
+                #B8A98E 0%,
+                transparent 38%
+            ),
+            linear-gradient(
+                90deg,
+                #4A382C 0%,
+                #8C7860 25%,
+                #D4C7AD 50%,
+                #B7A68B 75%,
+                #6B5745 100%
+            ) !important;
         z-index: 9999 !important;
     }
 
     .navbar.sticky {
-        background: linear-gradient(
-    90deg,
-    #700016,
-    #83001B,
-    #990012,
-    #B72E4A
-) !important;
+        background:
+            radial-gradient(
+                ellipse at 15% 50%,
+                #3A2A20 0%,
+                #6B5745 18%,
+                transparent 42%
+            ),
+            radial-gradient(
+                ellipse at 85% 30%,
+                #B8A98E 0%,
+                transparent 38%
+            ),
+            linear-gradient(
+                90deg,
+                #4A382C 0%,
+                #8C7860 25%,
+                #D4C7AD 50%,
+                #B7A68B 75%,
+                #6B5745 100%
+            ) !important;
     }
 
 
