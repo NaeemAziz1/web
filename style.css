@@ -2523,26 +2523,28 @@ html, body {
         padding: 9px 0 !important;
 
        background: linear-gradient(
-    90deg,
-    #4D000B,
-    #730013,
-    #990012,
-    #B72E4A,
-    #D4AF37
-) !important;
+        90deg,
+        #FAF9F6 0%,
+        #F8F6F0 20%,
+        #F5F1E8 40%,
+        #FFFDF5 60%,
+        #F2EFE6 80%,
+        #EEEDE7 100%
+    ) !important;
 
         z-index: 9999 !important;
     }
 
     .navbar.sticky {
         background: linear-gradient(
-    90deg,
-    #4D000B,
-    #730013,
-    #990012,
-    #B72E4A,
-    #D4AF37
-) !important;
+        90deg,
+        #FAF9F6 0%,
+        #F8F6F0 20%,
+        #F5F1E8 40%,
+        #FFFDF5 60%,
+        #F2EFE6 80%,
+        #EEEDE7 100%
+    ) !important;
     }
 
 
