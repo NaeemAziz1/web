@@ -2884,17 +2884,3 @@ html, body {
         object-fit: cover !important;
     }
 }
-@media (min-width: 948px) {
-    .navbar {
-        padding: 20px 0 !important;
-    }
-
-    .navbar.sticky {
-        padding: 10px 0 !important;
-    }
-}
-@media (min-width: 948px) {
-    .navbar {
-        padding: 20px 0 !important;
-    }
-}
