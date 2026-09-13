@@ -2771,7 +2771,7 @@ html, body {
     height: auto !important;
     max-width: 120px !important;
     display: block !important;
-    margin: 18px auto 0 -20px !important;
+    margin: 18px auto 0 -7px !important;
     object-fit: contain !important;
 }
 @media (max-width: 600px) {
