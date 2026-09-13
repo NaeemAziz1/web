@@ -2837,3 +2837,50 @@ html, body {
     }
 
 }
+/* ==============================
+   BIOGRAPHY — ORIGINAL LAYOUT
+   ============================== */
+
+.Biography .Biography-content .left {
+    width: 45% !important;
+}
+
+.Biography .Biography-content .right {
+    width: 55% !important;
+}
+
+.Biography .Biography-content .main-biography-image {
+    width: 400px !important;
+    height: 400px !important;
+    max-width: 400px !important;
+    object-fit: cover !important;
+    border-radius: 6px;
+}
+/* ==============================
+   BIOGRAPHY — MOBILE
+   ============================== */
+
+@media (max-width: 947px) {
+
+    .Biography .Biography-content .column {
+        width: 100% !important;
+    }
+
+    .Biography .Biography-content .left {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto 60px !important;
+    }
+
+    .Biography .Biography-content .right {
+        width: 100% !important;
+    }
+
+    .Biography .Biography-content .main-biography-image {
+        width: 350px !important;
+        height: 350px !important;
+        max-width: 100% !important;
+        object-fit: cover !important;
+    }
+}
