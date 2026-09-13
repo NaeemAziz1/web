@@ -2884,3 +2884,19 @@ html, body {
         object-fit: cover !important;
     }
 }
+@media (min-width: 948px) {
+    .navbar .max-width {
+        flex-wrap: nowrap !important;
+    }
+
+    .navbar .menu {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        white-space: nowrap !important;
+    }
+
+    .navbar .menu li {
+        white-space: nowrap !important;
+    }
+}
