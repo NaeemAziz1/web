@@ -2758,3 +2758,23 @@ html, body {
 .navbar .logo a span {
     font-family: "Cinzel Decorative", cursive !important;
 }
+/* Biography Main Photo + Aziz Identity Image */
+.biography-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-biography-image {
+    width: 100%;
+    display: block;
+}
+
+.aziz-signature {
+    display: block;
+    width: 55%;
+    max-width: 240px;
+    height: auto;
+    margin-top: 22px;
+    object-fit: contain;
+}
