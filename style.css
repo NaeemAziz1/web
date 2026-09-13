@@ -2810,3 +2810,30 @@ html, body {
     }
 
 }
+/* Fix Biography Desktop Image + Text Overlap */
+@media (min-width: 601px) {
+
+    .Biography .Biography-content {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 40px !important;
+    }
+
+    .Biography .Biography-content .left {
+        flex: 0 0 400px !important;
+        width: 400px !important;
+    }
+
+    .Biography .Biography-content .right {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .biography-photo .main-biography-image {
+        width: 400px !important;
+        height: 400px !important;
+        max-width: 400px !important;
+        object-fit: cover !important;
+    }
+
+}
