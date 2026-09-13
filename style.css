@@ -2772,9 +2772,9 @@ html, body {
 
 .aziz-signature {
     display: block;
-    width: 55%;
-    max-width: 240px;
+    width: 45%;
+    max-width: 200px;
     height: auto;
-    margin-top: 22px;
+    margin-top: 20px;
     object-fit: contain;
 }
