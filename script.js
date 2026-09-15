@@ -481,26 +481,26 @@ m10Image.src = 'images/m10.jpg';
        ===================================================== */
 
     const pages = [
-
-        'images/R7.jpg',       // Page 1
-        'images/R.jgp',       // Page 2
-        'images/R0.jpg',      // Page 3
-        'images/R1.jpg',      // Page 4
-        'images/R2.jpg',      // Page 5
-        'images/R3.jpg',      // Page 6
-        'images/R4.jpg',      // Page 7
-        'images/R5.jpg',      // Page 8
-        'images/R6.jpg',      // Page 9
-        'images/R8.jpg',      // Page 10
-        'images/R9.jpg',      // Page 11
-        'images/R10.jpg',     // Page 12
-        'images/R11.jpg',     // Page 13
-        'images/R12.jpg',     // Page 14
-        'images/R13.jpg',     // Page 15
-        'images/R14.jpg',     // Page 16
-        'images/R15.jpeg',    // Page 17
-        'images/R16.jpg',     // Page 18
-        'images/R17.jpg'      // Page 19
+ 
+        'images/R4.jpg',
+        'images/R6.jpg',
+        'images/R.jgp',
+        'images/R0.jpg',
+        'images/R1.jpg',
+        'images/R2.jpg',
+        'images/R3.jpg',
+        'images/R5.jpg',
+        'images/R7.jpg',
+        'images/R8.jpg',
+        'images/R9.jpg',
+        'images/R10.jpg',
+        'images/R11.jpg',
+        'images/R12.jpg',
+        'images/R13.jpg',
+        'images/R14.jpg',
+        'images/R15.jpeg',
+        'images/R16.jpg',
+        'images/R17.jpg'
 
     ];
 
