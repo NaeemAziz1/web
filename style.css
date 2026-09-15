@@ -2900,3 +2900,368 @@ html, body {
         white-space: nowrap !important;
     }
 }
+/* =====================================================
+   EXTRA EDUCATIONAL ACHIEVEMENTS
+   INSIDE EDUCATION TIMELINE
+   ===================================================== */
+
+.extra-education-block {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+
+/* Heading */
+
+.extra-education-block h4 {
+    color: crimson;
+    margin-bottom: 8px;
+}
+
+.extra-education-block h3 {
+    margin-bottom: 6px;
+}
+
+
+/* =====================================================
+   BOOK WRAPPER
+   ===================================================== */
+
+.extra-education-book-wrap {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+/* =====================================================
+   BOOK
+   ===================================================== */
+
+.extra-education-book {
+    position: relative;
+
+    width: 360px;
+    height: 455px;
+
+    perspective: 1800px;
+
+    transform-style: preserve-3d;
+
+    background: transparent;
+
+    overflow: visible;
+
+    touch-action: pan-y;
+}
+
+
+/* =====================================================
+   PAGE
+   ===================================================== */
+
+.extra-education-page {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    border-radius: 3px;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+/*
+   IMPORTANT:
+   The image keeps its own aspect ratio.
+   No stretching.
+   No forced cropping.
+*/
+
+.extra-education-page img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    pointer-events: none;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, .14);
+}
+
+
+/* Page underneath */
+
+.extra-education-back-page {
+    z-index: 1;
+}
+
+
+/* =====================================================
+   CRIMSON BOOK EDGE
+   ===================================================== */
+
+.extra-education-book::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4%;
+    bottom: 4%;
+
+    left: -2px;
+
+    width: 3px;
+
+    background: crimson;
+
+    border-radius: 3px;
+
+    opacity: .55;
+
+    z-index: 30;
+}
+
+
+/* =====================================================
+   3D FLIPPING PAGE
+   ===================================================== */
+
+.extra-education-flip {
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    z-index: 20;
+
+    transform-style: preserve-3d;
+
+    transform-origin: left center;
+
+    pointer-events: none;
+}
+
+.extra-education-flip.active {
+    display: block;
+}
+
+
+.extra-education-flip-front,
+.extra-education-flip-back {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.extra-education-flip-front img,
+.extra-education-flip-back img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    pointer-events: none;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, .18);
+}
+
+
+.extra-education-flip-back {
+    transform: rotateY(180deg);
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.extra-education-nav {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(220, 20, 60, .28);
+
+    background: rgba(255, 255, 255, .95);
+
+    color: crimson;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 24px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .22s ease,
+        background .22s ease,
+        color .22s ease,
+        opacity .22s ease;
+}
+
+
+.extra-education-nav:hover {
+    background: crimson;
+
+    color: #fff;
+
+    transform: scale(1.08);
+}
+
+
+.extra-education-nav:active {
+    transform: scale(.92);
+}
+
+
+.extra-education-nav:disabled {
+    opacity: .22;
+
+    cursor: default;
+
+    transform: none;
+
+    background: #fff;
+
+    color: crimson;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+   ===================================================== */
+
+.extra-education-page-number {
+    margin-top: 12px;
+
+    text-align: center;
+
+    color: crimson;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .extra-education-book {
+        width: 300px;
+        height: 380px;
+    }
+
+    .extra-education-book-wrap {
+        gap: 8px;
+    }
+
+    .extra-education-nav {
+        width: 34px;
+        height: 34px;
+
+        min-width: 34px;
+
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .extra-education-book {
+        width: calc(100vw - 105px);
+
+        height: calc(
+            (100vw - 105px) * 1.27
+        );
+
+        min-height: 275px;
+        max-height: 370px;
+    }
+
+    .extra-education-book-wrap {
+        gap: 5px;
+    }
+
+    .extra-education-nav {
+        width: 31px;
+        height: 31px;
+
+        min-width: 31px;
+
+        font-size: 19px;
+    }
+
+}
