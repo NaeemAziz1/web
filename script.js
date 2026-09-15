@@ -11,7 +11,6 @@ function handleScroll() {
 
     const currentScrollY = window.scrollY;
 
-
     // ==========================================
     // MOBILE FLOATING MENU
     // ==========================================
@@ -19,36 +18,24 @@ function handleScroll() {
     if (window.innerWidth <= 947) {
 
         if (currentScrollY > 150) {
-
             $('.mobile-menu-toggle').addClass('floating-menu');
-
         } else {
-
             $('.mobile-menu-toggle').removeClass('floating-menu');
-
         }
 
     } else {
-
         $('.mobile-menu-toggle').removeClass('floating-menu');
-
     }
-
 
     // ==========================================
     // STICKY NAVBAR
     // ==========================================
 
     if (currentScrollY > 20) {
-
         $('.navbar').addClass('sticky');
-
     } else {
-
         $('.navbar').removeClass('sticky');
-
     }
-
 
     // ==========================================
     // SCROLL UP BUTTON
@@ -56,12 +43,10 @@ function handleScroll() {
 
     if (currentScrollY > 500) {
 
-        // Scrolling = Bright
         scrollBtn.removeClass('dim').addClass('show');
 
         clearTimeout(scrollTimer);
 
-        // Scroll stop = Dim
         scrollTimer = setTimeout(function () {
 
             if (window.scrollY > 500) {
@@ -161,11 +146,8 @@ $('.mobile-menu-toggle').on('click', function () {
     const menu = $('.navbar .menu');
     const icon = $(this).find('i');
 
-    // Open / Close menu
     menu.toggleClass('active');
 
-
-    // Change icon
     if (menu.hasClass('active')) {
 
         icon
@@ -345,23 +327,18 @@ const observer = new IntersectionObserver(function(entries) {
 
         if (entry.isIntersecting) {
 
-            // সব active class সরানো
             menuLinks.forEach(function(link) {
 
                 link.classList.remove('active');
 
             });
 
-
-            // বর্তমান section-এর menu link খোঁজা
             const activeLink = document.querySelector(
                 '.navbar .menu li a[href="#' +
                 entry.target.id +
                 '"]'
             );
 
-
-            // active করা
             if (activeLink) {
 
                 activeLink.classList.add('active');
@@ -387,10 +364,6 @@ sections.forEach(function(section) {
 
 
 // ==========================================
-// PRELOADER
-// ==========================================
-
-// ==========================================
 // PRELOADER — MINIMUM 1.5 SECONDS
 // ==========================================
 
@@ -406,7 +379,6 @@ window.addEventListener('load', function () {
     const elapsedTime =
         Date.now() - preloaderStart;
 
-    // Minimum 1.5 seconds
     const remainingTime =
         Math.max(400 - elapsedTime, 0);
 
@@ -432,42 +404,56 @@ window.addEventListener('load', function () {
 const m10Image = new Image();
 
 m10Image.src = 'images/m10.jpg';
-/* =========================================================
-   EXTRA EDUCATIONAL ACHIEVEMENTS
-   ========================================================= */
+
+
+// =========================================================
+// EXTRA EDUCATIONAL ACHIEVEMENTS
+// =========================================================
 
 (function () {
 
-    const currentImage = document.getElementById(
-        'extraEducationCurrent'
-    );
+    const currentImage =
+        document.getElementById('extraEducationCurrent');
 
-    const previousButton = document.getElementById(
-        'extraEducationPrev'
-    );
+    const previousButton =
+        document.getElementById('extraEducationPrev');
 
-    const nextButton = document.getElementById(
-        'extraEducationNext'
-    );
+    const nextButton =
+        document.getElementById('extraEducationNext');
 
-    const counter = document.getElementById(
-        'extraEducationCounter'
-    );
+    const counter =
+        document.getElementById('extraEducationCounter');
 
-    const lightbox = document.getElementById(
-        'extraEducationLightbox'
-    );
+    const lightbox =
+        document.getElementById('extraEducationLightbox');
 
-    const lightboxImage = document.getElementById(
-        'extraEducationLightboxImage'
-    );
+    const lightboxImage =
+        document.getElementById('extraEducationLightboxImage');
 
-    const lightboxClose = document.getElementById(
-        'extraEducationLightboxClose'
-    );
+    const lightboxClose =
+        document.getElementById('extraEducationLightboxClose');
 
+
+    // Safety check
+    // If the Extra Education HTML is missing,
+    // nothing else will be affected.
+
+    if (
+        !currentImage ||
+        !previousButton ||
+        !nextButton ||
+        !counter
+    ) {
+        return;
+    }
+
+
+    // ==========================================
+    // IMAGE PAGES
+    // ==========================================
 
     const pages = [
+
         'images/R4.jpg',
         'images/R6.jpg',
         'images/R.jgp',
@@ -487,52 +473,78 @@ m10Image.src = 'images/m10.jpg';
         'images/R15.jpeg',
         'images/R16.jpg',
         'images/R17.jpg'
+
     ];
 
 
     let pageIndex = 0;
 
 
+    // ==========================================
+    // SET CURRENT IMAGE
+    // ==========================================
+
     function setPageImage() {
 
-        let source = pages[pageIndex];
+        const source = pages[pageIndex];
 
         currentImage.onerror = null;
+
         currentImage.src = source;
 
+
+        // R.jgp fallback
         if (source === 'images/R.jgp') {
 
             currentImage.onerror = function () {
+
                 currentImage.onerror = null;
+
                 currentImage.src = 'images/R.jpg';
+
             };
 
         }
+
     }
 
+
+    // ==========================================
+    // UPDATE PAGE NUMBER + BUTTONS
+    // ==========================================
 
     function updatePageUI() {
 
         counter.textContent =
-            (pageIndex + 1) + ' / ' + pages.length;
+            (pageIndex + 1) +
+            ' / ' +
+            pages.length;
 
         previousButton.disabled =
             pageIndex === 0;
 
         nextButton.disabled =
             pageIndex === pages.length - 1;
+
     }
 
+
+    // ==========================================
+    // SHOW PAGE
+    // ==========================================
 
     function showPage() {
 
         setPageImage();
+
         updatePageUI();
 
     }
 
 
-    /* Previous */
+    // ==========================================
+    // PREVIOUS
+    // ==========================================
 
     previousButton.addEventListener(
         'click',
@@ -548,7 +560,9 @@ m10Image.src = 'images/m10.jpg';
     );
 
 
-    /* Next */
+    // ==========================================
+    // NEXT
+    // ==========================================
 
     nextButton.addEventListener(
         'click',
@@ -564,39 +578,52 @@ m10Image.src = 'images/m10.jpg';
     );
 
 
-    /*
-       IMAGE CLICK
-       Document-level handler
-       This avoids click conflicts.
-    */
+    // =====================================================
+    // IMAGE LIGHTBOX
+    // =====================================================
 
-    document.addEventListener(
-        'click',
-        function (event) {
+    if (
+        lightbox &&
+        lightboxImage &&
+        lightboxClose
+    ) {
 
-            if (
-                event.target &&
-                event.target.id === 'extraEducationCurrent'
-            ) {
 
-                let source = pages[pageIndex];
+        // ==========================================
+        // OPEN LIGHTBOX
+        // ==========================================
+
+        currentImage.addEventListener(
+            'click',
+            function () {
+
+                const source =
+                    pages[pageIndex];
 
                 lightboxImage.onerror = null;
 
                 lightboxImage.src = source;
 
-                if (source === 'images/R.jgp') {
 
-                    lightboxImage.onerror = function () {
+                // R.jgp fallback
 
-                        lightboxImage.onerror = null;
+                if (
+                    source === 'images/R.jgp'
+                ) {
 
-                        lightboxImage.src =
-                            'images/R.jpg';
+                    lightboxImage.onerror =
+                        function () {
 
-                    };
+                            lightboxImage.onerror =
+                                null;
+
+                            lightboxImage.src =
+                                'images/R.jpg';
+
+                        };
 
                 }
+
 
                 lightbox.classList.add('show');
 
@@ -607,88 +634,104 @@ m10Image.src = 'images/m10.jpg';
 
                 document.body.style.overflow =
                     'hidden';
-            }
-
-        }
-    );
-
-
-    /* Close button */
-
-    lightboxClose.addEventListener(
-        'click',
-        function () {
-
-            closeLightbox();
-
-        }
-    );
-
-
-    /* Click outside image */
-
-    lightbox.addEventListener(
-        'click',
-        function (event) {
-
-            if (
-                event.target === lightbox
-            ) {
-
-                closeLightbox();
 
             }
-
-        }
-    );
-
-
-    /* Click large image */
-
-    lightboxImage.addEventListener(
-        'click',
-        function () {
-
-            closeLightbox();
-
-        }
-    );
-
-
-    /* Escape */
-
-    document.addEventListener(
-        'keydown',
-        function (event) {
-
-            if (
-                event.key === 'Escape' &&
-                lightbox.classList.contains('show')
-            ) {
-
-                closeLightbox();
-
-            }
-
-        }
-    );
-
-
-    function closeLightbox() {
-
-        lightbox.classList.remove('show');
-
-        lightbox.setAttribute(
-            'aria-hidden',
-            'true'
         );
 
-        document.body.style.overflow = '';
+
+        // ==========================================
+        // CLOSE FUNCTION
+        // ==========================================
+
+        function closeLightbox() {
+
+            lightbox.classList.remove('show');
+
+            lightbox.setAttribute(
+                'aria-hidden',
+                'true'
+            );
+
+            document.body.style.overflow =
+                '';
+
+        }
+
+
+        // ==========================================
+        // CLOSE BUTTON
+        // ==========================================
+
+        lightboxClose.addEventListener(
+            'click',
+            function () {
+
+                closeLightbox();
+
+            }
+        );
+
+
+        // ==========================================
+        // CLICK OUTSIDE IMAGE
+        // ==========================================
+
+        lightbox.addEventListener(
+            'click',
+            function (event) {
+
+                if (
+                    event.target === lightbox
+                ) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+
+        // ==========================================
+        // CLICK LARGE IMAGE TO CLOSE
+        // ==========================================
+
+        lightboxImage.addEventListener(
+            'click',
+            function () {
+
+                closeLightbox();
+
+            }
+        );
+
+
+        // ==========================================
+        // ESCAPE KEY
+        // ==========================================
+
+        document.addEventListener(
+            'keydown',
+            function (event) {
+
+                if (
+                    event.key === 'Escape' &&
+                    lightbox.classList.contains('show')
+                ) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
 
     }
 
 
-    /* Initial page */
+    // ==========================================
+    // INITIAL PAGE
+    // ==========================================
 
     currentImage.src = pages[0];
 
