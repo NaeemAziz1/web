@@ -508,7 +508,6 @@ m10Image.src = 'images/m10.jpg';
     let pageIndex = 0;
     currentImage.src = pages[0];
     updatePageUI();
-})();
 
 
     /* =====================================================
