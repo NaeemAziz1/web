@@ -432,3 +432,266 @@ window.addEventListener('load', function () {
 const m10Image = new Image();
 
 m10Image.src = 'images/m10.jpg';
+/* =========================================================
+   EXTRA EDUCATIONAL ACHIEVEMENTS
+   ========================================================= */
+
+(function () {
+
+    const currentImage = document.getElementById(
+        'extraEducationCurrent'
+    );
+
+    const previousButton = document.getElementById(
+        'extraEducationPrev'
+    );
+
+    const nextButton = document.getElementById(
+        'extraEducationNext'
+    );
+
+    const counter = document.getElementById(
+        'extraEducationCounter'
+    );
+
+    const lightbox = document.getElementById(
+        'extraEducationLightbox'
+    );
+
+    const lightboxImage = document.getElementById(
+        'extraEducationLightboxImage'
+    );
+
+    const lightboxClose = document.getElementById(
+        'extraEducationLightboxClose'
+    );
+
+
+    const pages = [
+        'images/R4.jpg',
+        'images/R6.jpg',
+        'images/R.jgp',
+        'images/R0.jpg',
+        'images/R1.jpg',
+        'images/R2.jpg',
+        'images/R3.jpg',
+        'images/R5.jpg',
+        'images/R7.jpg',
+        'images/R8.jpg',
+        'images/R9.jpg',
+        'images/R10.jpg',
+        'images/R11.jpg',
+        'images/R12.jpg',
+        'images/R13.jpg',
+        'images/R14.jpg',
+        'images/R15.jpeg',
+        'images/R16.jpg',
+        'images/R17.jpg'
+    ];
+
+
+    let pageIndex = 0;
+
+
+    function setPageImage() {
+
+        let source = pages[pageIndex];
+
+        currentImage.onerror = null;
+        currentImage.src = source;
+
+        if (source === 'images/R.jgp') {
+
+            currentImage.onerror = function () {
+                currentImage.onerror = null;
+                currentImage.src = 'images/R.jpg';
+            };
+
+        }
+    }
+
+
+    function updatePageUI() {
+
+        counter.textContent =
+            (pageIndex + 1) + ' / ' + pages.length;
+
+        previousButton.disabled =
+            pageIndex === 0;
+
+        nextButton.disabled =
+            pageIndex === pages.length - 1;
+    }
+
+
+    function showPage() {
+
+        setPageImage();
+        updatePageUI();
+
+    }
+
+
+    /* Previous */
+
+    previousButton.addEventListener(
+        'click',
+        function () {
+
+            if (pageIndex <= 0) return;
+
+            pageIndex--;
+
+            showPage();
+
+        }
+    );
+
+
+    /* Next */
+
+    nextButton.addEventListener(
+        'click',
+        function () {
+
+            if (pageIndex >= pages.length - 1) return;
+
+            pageIndex++;
+
+            showPage();
+
+        }
+    );
+
+
+    /*
+       IMAGE CLICK
+       Document-level handler
+       This avoids click conflicts.
+    */
+
+    document.addEventListener(
+        'click',
+        function (event) {
+
+            if (
+                event.target &&
+                event.target.id === 'extraEducationCurrent'
+            ) {
+
+                let source = pages[pageIndex];
+
+                lightboxImage.onerror = null;
+
+                lightboxImage.src = source;
+
+                if (source === 'images/R.jgp') {
+
+                    lightboxImage.onerror = function () {
+
+                        lightboxImage.onerror = null;
+
+                        lightboxImage.src =
+                            'images/R.jpg';
+
+                    };
+
+                }
+
+                lightbox.classList.add('show');
+
+                lightbox.setAttribute(
+                    'aria-hidden',
+                    'false'
+                );
+
+                document.body.style.overflow =
+                    'hidden';
+            }
+
+        }
+    );
+
+
+    /* Close button */
+
+    lightboxClose.addEventListener(
+        'click',
+        function () {
+
+            closeLightbox();
+
+        }
+    );
+
+
+    /* Click outside image */
+
+    lightbox.addEventListener(
+        'click',
+        function (event) {
+
+            if (
+                event.target === lightbox
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+    /* Click large image */
+
+    lightboxImage.addEventListener(
+        'click',
+        function () {
+
+            closeLightbox();
+
+        }
+    );
+
+
+    /* Escape */
+
+    document.addEventListener(
+        'keydown',
+        function (event) {
+
+            if (
+                event.key === 'Escape' &&
+                lightbox.classList.contains('show')
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove('show');
+
+        lightbox.setAttribute(
+            'aria-hidden',
+            'true'
+        );
+
+        document.body.style.overflow = '';
+
+    }
+
+
+    /* Initial page */
+
+    currentImage.src = pages[0];
+
+    updatePageUI();
+
+})();
