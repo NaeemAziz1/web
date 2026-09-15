@@ -3162,3 +3162,6 @@ html, body {
         font-size: 11px;
     }
 }
+.extra-education-block h4 {
+    color: #000 !important;
+}
