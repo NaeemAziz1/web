@@ -3757,3 +3757,55 @@ html, body {
         max-height: 72vh !important;
     }
 }
+/* =========================================================
+   ZOOM CLOSE BUTTON
+   ========================================================= */
+
+.extra-education-zoom-check:checked
+~ .extra-education-image-label::after {
+    content: "×";
+
+    position: fixed;
+
+    top: 20px;
+    right: 25px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color: #222;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+    line-height: 1;
+
+    z-index: 1000000;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.25);
+
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .extra-education-zoom-check:checked
+    ~ .extra-education-image-label::after {
+
+        top: 12px;
+        right: 12px;
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 24px;
+    }
+}
