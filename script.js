@@ -491,15 +491,15 @@ m10Image.src = 'images/m10.jpg';
     // =================================================
 
     const pages = [
-
+ 
+        'images/R4.jpg',
+        'images/R6.jpg',
         'images/R.jgp',
         'images/R0.jpg',
         'images/R1.jpg',
         'images/R2.jpg',
         'images/R3.jpg',
-        'images/R4.jpg',
         'images/R5.jpg',
-        'images/R6.jpg',
         'images/R7.jpg',
         'images/R8.jpg',
         'images/R9.jpg',
