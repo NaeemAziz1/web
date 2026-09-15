@@ -3265,3 +3265,256 @@ html, body {
     }
 
 }
+/* =========================================
+   COMPACT EXTRA EDUCATIONAL BOOK
+   ========================================= */
+
+.extra-education-block {
+    padding-bottom: 12px !important;
+}
+
+
+/* Heading-এর নিচে খুব সামান্য gap */
+
+.extra-education-block h4 {
+    margin-bottom: 10px !important;
+}
+
+
+/* Book wrapper */
+
+.extra-education-book-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    width: 100%;
+}
+
+
+/* ছোট compact book */
+
+.extra-education-book {
+    position: relative;
+
+    width: 340px;
+    height: 285px;
+
+    perspective: 1600px;
+
+    transform-style: preserve-3d;
+
+    overflow: visible;
+
+    background: transparent;
+
+    touch-action: pan-y;
+}
+
+
+/* Page */
+
+.extra-education-page,
+.extra-education-flip-front,
+.extra-education-flip-back {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+/* ছবির ratio কখনো পরিবর্তন হবে না */
+
+.extra-education-page img,
+.extra-education-flip-front img,
+.extra-education-flip-back img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    pointer-events: none;
+
+    border-radius: 2px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.13);
+}
+
+
+/* Flip */
+
+.extra-education-flip {
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    z-index: 20;
+
+    transform-style: preserve-3d;
+
+    pointer-events: none;
+}
+
+.extra-education-flip.active {
+    display: block;
+}
+
+.extra-education-flip-back {
+    transform: rotateY(180deg);
+}
+
+
+/* Crimson edge */
+
+.extra-education-book::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4%;
+    bottom: 4%;
+
+    left: -2px;
+
+    width: 2px;
+
+    background: crimson;
+
+    opacity: .45;
+
+    border-radius: 3px;
+
+    z-index: 30;
+}
+
+
+/* =========================================
+   ARROWS
+   ========================================= */
+
+.extra-education-nav {
+    width: 32px;
+    height: 32px;
+
+    min-width: 32px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(220,20,60,.25);
+
+    background: rgba(255,255,255,.95);
+
+    color: crimson;
+
+    font-size: 21px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.extra-education-nav:hover {
+    background: crimson;
+    color: white;
+    transform: scale(1.05);
+}
+
+.extra-education-nav:disabled {
+    opacity: .18;
+    cursor: default;
+    transform: none;
+}
+
+
+/* =========================================
+   PAGE NUMBER
+   ========================================= */
+
+.extra-education-page-number {
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+
+    text-align: center;
+
+    color: crimson;
+
+    font-size: 12px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .extra-education-book {
+        width: 285px;
+        height: 240px;
+    }
+
+    .extra-education-book-wrap {
+        gap: 5px;
+    }
+
+    .extra-education-nav {
+        width: 30px;
+        height: 30px;
+
+        min-width: 30px;
+
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .extra-education-book {
+        width: calc(100vw - 105px);
+        height: calc((100vw - 105px) * .84);
+
+        min-height: 190px;
+        max-height: 260px;
+    }
+
+}
