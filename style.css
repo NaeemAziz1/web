@@ -3529,3 +3529,72 @@ html, body {
         font-size: 14px !important;
     }
 }
+/* ==========================================
+   EXTRA EDUCATIONAL IMAGE LIGHTBOX
+   ========================================== */
+
+#extraEducationLightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.88);
+}
+
+#extraEducationLightbox.show {
+    display: flex;
+}
+
+#extraEducationLightboxImage {
+    display: block;
+
+    max-width: 94vw;
+    max-height: 92vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    cursor: zoom-out;
+
+    border-radius: 3px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+#extraEducationLightboxClose {
+    position: fixed;
+
+    top: 15px;
+    right: 20px;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+
+    font-size: 30px;
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 100000;
+}
+
+#extraEducationLightboxClose:hover {
+    background: crimson;
+    color: white;
+}
