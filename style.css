@@ -3813,6 +3813,6 @@ html, body {
 @media (min-width: 481px) {
     .extra-education-zoom-check:checked
     ~ .extra-education-image-label img {
-        transform: scale(0.56) !important;
+        transform: scale(0.75) !important;
     }
 }
