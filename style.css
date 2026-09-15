@@ -2900,3 +2900,338 @@ html, body {
         white-space: nowrap !important;
     }
 }
+/* ==========================================
+   EXTRA EDUCATIONAL ACHIEVEMENTS
+   ========================================== */
+
+.extra-achievements {
+    width: 100%;
+    padding: 90px 0 100px;
+    background: #111;
+    overflow: hidden;
+}
+
+.extra-achievements-title {
+    margin-bottom: 50px !important;
+    text-align: center;
+}
+
+
+/* ==========================================
+   BOOK VIEWER
+   ========================================== */
+
+.extra-achievements-viewer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.extra-achievements-book {
+    position: relative;
+    width: min(72vw, 650px);
+    height: min(82vh, 820px);
+    min-height: 420px;
+    max-height: 820px;
+
+    perspective: 2200px;
+    transform-style: preserve-3d;
+
+    background: #111;
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .55),
+        0 5px 15px rgba(0, 0, 0, .35);
+
+    overflow: visible;
+}
+
+
+/* ==========================================
+   PAGES
+   ========================================== */
+
+.extra-achievements-page {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .35);
+
+    z-index: 2;
+}
+
+.extra-achievements-page img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    background: #fff;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    pointer-events: none;
+}
+
+.extra-achievements-under {
+    z-index: 1;
+}
+
+
+/* ==========================================
+   3D FLIP PAGE
+   ========================================== */
+
+.extra-achievements-flip {
+    position: absolute;
+    inset: 0;
+
+    z-index: 10;
+
+    display: none;
+
+    transform-style: preserve-3d;
+    transform-origin: left center;
+
+    pointer-events: none;
+
+    box-shadow: none;
+}
+
+.extra-achievements-flip.active {
+    display: block;
+}
+
+.extra-achievements-flip-front,
+.extra-achievements-flip-back {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    background: #fff;
+}
+
+.extra-achievements-flip-front img,
+.extra-achievements-flip-back img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    background: #fff;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.extra-achievements-flip-back {
+    transform: rotateY(180deg);
+}
+
+
+/* ==========================================
+   PAGE TURN SHADOW
+   ========================================== */
+
+.extra-achievements-flip::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.12) 15%,
+            transparent 45%,
+            rgba(0,0,0,.08) 80%,
+            rgba(0,0,0,.25)
+        );
+
+    opacity: .65;
+}
+
+
+/* ==========================================
+   NAVIGATION BUTTONS
+   ========================================== */
+
+.extra-achievements-btn {
+    width: 52px;
+    height: 52px;
+
+    flex: 0 0 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.12);
+    color: #fff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        opacity .25s ease;
+}
+
+.extra-achievements-btn:hover {
+    background: rgba(255,255,255,.25);
+    transform: scale(1.08);
+}
+
+.extra-achievements-btn:active {
+    transform: scale(.94);
+}
+
+.extra-achievements-btn:disabled {
+    opacity: .25;
+    cursor: default;
+    transform: none;
+}
+
+
+/* ==========================================
+   COUNTER
+   ========================================== */
+
+.extra-achievements-bottom {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-achievements-counter {
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    opacity: .8;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .extra-achievements {
+        padding: 70px 0 80px;
+    }
+
+    .extra-achievements-title {
+        margin-bottom: 35px !important;
+        padding: 0 15px;
+    }
+
+    .extra-achievements-viewer {
+        gap: 10px;
+    }
+
+    .extra-achievements-book {
+        width: calc(100vw - 100px);
+        height: calc((100vw - 100px) * 1.38);
+
+        min-height: 360px;
+        max-height: 650px;
+    }
+
+    .extra-achievements-btn {
+        width: 42px;
+        height: 42px;
+
+        flex-basis: 42px;
+
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .extra-achievements {
+        padding: 60px 0 70px;
+    }
+
+    .extra-achievements-viewer {
+        gap: 6px;
+    }
+
+    .extra-achievements-book {
+        width: calc(100vw - 82px);
+        height: calc((100vw - 82px) * 1.40);
+
+        min-height: 300px;
+    }
+
+    .extra-achievements-btn {
+        width: 36px;
+        height: 36px;
+
+        flex-basis: 36px;
+
+        font-size: 14px;
+    }
+
+    .extra-achievements-counter {
+        font-size: 13px;
+    }
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .extra-achievements-flip {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
