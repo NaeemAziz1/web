@@ -3809,38 +3809,70 @@ html, body {
         font-size: 24px;
     }
 }
-/* EXTRA EDUCATION — FULLSCREEN IMAGE, ALWAYS INSIDE SCREEN */
-.extra-education-zoom-check:checked ~ .extra-education-image-label {
+.extra-education-lightbox {
     position: fixed !important;
-    inset: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100vw !important;
+    height: 100vh !important;
     height: 100dvh !important;
-    margin: 0 !important;
-    padding: 15px !important;
-    box-sizing: border-box !important;
 
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
 
-    background: rgba(255, 255, 255, 0.98) !important;
-    z-index: 999999 !important;
-    overflow: hidden !important;
+    padding: 15px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    z-index: 2147483647 !important;
+
+    overflow: hidden;
 }
 
-.extra-education-zoom-check:checked ~ .extra-education-image-label img {
-    position: static !important;
-    display: block !important;
+.extra-education-lightbox.active {
+    display: flex;
+}
+
+.extra-education-lightbox img {
+    display: block;
 
     width: auto !important;
     height: auto !important;
 
     max-width: calc(100vw - 30px) !important;
+    max-height: calc(100vh - 30px) !important;
     max-height: calc(100dvh - 30px) !important;
+
+    object-fit: contain !important;
 
     margin: 0 !important;
     padding: 0 !important;
 
-    object-fit: contain !important;
     transform: none !important;
+}
+
+.extra-education-lightbox-close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: crimson;
+
+    font-size: 28px;
+    line-height: 32px;
+
+    cursor: pointer;
+    z-index: 2;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
