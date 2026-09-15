@@ -695,3 +695,26 @@ m10Image.src = 'images/m10.jpg';
     updatePageUI();
 
 })();
+const extraEducationLightbox =
+    document.getElementById('extraEducationLightbox');
+
+const extraEducationLightboxImage =
+    document.getElementById('extraEducationLightboxImage');
+
+const extraEducationClose =
+    document.getElementById('extraEducationClose');
+
+currentImage.addEventListener('click', function () {
+    extraEducationLightboxImage.src = currentImage.src;
+    extraEducationLightbox.classList.add('active');
+});
+
+extraEducationClose.addEventListener('click', function () {
+    extraEducationLightbox.classList.remove('active');
+});
+
+extraEducationLightbox.addEventListener('click', function (e) {
+    if (e.target === extraEducationLightbox) {
+        extraEducationLightbox.classList.remove('active');
+    }
+});
