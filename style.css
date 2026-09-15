@@ -2900,3 +2900,264 @@ html, body {
         white-space: nowrap !important;
     }
 }
+/* =====================================================
+   EXTRA EDUCATIONAL ACHIEVEMENTS
+   ===================================================== */
+
+.extra-education-block {
+    position: relative;
+    padding-bottom: 12px !important;
+}
+
+.extra-education-block h4 {
+    color: crimson;
+    margin-bottom: 10px !important;
+    white-space: nowrap !important;
+    font-size: 16px !important;
+}
+
+.extra-education-book-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.extra-education-book {
+    position: relative;
+    width: 340px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+    touch-action: auto;
+    user-select: none;
+}
+
+.extra-education-page {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+.extra-education-page img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 2px;
+    cursor: zoom-in;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,.13);
+}
+
+.extra-education-book::before {
+    content: "";
+    position: absolute;
+    top: 4%;
+    bottom: 4%;
+    left: 0;
+    width: 2px;
+    background: crimson;
+    opacity: .45;
+    border-radius: 3px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.extra-education-nav {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(220,20,60,.25);
+    background: rgba(255,255,255,.96);
+    color: crimson;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    transition: background .2s, color .2s, transform .2s, opacity .2s;
+}
+
+.extra-education-nav:hover {
+    background: crimson;
+    color: white;
+    transform: scale(1.06);
+}
+
+.extra-education-nav:active {
+    transform: scale(.93);
+}
+
+.extra-education-nav:disabled {
+    opacity: .20;
+    cursor: default;
+    background: white;
+    color: crimson;
+    transform: none;
+}
+
+.extra-education-page-number {
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    color: crimson;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+
+/* =====================================================
+   IMAGE LIGHTBOX
+   ===================================================== */
+
+.extra-education-lightbox {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background: rgba(0,0,0,.88);
+
+    z-index: 2147483647 !important;
+
+    overflow: hidden;
+}
+
+.extra-education-lightbox.show {
+    display: flex;
+}
+
+.extra-education-lightbox img {
+    display: block;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 94vw !important;
+    max-height: 92vh !important;
+    max-height: 92dvh !important;
+
+    object-fit: contain !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 4px;
+}
+
+.extra-education-lightbox-close {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.95);
+    color: #222;
+
+    font-size: 30px;
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 2;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.20);
+}
+
+.extra-education-lightbox-close:hover {
+    background: crimson;
+    color: white;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .extra-education-book {
+        width: 285px;
+        height: 240px;
+    }
+
+    .extra-education-book-wrap {
+        gap: 5px;
+    }
+
+    .extra-education-nav {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .extra-education-block h4 {
+        font-size: 14px !important;
+    }
+
+    .extra-education-book {
+        width: calc(100vw - 105px);
+        height: calc((100vw - 105px) * .84);
+
+        min-height: 190px;
+        max-height: 260px;
+    }
+
+    .extra-education-book-wrap {
+        gap: 4px;
+    }
+
+    .extra-education-nav {
+        width: 29px;
+        height: 29px;
+        min-width: 29px;
+        font-size: 19px;
+    }
+
+    .extra-education-page-number {
+        margin-top: 3px !important;
+        font-size: 11px;
+    }
+}
