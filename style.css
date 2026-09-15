@@ -3089,8 +3089,8 @@ html, body {
     border: none;
     border-radius: 50%;
 
-    background: rgba(255,255,255,.95);
-    color: #222;
+    background: crimson;
+    color: white;
 
     font-size: 30px;
     line-height: 40px;
@@ -3100,6 +3100,7 @@ html, body {
     z-index: 2;
 
     box-shadow: 0 3px 12px rgba(0,0,0,.20);
+    transition: background .2s, color .2s;
 }
 
 .extra-education-lightbox-close:hover {
