@@ -432,3 +432,351 @@ window.addEventListener('load', function () {
 const m10Image = new Image();
 
 m10Image.src = 'images/m10.jpg';
+/* =========================================================
+   EXTRA EDUCATIONAL ACHIEVEMENTS
+   BUTTON ONLY PAGE NAVIGATION
+   CLICK IMAGE = LARGE VIEW
+   ========================================================= */
+
+(function () {
+
+    const currentImage =
+        document.getElementById(
+            'extraEducationCurrent'
+        );
+
+    const previousButton =
+        document.getElementById(
+            'extraEducationPrev'
+        );
+
+    const nextButton =
+        document.getElementById(
+            'extraEducationNext'
+        );
+
+    const counter =
+        document.getElementById(
+            'extraEducationCounter'
+        );
+
+    const lightbox =
+        document.getElementById(
+            'extraEducationLightbox'
+        );
+
+    const lightboxImage =
+        document.getElementById(
+            'extraEducationLightboxImage'
+        );
+
+    const lightboxClose =
+        document.getElementById(
+            'extraEducationLightboxClose'
+        );
+
+
+    /* =====================================================
+       PAGE LIST
+       ===================================================== */
+
+    const pages = [
+
+        'images/R7.jpg',       // Page 1
+        'images/R.jgp',       // Page 2
+        'images/R0.jpg',      // Page 3
+        'images/R1.jpg',      // Page 4
+        'images/R2.jpg',      // Page 5
+        'images/R3.jpg',      // Page 6
+        'images/R4.jpg',      // Page 7
+        'images/R5.jpg',      // Page 8
+        'images/R6.jpg',      // Page 9
+        'images/R8.jpg',      // Page 10
+        'images/R9.jpg',      // Page 11
+        'images/R10.jpg',     // Page 12
+        'images/R11.jpg',     // Page 13
+        'images/R12.jpg',     // Page 14
+        'images/R13.jpg',     // Page 15
+        'images/R14.jpg',     // Page 16
+        'images/R15.jpeg',    // Page 17
+        'images/R16.jpg',     // Page 18
+        'images/R17.jpg'      // Page 19
+
+    ];
+
+
+    let pageIndex = 0;
+
+
+    /* =====================================================
+       SET IMAGE
+       ===================================================== */
+
+    function setPageImage(source) {
+
+        currentImage.onerror = null;
+
+        currentImage.src = source;
+
+
+        /*
+         If R.jgp does not exist,
+         automatically try R.jpg
+        */
+
+        if (source === 'images/R.jgp') {
+
+            currentImage.onerror =
+                function () {
+
+                    currentImage.onerror = null;
+
+                    currentImage.src =
+                        'images/R.jpg';
+
+                };
+
+        }
+
+    }
+
+
+    /* =====================================================
+       UPDATE PAGE NUMBER + BUTTON STATE
+       ===================================================== */
+
+    function updatePageUI() {
+
+        counter.textContent =
+            (pageIndex + 1) +
+            ' / ' +
+            pages.length;
+
+
+        previousButton.disabled =
+            pageIndex === 0;
+
+
+        nextButton.disabled =
+            pageIndex === pages.length - 1;
+
+    }
+
+
+    /* =====================================================
+       SHOW CURRENT PAGE
+       ===================================================== */
+
+    function showPage() {
+
+        setPageImage(
+            pages[pageIndex]
+        );
+
+
+        updatePageUI();
+
+    }
+
+
+    /* =====================================================
+       NEXT PAGE
+       BUTTON ONLY
+       ===================================================== */
+
+    function nextPage() {
+
+        if (
+            pageIndex >=
+            pages.length - 1
+        ) {
+            return;
+        }
+
+
+        pageIndex++;
+
+        showPage();
+
+    }
+
+
+    /* =====================================================
+       PREVIOUS PAGE
+       BUTTON ONLY
+       ===================================================== */
+
+    function previousPage() {
+
+        if (
+            pageIndex <= 0
+        ) {
+            return;
+        }
+
+
+        pageIndex--;
+
+        showPage();
+
+    }
+
+
+    /* =====================================================
+       BUTTON EVENTS
+       ===================================================== */
+
+    previousButton.addEventListener(
+        'click',
+        previousPage
+    );
+
+
+    nextButton.addEventListener(
+        'click',
+        nextPage
+    );
+
+
+    /* =====================================================
+       CLICK IMAGE → LARGE VIEW
+       ===================================================== */
+
+    currentImage.addEventListener(
+        'click',
+        function () {
+
+            let source =
+                pages[pageIndex];
+
+
+            lightboxImage.onerror = null;
+
+
+            lightboxImage.src =
+                source;
+
+
+            /*
+             R.jgp → R.jpg fallback
+            */
+
+            if (
+                source ===
+                'images/R.jgp'
+            ) {
+
+                lightboxImage.onerror =
+                    function () {
+
+                        lightboxImage.onerror = null;
+
+                        lightboxImage.src =
+                            'images/R.jpg';
+
+                    };
+
+            }
+
+
+            lightbox.classList.add(
+                'show'
+            );
+
+
+            lightbox.setAttribute(
+                'aria-hidden',
+                'false'
+            );
+
+
+            document.body.style.overflow =
+                'hidden';
+
+        }
+    );
+
+
+    /* =====================================================
+       CLOSE LIGHTBOX
+       ===================================================== */
+
+    function closeLightbox() {
+
+        lightbox.classList.remove(
+            'show'
+        );
+
+
+        lightbox.setAttribute(
+            'aria-hidden',
+            'true'
+        );
+
+
+        document.body.style.overflow =
+            '';
+
+    }
+
+
+    lightboxClose.addEventListener(
+        'click',
+        closeLightbox
+    );
+
+
+    /* Click outside image */
+
+    lightbox.addEventListener(
+        'click',
+        function (event) {
+
+            if (
+                event.target ===
+                lightbox
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+    /* Click large image to close */
+
+    lightboxImage.addEventListener(
+        'click',
+        closeLightbox
+    );
+
+
+    /* ESC key */
+
+    document.addEventListener(
+        'keydown',
+        function (event) {
+
+            if (
+                event.key === 'Escape' &&
+                lightbox.classList.contains('show')
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       INITIAL PAGE
+       ===================================================== */
+
+    showPage();
+
+
+})();
