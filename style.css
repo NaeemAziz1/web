@@ -2906,54 +2906,68 @@ html, body {
 
 .extra-achievements {
     width: 100%;
-    padding: 90px 0 100px;
-    background: #111;
+    padding: 70px 0 75px;
+    background: #fff;
     overflow: hidden;
 }
 
-.extra-achievements-title {
-    margin-bottom: 50px !important;
-    text-align: center;
+
+/* Same style as other website section headings */
+
+.extra-achievements .section-title {
+    margin-bottom: 38px;
 }
 
 
 /* ==========================================
-   BOOK VIEWER
+   BOOK AREA
    ========================================== */
 
-.extra-achievements-viewer {
-    width: 100%;
+.extra-achievements-book-area {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+
+    gap: 18px;
+
+    width: 100%;
 }
+
+
+/* ==========================================
+   SMALL BOOK
+   ========================================== */
 
 .extra-achievements-book {
     position: relative;
-    width: min(72vw, 650px);
-    height: min(82vh, 820px);
-    min-height: 420px;
-    max-height: 820px;
 
-    perspective: 2200px;
+    width: 430px;
+    height: 555px;
+
+    perspective: 1800px;
+
     transform-style: preserve-3d;
 
-    background: #111;
+    background: #fff;
+
+    border-left: 3px solid rgba(220, 20, 60, .28);
+    border-right: 3px solid rgba(220, 20, 60, .28);
+
     box-shadow:
-        0 20px 45px rgba(0, 0, 0, .55),
-        0 5px 15px rgba(0, 0, 0, .35);
+        0 8px 22px rgba(0, 0, 0, .16),
+        0 0 0 1px rgba(220, 20, 60, .10);
 
     overflow: visible;
 }
 
 
 /* ==========================================
-   PAGES
+   BOOK PAGES
    ========================================== */
 
 .extra-achievements-page {
     position: absolute;
+
     inset: 0;
 
     width: 100%;
@@ -2963,19 +2977,18 @@ html, body {
 
     overflow: hidden;
 
-    border-radius: 2px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, .35);
-
     z-index: 2;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
-.extra-achievements-page img {
-    display: block;
 
+.extra-achievements-page img {
     width: 100%;
     height: 100%;
+
+    display: block;
 
     object-fit: contain;
 
@@ -2983,9 +2996,8 @@ html, body {
 
     user-select: none;
     -webkit-user-drag: none;
-
-    pointer-events: none;
 }
+
 
 .extra-achievements-under {
     z-index: 1;
@@ -2993,53 +3005,60 @@ html, body {
 
 
 /* ==========================================
-   3D FLIP PAGE
+   PAGE TURN
    ========================================== */
 
 .extra-achievements-flip {
     position: absolute;
-    inset: 0;
 
-    z-index: 10;
+    inset: 0;
 
     display: none;
 
+    z-index: 20;
+
     transform-style: preserve-3d;
+
     transform-origin: left center;
 
     pointer-events: none;
-
-    box-shadow: none;
 }
+
 
 .extra-achievements-flip.active {
     display: block;
 }
 
+
 .extra-achievements-flip-front,
 .extra-achievements-flip-back {
     position: absolute;
+
     inset: 0;
 
     width: 100%;
     height: 100%;
+
+    background: #fff;
 
     overflow: hidden;
 
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 
-    background: #fff;
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .18);
 }
+
 
 .extra-achievements-flip-front img,
 .extra-achievements-flip-back img {
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
-
     display: block;
+
+    object-fit: contain;
 
     background: #fff;
 
@@ -3047,109 +3066,117 @@ html, body {
     -webkit-user-drag: none;
 }
 
+
 .extra-achievements-flip-back {
     transform: rotateY(180deg);
 }
 
 
 /* ==========================================
-   PAGE TURN SHADOW
+   CRIMSON PAGE EDGE / BOOK SPINE
    ========================================== */
 
-.extra-achievements-flip::after {
+.extra-achievements-book::before {
     content: "";
 
     position: absolute;
+
     top: 0;
     bottom: 0;
 
-    left: 0;
+    left: -3px;
 
-    width: 100%;
+    width: 3px;
 
-    pointer-events: none;
+    background: crimson;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0,0,0,.35),
-            rgba(0,0,0,.12) 15%,
-            transparent 45%,
-            rgba(0,0,0,.08) 80%,
-            rgba(0,0,0,.25)
-        );
+    z-index: 30;
 
-    opacity: .65;
+    box-shadow:
+        1px 0 4px rgba(220, 20, 60, .35);
 }
 
 
 /* ==========================================
-   NAVIGATION BUTTONS
+   NAVIGATION
    ========================================== */
 
-.extra-achievements-btn {
-    width: 52px;
-    height: 52px;
+.extra-achievements-arrow {
+    width: 42px;
+    height: 42px;
 
-    flex: 0 0 52px;
+    min-width: 42px;
 
-    border: none;
+    border: 1px solid rgba(220, 20, 60, .35);
+
     border-radius: 50%;
 
-    background: rgba(255,255,255,.12);
-    color: #fff;
+    background: #fff;
 
-    font-size: 20px;
+    color: crimson;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
 
     cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     transition:
-        transform .25s ease,
-        background .25s ease,
-        opacity .25s ease;
+        .25s ease;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, .10);
 }
 
-.extra-achievements-btn:hover {
-    background: rgba(255,255,255,.25);
+
+.extra-achievements-arrow:hover {
+    background: crimson;
+
+    color: #fff;
+
+    border-color: crimson;
+
     transform: scale(1.08);
 }
 
-.extra-achievements-btn:active {
+
+.extra-achievements-arrow:active {
     transform: scale(.94);
 }
 
-.extra-achievements-btn:disabled {
+
+.extra-achievements-arrow:disabled {
     opacity: .25;
+
     cursor: default;
+
     transform: none;
+
+    background: #fff;
+
+    color: crimson;
 }
 
 
 /* ==========================================
-   COUNTER
+   PAGE COUNTER
    ========================================== */
 
-.extra-achievements-bottom {
-    margin-top: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .extra-achievements-counter {
-    color: #fff;
+    text-align: center;
 
-    font-size: 15px;
-    font-weight: 500;
+    margin-top: 17px;
+
+    color: crimson;
+
+    font-size: 14px;
+
+    font-weight: 600;
 
     letter-spacing: 1px;
-
-    opacity: .8;
 }
 
 
@@ -3160,78 +3187,78 @@ html, body {
 @media (max-width: 700px) {
 
     .extra-achievements {
-        padding: 70px 0 80px;
+        padding: 60px 0 65px;
     }
 
-    .extra-achievements-title {
-        margin-bottom: 35px !important;
-        padding: 0 15px;
+    .extra-achievements .section-title {
+        margin-bottom: 30px;
     }
 
-    .extra-achievements-viewer {
-        gap: 10px;
+    .extra-achievements-book-area {
+        gap: 8px;
     }
 
     .extra-achievements-book {
-        width: calc(100vw - 100px);
-        height: calc((100vw - 100px) * 1.38);
 
-        min-height: 360px;
-        max-height: 650px;
+        width: 330px;
+
+        height: 430px;
+
     }
 
-    .extra-achievements-btn {
-        width: 42px;
-        height: 42px;
+    .extra-achievements-arrow {
 
-        flex-basis: 42px;
+        width: 38px;
+        height: 38px;
 
-        font-size: 16px;
+        min-width: 38px;
+
+        font-size: 13px;
+
     }
+
 }
 
 
 @media (max-width: 480px) {
 
     .extra-achievements {
-        padding: 60px 0 70px;
+
+        padding: 50px 0 55px;
+
     }
 
-    .extra-achievements-viewer {
-        gap: 6px;
+    .extra-achievements-book-area {
+
+        gap: 5px;
+
     }
 
     .extra-achievements-book {
-        width: calc(100vw - 82px);
-        height: calc((100vw - 82px) * 1.40);
 
-        min-height: 300px;
+        width: calc(100vw - 92px);
+
+        height: calc((100vw - 92px) * 1.29);
+
+        max-height: 430px;
+
     }
 
-    .extra-achievements-btn {
-        width: 36px;
-        height: 36px;
+    .extra-achievements-arrow {
 
-        flex-basis: 36px;
+        width: 34px;
+        height: 34px;
 
-        font-size: 14px;
+        min-width: 34px;
+
+        font-size: 11px;
+
     }
 
     .extra-achievements-counter {
+
         font-size: 13px;
-    }
-}
 
-
-/* ==========================================
-   REDUCED MOTION
-   ========================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .extra-achievements-flip {
-        transition: none !important;
-        animation: none !important;
     }
 
 }
