@@ -3816,3 +3816,39 @@ html, body {
         transform: scale(0.75) !important;
     }
 }
+.extra-education-zoom-check:checked
+~ .extra-education-image-label {
+
+    position: fixed !important;
+
+    top: 50% !important;
+    left: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    z-index: 999999 !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 90vw !important;
+    max-height: 85vh !important;
+
+    padding: 5px !important;
+
+    background: white !important;
+}
+
+.extra-education-zoom-check:checked
+~ .extra-education-image-label img {
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 90vw !important;
+    max-height: 85vh !important;
+
+    object-fit: contain !important;
+
+    transform: none !important;
+}
