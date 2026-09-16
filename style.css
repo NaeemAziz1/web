@@ -3194,3 +3194,19 @@ html, body {
         font-size: 23px;
     }
 }
+/* Extra Education Certificate - Crimson vertical line hide */
+.extra-education-page {
+    position: relative;
+}
+
+.extra-education-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2%;
+    background: #ffffff;
+    z-index: 5;
+    pointer-events: none;
+}
