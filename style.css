@@ -3166,3 +3166,23 @@ html, body {
     color: #000 !important;
     font-size: 16px !important;
 }
+/* Extra Education — Larger Left / Right Buttons on Mobile Only */
+
+@media (max-width: 700px) {
+    .extra-education-nav {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 23px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .extra-education-nav {
+        width: 33px;
+        height: 33px;
+        min-width: 33px;
+        font-size: 22px;
+    }
+}
