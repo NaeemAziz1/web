@@ -3187,7 +3187,9 @@ html, body {
         font-size: 24px;
     }
 }
-/* Extra Education — Slightly Larger Images */
-.extra-education-page img {
-    transform: scale(1.08);
+/* Extra Education Images — Mobile Only */
+@media (max-width: 700px) {
+    .extra-education-page img {
+        transform: scale(1.08);
+    }
 }
