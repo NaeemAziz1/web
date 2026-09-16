@@ -3189,8 +3189,9 @@ html, body {
 }
 .extra-education-hint {
     color: #990012;
-    font-size: 10px;
-    margin: -5px 0 4px;
+    font-size: 8px;
+    font-weight: bold;
+    margin: -6px 0 3px;
     text-align: center;
     line-height: 1;
 }
