@@ -3187,3 +3187,10 @@ html, body {
         font-size: 22px;
     }
 }
+.extra-education-hint {
+    color: #990012;
+    font-size: 10px;
+    margin: -5px 0 4px;
+    text-align: center;
+    line-height: 1;
+}
