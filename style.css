@@ -2965,6 +2965,7 @@ html, body {
 }
 
 .extra-education-book::before {
+    display: none;
     content: "";
     position: absolute;
     top: 4%;
