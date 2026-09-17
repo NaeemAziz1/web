@@ -484,14 +484,17 @@ m10Image.src = 'images/m10.jpg';
     // SET CURRENT IMAGE
     // ==========================================
 
-    function setPageImage() {
+   function setPageImage() {
 
-        const source = pages[pageIndex];
+    const source = pages[pageIndex];
+
+    // Fade out
+    currentImage.classList.add('changing');
+
+    setTimeout(function () {
 
         currentImage.onerror = null;
-
         currentImage.src = source;
-
 
         // R.jgp fallback
         if (source === 'images/R.jgp') {
@@ -506,7 +509,13 @@ m10Image.src = 'images/m10.jpg';
 
         }
 
-    }
+        // Fade in
+        requestAnimationFrame(function () {
+            currentImage.classList.remove('changing');
+        });
+
+    }, 250);
+   }
 
 
     // ==========================================
