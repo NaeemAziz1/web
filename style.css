@@ -3195,9 +3195,9 @@ html, body {
 }
 @media (max-width: 690px) {
     .title .yin-yang {
-        width: 0.78em;
-        height: 0.78em;
+        width: 0.75em;
+        height: 0.75em;
         position: relative;
-        top: -1px;
+        top: -0.5px;
     }
 }
