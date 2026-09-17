@@ -3256,9 +3256,25 @@ html, body {
     transform: scale(1);
 }
 @media (max-width: 947px) {
-    .extra-education-page img {
-        width: 112% !important;
-        height: 112% !important;
+
+    #extraEducationCurrent,
+    #extraEducationNextImage {
+        width: 100% !important;
+        height: 100% !important;
         object-fit: contain !important;
+
+        transform: scale(1.12) !important;
+    }
+
+    /* পুরোনো ছবি বের হওয়ার সময়ও বড় থাকবে */
+    #extraEducationCurrent.changing {
+        opacity: 0 !important;
+        transform: scale(1.08) !important;
+    }
+
+    /* নতুন ছবি বড় অবস্থাতেই থাকবে */
+    #extraEducationNextImage.showing {
+        opacity: 1 !important;
+        transform: scale(1.12) !important;
     }
 }
