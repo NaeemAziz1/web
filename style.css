@@ -3256,12 +3256,33 @@ html, body {
     transform: scale(1);
 }
 /* Desktop: পুরো ছবি দেখাবে, কোনো crop হবে না */
-#extraEducationCurrent,
-#extraEducationNextImage {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
-    transform: scale(1) !important;
+/* EXTRA EDUCATION - DESKTOP */
+@media (min-width: 948px) {
+
+    #extraEducationCurrent {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+
+    #extraEducationNextImage {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        transform: scale(1.03) !important;
+        pointer-events: none !important;
+    }
+
+    #extraEducationCurrent.changing {
+        transform: scale(0.96) !important;
+    }
+
+    #extraEducationNextImage.showing {
+        transform: scale(1) !important;
+    }
 }
