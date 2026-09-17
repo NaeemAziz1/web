@@ -3197,5 +3197,7 @@ html, body {
     .title .yin-yang {
         width: 0.78em;
         height: 0.78em;
+        position: relative;
+        top: -1px;
     }
 }
