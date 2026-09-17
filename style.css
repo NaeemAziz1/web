@@ -3255,3 +3255,13 @@ html, body {
     opacity: 1;
     transform: scale(1);
 }
+/* Desktop: পুরো ছবি দেখাবে, কোনো crop হবে না */
+#extraEducationCurrent,
+#extraEducationNextImage {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    transform: scale(1) !important;
+}
