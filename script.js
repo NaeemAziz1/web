@@ -456,7 +456,7 @@ m10Image.src = 'images/m10.jpg';
 
         'images/R4.jpg',
         'images/R6.jpg',
-        'images/R.jgp',
+        'images/R.jpg',
         'images/R0.jpg',
         'images/R1.jpg',
         'images/R2.jpg',
