@@ -487,7 +487,7 @@ m10Image.src = 'images/m10.jpg';
    function setPageImage() {
 
     const source = pages[pageIndex];
-    const nextImage = document.getElementById('extraEducationNext');
+    const nextImage = document.getElementById('extraEducationNextImage');
 
     if (!nextImage) return;
 
