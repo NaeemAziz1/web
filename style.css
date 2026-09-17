@@ -3206,38 +3206,52 @@ html, body {
     overflow: hidden;
 }
 
-#extraEducationCurrent,
-#extraEducationNext {
+/* Current image */
+#extraEducationCurrent {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
+
+    position: relative;
+    z-index: 1;
+
+    opacity: 1;
+    transform: scale(1);
+
     transition:
         opacity 0.65s ease,
         transform 0.65s ease;
 }
 
-#extraEducationCurrent {
-    position: relative;
-    z-index: 1;
-    opacity: 1;
-    transform: scale(1);
-}
+/* Next image */
+#extraEducationNextImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 
-#extraEducationNext {
     position: absolute;
     inset: 0;
+
     z-index: 2;
+
     opacity: 0;
     transform: scale(1.03);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
 }
 
+/* Old image fades out */
 #extraEducationCurrent.changing {
     opacity: 0;
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
 
-#extraEducationNext.showing {
+/* New image fades in */
+#extraEducationNextImage.showing {
     opacity: 1;
     transform: scale(1);
 }
