@@ -3213,3 +3213,10 @@ html, body {
     opacity: 0;
     transform: scale(0.97);
 }
+@media (max-width: 947px) {
+    .extra-education-page img {
+        width: 112% !important;
+        height: 112% !important;
+        object-fit: contain !important;
+    }
+}
