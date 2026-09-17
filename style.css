@@ -3263,18 +3263,18 @@ html, body {
         height: 100% !important;
         object-fit: contain !important;
 
-        transform: scale(1.08) !important;
+        transform: scale(1.03) !important;
     }
 
     /* পুরোনো ছবি বের হওয়ার সময়ও বড় থাকবে */
     #extraEducationCurrent.changing {
         opacity: 0 !important;
-        transform: scale(1.08) !important;
+        transform: scale(1.03) !important;
     }
 
     /* নতুন ছবি বড় অবস্থাতেই থাকবে */
     #extraEducationNextImage.showing {
         opacity: 1 !important;
-        transform: scale(1.08) !important;
+        transform: scale(1.03) !important;
     }
 }
