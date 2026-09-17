@@ -485,38 +485,34 @@ m10Image.src = 'images/m10.jpg';
     // ==========================================
 
    function setPageImage() {
-
     const source = pages[pageIndex];
 
-    // Fade out
-    currentImage.classList.add('changing');
+    const nextImage = document.getElementById('extraEducationNext');
 
-    setTimeout(function () {
+    if (!nextImage) return;
 
-        currentImage.onerror = null;
-        currentImage.src = source;
+    // নতুন ছবিটি আগে load করো
+    const preloader = new Image();
 
-        // R.jgp fallback
-        if (source === 'images/R.jgp') {
+    preloader.onload = function () {
+        nextImage.src = source;
 
-            currentImage.onerror = function () {
+        // নতুন ছবিকে সামনে এনে fade-in
+        nextImage.classList.add('showing');
 
-                currentImage.onerror = null;
+        // পুরনো ছবিকে একই সময়ে fade-out
+        currentImage.classList.add('changing');
 
-                currentImage.src = 'images/R.jpg';
+        setTimeout(function () {
+            currentImage.src = source;
 
-            };
-
-        }
-
-        // Fade in
-        requestAnimationFrame(function () {
             currentImage.classList.remove('changing');
-        });
+            nextImage.classList.remove('showing');
+        }, 650);
+    };
 
-    }, 250);
+    preloader.src = source;
    }
-
 
     // ==========================================
     // UPDATE PAGE NUMBER + BUTTONS
