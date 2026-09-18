@@ -3371,7 +3371,7 @@ html, body {
     font-family: "Copperplate Gothic Light", "Copperplate", "Copperplate Gothic", serif !important;
     font-size: 11px !important;
     color: #000 !important;
-    margin-top: 5px;
+    margin-top: -1px !important;
     letter-spacing: 0.5px;
 }
 .image-view-note span {
