@@ -3305,3 +3305,65 @@ html, body {
         transform: scale(1) !important;
     }
 }
+/* =====================================================
+   EXTRA EDUCATION — FINAL DESKTOP IMAGE FIX
+   ===================================================== */
+
+@media (min-width: 948px) {
+
+    .extra-education-book {
+        width: 340px;
+        height: 285px;
+        overflow: visible !important;
+    }
+
+    .extra-education-page {
+        position: absolute;
+        inset: 0;
+        overflow: visible !important;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #extraEducationCurrent {
+        position: relative !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 100% !important;
+        max-height: 100% !important;
+
+        object-fit: contain !important;
+
+        margin: 0 !important;
+
+        transform: none !important;
+    }
+
+    #extraEducationNextImage {
+        position: absolute !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 100% !important;
+        max-height: 100% !important;
+
+        object-fit: contain !important;
+
+        margin: auto !important;
+
+        inset: 0 !important;
+    }
+
+    #extraEducationCurrent.changing {
+        transform: scale(0.96) !important;
+    }
+
+    #extraEducationNextImage.showing {
+        transform: scale(1) !important;
+    }
+}
