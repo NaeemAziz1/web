@@ -3377,3 +3377,7 @@ html, body {
 .image-view-note span {
     color: #990012 !important;
 }
+.extra-education-block h4 {
+    margin-bottom: 7px !important;
+    font-size: 15px !important;
+}
