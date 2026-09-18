@@ -3255,26 +3255,46 @@ html, body {
     opacity: 1;
     transform: scale(1);
 }
-/* EXTRA EDUCATION - DESKTOP */
+/* ==========================================
+   EXTRA EDUCATION — DESKTOP IMAGE FIX
+   Full image visible, no crop
+   ========================================== */
+
 @media (min-width: 948px) {
 
-    #extraEducationCurrent {
-        width: auto !important;
-        height: auto !important;
-        max-width: 100% !important;
-        max-height: 100% !important;
-        object-fit: contain !important;
-        transform: none !important;
+    .extra-education-page {
+        position: relative;
+        overflow: visible !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    #extraEducationCurrent,
     #extraEducationNextImage {
         width: auto !important;
         height: auto !important;
         max-width: 100% !important;
         max-height: 100% !important;
         object-fit: contain !important;
-        transform: scale(1.03) !important;
-        pointer-events: none !important;
+    }
+
+    #extraEducationCurrent {
+        position: relative;
+        z-index: 1;
+        display: block;
+        transform: none !important;
+    }
+
+    #extraEducationNextImage {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+
+        z-index: 2;
+        pointer-events: none;
+
+        transform: scale(1.03);
     }
 
     #extraEducationCurrent.changing {
