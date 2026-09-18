@@ -3367,3 +3367,11 @@ html, body {
         transform: scale(1) !important;
     }
 }
+.image-view-note {
+    font-family: "Copperplate Gothic Light", "Copperplate", "Copperplate Gothic", serif;
+    font-size: 11px;
+    color: #990012;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
