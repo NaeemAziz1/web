@@ -2946,7 +2946,7 @@ html, body {
     align-items: center;
     justify-content: center;
     background: transparent;
-    overflow: hidden;
+    overflow: visible !important;
 }
 
 .extra-education-page img {
