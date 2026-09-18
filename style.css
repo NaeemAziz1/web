@@ -3369,8 +3369,8 @@ html, body {
 }
 .image-view-note {
     font-family: "Copperplate Gothic Light", "Copperplate", "Copperplate Gothic", serif;
-    font-size: 11px;
-    color: #990012;
+    font-size: 3px;
+    color: #990012 !important;
     margin-top: 5px;
     letter-spacing: 0.5px;
     text-align: center;
