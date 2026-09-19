@@ -3381,3 +3381,6 @@ html, body {
     margin-bottom: 8.5px !important;
     font-size: 15px !important;
 }
+.section-title {
+    white-space: nowrap !important;
+}
