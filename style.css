@@ -3385,17 +3385,13 @@ html, body {
     white-space: nowrap !important;
 }
 @media (max-width: 690px) {
-    #education .section-title {
-        font-size: 23px !important;
-    }
-}
-@media (max-width: 690px) {
     .Biography .title,
     .he-is-title,
     .awards .title,
     .skills .title,
     #education .section-title,
     .contact .title {
+        font-family: "EB Garamond", serif !important;
         font-size: 23px !important;
     }
 }
