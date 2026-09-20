@@ -3392,6 +3392,7 @@ html, body {
     #education .section-title,
     .contact .title {
         font-family: "EB Garamond", serif !important;
-        font-size: 23px !important;
+        font-size: 25px !important;
+        font-weight: 700 !important;
     }
 }
