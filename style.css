@@ -3384,3 +3384,8 @@ html, body {
 .section-title {
     white-space: nowrap !important;
 }
+@media (max-width: 690px) {
+    #education .section-title {
+        font-size: 22px !important;
+    }
+}
