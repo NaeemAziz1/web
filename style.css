@@ -3399,12 +3399,12 @@ html, body {
 .navbar .logo a {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
 }
 
 .welcome-logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     vertical-align: middle;
 }
