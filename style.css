@@ -3419,3 +3419,13 @@ html, body {
     font-size: 25px !important;
     letter-spacing: -1px !important;
 }
+.navbar {
+    height: 60px !important;
+    min-height: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar .max-width {
+    height: 100%;
+}
