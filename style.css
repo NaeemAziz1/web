@@ -3429,3 +3429,7 @@ html, body {
 .navbar .max-width {
     height: 100%;
 }
+.navbar .logo a {
+    position: relative;
+    left: -8px !important;
+}
