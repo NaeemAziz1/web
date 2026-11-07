@@ -3433,3 +3433,7 @@ html, body {
     position: relative;
     left: -10px !important;
 }
+/* Scholarship image — show from top */
+.award-card img[src="images/scholarship.jpg"] {
+    object-position: top center !important;
+}
