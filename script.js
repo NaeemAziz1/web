@@ -458,6 +458,7 @@ m10Image.src = 'images/m10.jpg';
         'images/R6.jpg',
         'images/R.jpg',
         'images/R0.jpg',
+        'images/thesis.jpg',
         'images/R1.jpg',
         'images/R2.jpg',
         'images/R5.jpg',
